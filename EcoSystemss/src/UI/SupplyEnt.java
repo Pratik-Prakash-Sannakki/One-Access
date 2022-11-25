@@ -15,6 +15,7 @@ javax.swing.JPanel rightPanel;
      */
     public SupplyEnt(JPanel c) {
         initComponents();
+        
         this.rightPanel=c;
     }
 
