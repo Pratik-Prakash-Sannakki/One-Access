@@ -4,17 +4,28 @@
  */
 package UI;
 
+import UserCred.userCred;
+import UserCred.userCredData;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 /**
  *
  * @author pratiksannakki
  */
 public class MainFrame extends javax.swing.JFrame {
-
+    userCredData userData;
     /**
      * Creates new form MainFrame
      */
     public MainFrame() {
         initComponents();
+        
+        userData = new userCredData();
+        userCred uc = userData.addDetails();
+        uc.setUserName("sysadmin");
+        uc.setPwd("123");
+        uc.setUserType("sysadmin");
     }
 
     /**
@@ -26,21 +37,157 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jSplitPane1 = new javax.swing.JSplitPane();
+        leftPanel = new javax.swing.JPanel();
+        UserName = new javax.swing.JLabel();
+        UserName_login = new javax.swing.JTextField();
+        Pwd = new javax.swing.JLabel();
+        Login = new javax.swing.JButton();
+        Pwd_login = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
+        rightPanel = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        UserName.setText("User Name");
+
+        UserName_login.setText("jTextField1");
+        UserName_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UserName_loginActionPerformed(evt);
+            }
+        });
+
+        Pwd.setText("Password");
+
+        Login.setText("login");
+        Login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LoginActionPerformed(evt);
+            }
+        });
+
+        Pwd_login.setText("jPasswordField1");
+
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
+        leftPanel.setLayout(leftPanelLayout);
+        leftPanelLayout.setHorizontalGroup(
+            leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(leftPanelLayout.createSequentialGroup()
+                .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(leftPanelLayout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(Login))
+                    .addGroup(leftPanelLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton1)
+                            .addGroup(leftPanelLayout.createSequentialGroup()
+                                .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(Pwd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(UserName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(46, 46, 46)
+                                .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(UserName_login)
+                                    .addComponent(Pwd_login, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE))))))
+                .addContainerGap(81, Short.MAX_VALUE))
+        );
+        leftPanelLayout.setVerticalGroup(
+            leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(leftPanelLayout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(UserName)
+                    .addComponent(UserName_login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Pwd)
+                    .addComponent(Pwd_login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addComponent(Login)
+                .addGap(43, 43, 43)
+                .addComponent(jButton1)
+                .addContainerGap(130, Short.MAX_VALUE))
+        );
+
+        jSplitPane1.setLeftComponent(leftPanel);
+
+        rightPanel.setLayout(new java.awt.CardLayout());
+        jSplitPane1.setRightComponent(rightPanel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jSplitPane1)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void UserName_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UserName_loginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UserName_loginActionPerformed
+
+
+    private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
+        // TODO add your handling code here:
+        
+        
+        
+        int e=0;
+        if (UserName_login.getText() != null && Pwd_login.getPassword() != null ){
+            
+            for(userCred em : userData.getUserData()){
+                if(em.getUserName().toLowerCase().equals(UserName_login.getText().toLowerCase()) ){
+                
+                if(em.getPwd().equals((new String(Pwd_login.getPassword())))){
+                    
+                    JOptionPane.showMessageDialog(this, "logined as "+em.getUserType()+"UID : "+em.getUID());
+                    UserName_login.setText((""));
+                    Pwd_login.setText("");
+                    if ("sysadmin".equals( em.getUserType().toLowerCase().replaceAll("\\s+",""))){
+                        System.out.println( em.getUserName());
+                    
+             SupplyEnt supply = new SupplyEnt(rightPanel);
+            rightPanel.removeAll();
+            rightPanel.add("s", supply);
+            ((java.awt.CardLayout) rightPanel.getLayout()).next(rightPanel);
+               
+                    
+                    
+                            
+                        }
+                
+                
+                }}
+            
+            
+            
+            }
+        
+        }
+    }//GEN-LAST:event_LoginActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        
+     
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -73,10 +220,25 @@ public class MainFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainFrame().setVisible(true);
+                
+                
+                
+                
+
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Login;
+    private javax.swing.JLabel Pwd;
+    private javax.swing.JPasswordField Pwd_login;
+    private javax.swing.JLabel UserName;
+    private javax.swing.JTextField UserName_login;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JPanel leftPanel;
+    private javax.swing.JPanel rightPanel;
     // End of variables declaration//GEN-END:variables
 }
