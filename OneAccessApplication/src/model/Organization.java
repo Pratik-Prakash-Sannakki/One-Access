@@ -5,11 +5,16 @@
 package model;
 
 import java.util.ArrayList;
+import model.Employee.EmployeeDirectory;
+import model.Role.Role;
+import model.UserAccount.UserAccountDirectory;
+import model.WorkQueue.WorkQueue;
 
 /**
  *
  * @author pratiksannakki
  */
+
 public abstract class Organization {
 
      String name;
