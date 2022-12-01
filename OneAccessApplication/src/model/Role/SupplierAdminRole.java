@@ -14,10 +14,7 @@ import model.EcoSystem;
 import model.UserAccount.UserAccount;
 import userinterface.SupplierAdmin.SupplierAdminJPanel;
 
-/**
- *
- * @author Ash
- */
+
 public class SupplierAdminRole extends Role{
 
     @Override

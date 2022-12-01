@@ -9,17 +9,12 @@ package model.Role;
  * @author Akshatha
  */
 
-
-
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
 import userinterface.DeliveryManRole.DeliveryManWorkAreaJPanel;
 
-/**
- *
- * @author harold
- */
+
 public class DeliverManRole extends Role {
 
     @Override

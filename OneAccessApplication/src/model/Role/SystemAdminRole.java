@@ -6,7 +6,7 @@ package model.Role;
 
 /**
  *
- * @author Dell
+ * @author Akshatha
  */
 
 
@@ -16,10 +16,7 @@ import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
 
-/**
- *
- * @author Akshatha
- */
+
 public class SystemAdminRole extends Role{
 
   

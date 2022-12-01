@@ -8,16 +8,12 @@ package model.Role;
  *
  * @author Akshatha
  */
-
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
 import userinterface.EmergencyAdmin.EmergencyAdminJPanel;
 
-/**
- *
- * @author Ash
- */
+
 public class EmergencyAdminRole extends Role{
 
     @Override

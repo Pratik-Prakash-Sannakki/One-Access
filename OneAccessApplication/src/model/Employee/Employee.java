@@ -8,11 +8,6 @@ package model.Employee;
  *
  * @author Akshatha
  */
-
-
-import Business.Doctor.DoctorDirectory;
-
-
 public class Employee {
     
     private String name;
