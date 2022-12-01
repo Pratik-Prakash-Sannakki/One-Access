@@ -5,6 +5,8 @@
 package model;
 
 import java.util.ArrayList;
+import model.Role.HospitalAdminRole;
+import model.Role.Role;
 
 /**
  *
@@ -20,9 +22,9 @@ public class HospitalEnterprise extends Enterprise {
 
     @Override
     public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> roles = new ArrayList();
-        roles.add(new HospitalAdminRole());
-        return roles;
+        ArrayList<Role> role = new ArrayList();
+        role.add(new HospitalAdminRole());
+        return role;
     }
     
 }
