@@ -5,6 +5,8 @@
 package model;
 
 import java.util.ArrayList;
+import model.Role.CustomerRole;
+import model.Role.Role;
 
 /**
  *
@@ -19,9 +21,9 @@ public class PatientOrganization extends Organization{
     }
     @Override
     public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> roles = new ArrayList();
-        roles.add(new CustomerRole());
-        return roles;
+        ArrayList<Role> role = new ArrayList();
+        role.add(new CustomerRole());
+        return role;
         }
     
 }

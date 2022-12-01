@@ -5,6 +5,8 @@
 package model;
 
 import java.util.ArrayList;
+import model.Role.LabAdminRole;
+import model.Role.Role;
 
 /**
  *
@@ -18,9 +20,9 @@ public class LabEnterprise extends Enterprise {
 
     @Override
     public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> roles = new ArrayList();
-        roles.add(new LabAdminRole());
-        return roles;
+        ArrayList<Role> role = new ArrayList();
+        role.add(new LabAdminRole());
+        return role;
     }
 
    
