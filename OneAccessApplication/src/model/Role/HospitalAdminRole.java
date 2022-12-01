@@ -9,7 +9,7 @@ package model.Role;
  * @author Akshatha
  */
 
-import javax.management.relation.Role;
+
 import userinterface.HospitalAdminRole.AdminWorkAreaJPanel;
 import javax.swing.JPanel;
 import model.EcoSystem;
@@ -25,4 +25,5 @@ public class HospitalAdminRole extends Role{
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem business) {
         return new AdminWorkAreaJPanel(userProcessContainer,business,account);
     }
+}
 

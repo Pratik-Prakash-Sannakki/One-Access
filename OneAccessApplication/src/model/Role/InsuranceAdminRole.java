@@ -8,16 +8,13 @@ package model.Role;
  *
  * @author Akshatha
  */
-import javax.management.relation.Role;
+
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
 import userinterface.InsuranceAdmin.InsuranceAdminJPanel;
 
-/**
- *
- * @author Ash
- */
+
 public class InsuranceAdminRole extends Role{
 
     @Override

@@ -13,10 +13,7 @@ import model.EcoSystem;
 import model.UserAccount.UserAccount;
 import userinterface.Labadmin.LabAdminJPanel;
 
-/**
- *
- * @author shreyascr
- */
+
 public class LabAdminRole extends Role{
 
     @Override

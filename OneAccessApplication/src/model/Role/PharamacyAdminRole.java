@@ -8,20 +8,13 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Dell
+ * @author Akshatha
  */
-
-
-
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
 import userinterface.PharamacyAdmin.PharamacyAdminJPanel;
 
-/**
- *
- * @author Akshatha
- */
 public class PharamacyAdminRole extends Role{
 
     @Override

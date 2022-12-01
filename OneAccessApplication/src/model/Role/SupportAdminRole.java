@@ -8,23 +8,14 @@ package model.Role;
  *
  * @author Akshatha
  */
-
-
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
 import userinterface.SupportAdmin.SupportJPanel;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Ash
- */
+
+
 public class SupportAdminRole extends Role{
 
     @Override
