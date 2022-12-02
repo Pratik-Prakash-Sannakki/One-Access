@@ -1,8 +1,36 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package UI.SystemAdminWorkArea;
+
+import userinterface.HospitalAdminRole.AddPatientJPanel;
+import model.EcoSystem;
+import model.Enterprise;
+import model.Network;
+
+import model.Organization;
+import model.UserAccount.UserAccount;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.util.ArrayList;
+import java.util.Locale;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.general.DefaultPieDataset;
+import org.jfree.data.general.PieDataset;
 
 /**
  *
@@ -13,10 +41,63 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form SystemAdminWorkAreaJPanel
      */
-    public SystemAdminWorkAreaJPanel() {
+    JPanel userProcessContainer;
+    EcoSystem system;
+    UserAccount user;
+       Network network;
+        Enterprise enterprise;
+        Organization organization;
+    public SystemAdminWorkAreaJPanel(JPanel userProcessContainer,EcoSystem system,UserAccount user) {
         initComponents();
+        this.userProcessContainer=userProcessContainer;
+        this.system=system;
+        this.user = user;
+        
+        populateTree();
+        jPanel3.setVisible(false);
+        jPanel4.setVisible(false);
+        
     }
+    
+    public void populateTree(){
+       // DefaultTreeModel model=(DefaultTreeModel)jTree.getModel();
+      DefaultTreeModel model = (DefaultTreeModel) jTree.getModel();
+        ArrayList<Network> networkList = system.getNetworkList();
+        ArrayList<Enterprise> enterpriseList;
+        ArrayList<Organization> organizationList;
 
+    
+
+        DefaultMutableTreeNode networks = new DefaultMutableTreeNode("Networks");
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
+        root.removeAllChildren();
+        root.insert(networks, 0);
+
+        DefaultMutableTreeNode networkNode;
+        DefaultMutableTreeNode enterpriseNode;
+        DefaultMutableTreeNode organizationNode;
+
+        for (int i = 0; i < networkList.size(); i++) {
+            network = networkList.get(i);
+            networkNode = new DefaultMutableTreeNode(network.getName());
+            networks.insert(networkNode, i);
+
+            enterpriseList = network.getEnterpriseDirectory().getEnterpriseList();
+            for (int j = 0; j < enterpriseList.size(); j++) {
+                enterprise = enterpriseList.get(j);
+                enterpriseNode = new DefaultMutableTreeNode(enterprise.getName());
+                networkNode.insert(enterpriseNode, j);
+
+                organizationList = enterprise.getOrganizationDirectory().getOrganizationList();
+                for (int k = 0; k < organizationList.size(); k++) {
+                    organization = organizationList.get(k);
+                    organizationNode = new DefaultMutableTreeNode(organization.getName());
+                    enterpriseNode.insert(organizationNode, k);
+                }
+            }
+        }
+        model.reload();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,6 +107,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         jSplitPane = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -51,6 +133,8 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jButton10 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+
+        setLayout(new java.awt.BorderLayout());
 
         jTree.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
             public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
@@ -282,33 +366,14 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(99, Short.MAX_VALUE)
+                .addContainerGap(92, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         jSplitPane.setLeftComponent(jPanel1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1061, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jSplitPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1061, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 915, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jSplitPane, javax.swing.GroupLayout.PREFERRED_SIZE, 915, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jSplitPane, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTreeValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_jTreeValueChanged
@@ -319,27 +384,79 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_jTreeValueChanged
 
-    private void btnManageNetworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageNetworkActionPerformed
-        AddHospital AddHospitalJPanel = new AddHospital(userProcessContainer, system);
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        populateData1();
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        populateData();
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void manPharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manPharActionPerformed
+        // TODO add your handling code here:
+        UpdateDeletePharmacy updatePharJPanel = new UpdateDeletePharmacy(userProcessContainer, system, user);
+        userProcessContainer.add("CreateHospital", updatePharJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_manPharActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        UpdateDeleteSupplier AddHospitalJPanel = new UpdateDeleteSupplier(userProcessContainer, system, user);
         userProcessContainer.add("CreateHospital", AddHospitalJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnManageNetworkActionPerformed
+    }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void btnManageAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageAdminActionPerformed
-        AddDelivery AddDeliveryJPanel = new AddDelivery(userProcessContainer, system);
-        userProcessContainer.add("CreateHospital", AddDeliveryJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnManageAdminActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        AddLabJPanel AddHospitalJPanel = new AddLabJPanel(userProcessContainer, system);
-        userProcessContainer.add("CreateLab", AddHospitalJPanel);
+        UpdateDeleteEmergencyUnit AddHospitalJPanel = new UpdateDeleteEmergencyUnit(userProcessContainer, system, user);
+        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        UpdateDeleteInsuranceCompany AddHospitalJPanel = new UpdateDeleteInsuranceCompany(userProcessContainer, system, user);
+        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        AddSupplierJPanel AddHospitalJPanel = new AddSupplierJPanel(userProcessContainer, system);
+        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        AddEmergencyUnitJPanel AddHospitalJPanel = new AddEmergencyUnitJPanel(userProcessContainer, system);
+        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        AddInsuranceCompanyJPanel AddHospitalJPanel = new AddInsuranceCompanyJPanel(userProcessContainer, system);
+        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void btnManageNetwork1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageNetwork1ActionPerformed
+        // TODO add your handling code here:
+        AddPharmacy addPharmacyJPanel = new AddPharmacy(userProcessContainer, system);
+        userProcessContainer.add("Add Pharmacy", addPharmacyJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_btnManageNetwork1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -350,81 +467,169 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void btnManageNetwork1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageNetwork1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        AddPharmacy addPharmacyJPanel = new AddPharmacy(userProcessContainer, system);
-        userProcessContainer.add("Add Pharmacy", addPharmacyJPanel);
+        AddLabJPanel AddHospitalJPanel = new AddLabJPanel(userProcessContainer, system);
+        userProcessContainer.add("CreateLab", AddHospitalJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnManageNetwork1ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        AddInsuranceCompanyJPanel AddHospitalJPanel = new AddInsuranceCompanyJPanel(userProcessContainer, system);
+    private void btnManageAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageAdminActionPerformed
+        AddDelivery AddDeliveryJPanel = new AddDelivery(userProcessContainer, system);
+        userProcessContainer.add("CreateHospital", AddDeliveryJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_btnManageAdminActionPerformed
+
+    private void btnManageNetworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageNetworkActionPerformed
+        AddHospital AddHospitalJPanel = new AddHospital(userProcessContainer, system);
         userProcessContainer.add("CreateHospital", AddHospitalJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        AddEmergencyUnitJPanel AddHospitalJPanel = new AddEmergencyUnitJPanel(userProcessContainer, system);
-        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-        AddSupplierJPanel AddHospitalJPanel = new AddSupplierJPanel(userProcessContainer, system);
-        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-        UpdateDeleteInsuranceCompany AddHospitalJPanel = new UpdateDeleteInsuranceCompany(userProcessContainer, system, user);
-        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-        UpdateDeleteEmergencyUnit AddHospitalJPanel = new UpdateDeleteEmergencyUnit(userProcessContainer, system, user);
-        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-        UpdateDeleteSupplier AddHospitalJPanel = new UpdateDeleteSupplier(userProcessContainer, system, user);
-        userProcessContainer.add("CreateHospital", AddHospitalJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void manPharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manPharActionPerformed
-        // TODO add your handling code here:
-        UpdateDeletePharmacy updatePharJPanel = new UpdateDeletePharmacy(userProcessContainer, system, user);
-        userProcessContainer.add("CreateHospital", updatePharJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_manPharActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-        populateData();
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-        populateData1();
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnManageNetworkActionPerformed
 
 
+    
+         public void populateData() {
+         
+        
+        DefaultPieDataset dataSet = new DefaultPieDataset();
+        int Hospital = 0;
+        int Pharmacy = 0;
+        int Lab = 0;
+        int Delivery = 0;
+        int Insurance = 0;
+        int Emergency = 0;
+        int Supplier = 0;
+        
+        
+        try {
+
+            for(Network network:system.getNetworkList()){
+            System.out.println("nett"+network);
+            for(Enterprise org : network.getEnterpriseDirectory().getEnterpriseList()){
+                   System.out.println("nett"+network.getEnterpriseDirectory().getEnterpriseList());
+               
+
+                     if (org.getEnterpriseType().getValue().equals("Hospital")) {
+                          System.out.println("nett111"+org);
+                    Hospital++;
+                } else if (org.getEnterpriseType().getValue().equals("Pharmacy")) {
+                    Pharmacy++;
+                } else if (org.getEnterpriseType().getValue().equals("Lab")) {
+                  Lab++;
+                } else if (org.getEnterpriseType().getValue().equals("Delivery")) {
+                    Delivery++;
+                } else if (org.getEnterpriseType().getValue().equals("Insurance")) {
+                   Insurance++;
+                } else if (org.getEnterpriseType().getValue().equals("Emergency")){
+                    Emergency++;
+                } else if (org.getEnterpriseType().getValue().equals("Supplier")) {
+                     Supplier++;
+                } 
+                }
+            
+        }
+            System.out.println("asss"+Hospital);
+            dataSet.setValue("Hospitals", Hospital);
+            dataSet.setValue("Pharmacy", Pharmacy);
+            dataSet.setValue("Lab", Lab);
+            dataSet.setValue("Delivery", Delivery);
+            dataSet.setValue("Insurance", Insurance);
+            dataSet.setValue("Emergency", Emergency);
+            dataSet.setValue("Supplier", Supplier);
+
+            JFreeChart chart = ChartFactory.createPieChart3D("Enterprises", dataSet, true, true, Locale.ENGLISH);
+            chart.setBackgroundPaint(Color.WHITE);
+            chart.getTitle().setPaint(Color.DARK_GRAY);
+            ChartPanel chartpanel = new ChartPanel(chart);
+            chartpanel.setDomainZoomable(true);
+
+            jPanel4.setLayout(new BorderLayout());
+            jPanel4.add(chartpanel, BorderLayout.EAST);
+            jPanel4.setVisible(true);
+        } catch (NullPointerException npe) {
+            JOptionPane.showMessageDialog(null, " No Data to display");
+            return;
+        }
+
+    }
+      public void populateData1() {
+         
+        
+        DefaultPieDataset dataSet = new DefaultPieDataset();
+        int Doctor = 0;
+        int Patient = 0;
+        int DeliveryMan = 0;
+        int InsuranceAdmin = 0;
+        int PharamacyAdmin = 0;
+        int LabAdmin = 0;
+        int SupplierAdmin = 0;
+        int EmergencyAdmin=0;
+        
+        
+        try {
+         
+       for(Network network:system.getNetworkList()){
+            System.out.println("nett"+network);
+            for(Enterprise ent : network.getEnterpriseDirectory().getEnterpriseList()){
+                   System.out.println("nett"+network.getEnterpriseDirectory().getEnterpriseList());
+               
+                   for (Organization org : ent.getOrganizationDirectory().getOrganizationList()) {
+                if (org.getEnterpriseType1().getValue().equals("Doctor")) {
+                   Doctor++;
+                } else if (org.getEnterpriseType1().getValue().equals("Patient")) {
+                    Patient++;
+                } else if (org.getEnterpriseType1().getValue().equals("DeliveryMan")) {
+                 DeliveryMan++;
+                } else if (org.getEnterpriseType1().getValue().equals("InsuranceAdmin")) {
+                   InsuranceAdmin++;
+                } else if (org.getEnterpriseType1().getValue().equals("PharamacyAdmin")) {
+                   PharamacyAdmin++;
+                } else if (org.getEnterpriseType1().getValue().equals("LabAdmin")){
+                    LabAdmin++;
+                } else if (org.getEnterpriseType1().getValue().equals("SupplierAdmin")) {
+                   SupplierAdmin++;
+                } else if (org.getEnterpriseType1().getValue().equals("EmergencyAdmin")) {
+                 EmergencyAdmin++;
+                }
+                
+            
+        }
+       
+            }
+       
+       }
+
+            dataSet.setValue("Doctor Organization", Doctor);
+            dataSet.setValue("Patient Organization", Patient);
+            dataSet.setValue("Delivery Organization", DeliveryMan);
+            dataSet.setValue("Insurance Organization", InsuranceAdmin);
+            dataSet.setValue("Pharamacy Organization", PharamacyAdmin);
+            dataSet.setValue("Lab Organization", LabAdmin);
+            dataSet.setValue("Emergency Organization", EmergencyAdmin);
+            dataSet.setValue("Supplier Organization", SupplierAdmin);
+
+            JFreeChart chart = ChartFactory.createPieChart3D("Organizations", dataSet, true, true, Locale.ENGLISH);
+            chart.setBackgroundPaint(Color.WHITE);
+            chart.getTitle().setPaint(Color.DARK_GRAY);
+            ChartPanel chartpanel = new ChartPanel(chart);
+            chartpanel.setDomainZoomable(true);
+
+            jPanel3.setLayout(new BorderLayout());
+            jPanel3.add(chartpanel, BorderLayout.EAST);
+            jPanel3.setVisible(true);
+        } catch (NullPointerException npe) {
+            JOptionPane.showMessageDialog(null, " No Data to display");
+            return;
+        }
+
+    }
+    
+    
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnManageAdmin;
     private javax.swing.JButton btnManageNetwork;
@@ -441,6 +646,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
