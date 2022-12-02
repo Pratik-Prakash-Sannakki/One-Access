@@ -4,6 +4,16 @@
  */
 package UI.Doctor;
 
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+import model.DB4OUtil.DB4OUtil;
+import model.Doctor.Doctor;
+import model.EcoSystem;
+import model.HospitalAdmin.Hospital;
+import model.UserAccount.UserAccount;
+
 /**
  *
  * @author Akshatha
@@ -13,9 +23,46 @@ public class DoctorJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DoctorJPanel
      */
-    public DoctorJPanel() {
+    private JPanel userProcessContainer;
+    private EcoSystem system;
+    private  UserAccount user;
+    private Hospital resObj;
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
+    private String hosname;
+    
+    public DoctorJPanel(JPanel userProcessContainer,EcoSystem system,UserAccount user) {
         initComponents();
+         this.userProcessContainer=userProcessContainer;
+        this.system=system;
+        this.user = user;
+        hosname = user.getEmployee().getName();
+        populateTable();
+    
     }
+    public void populateTable(){
+     
+        DefaultTableModel dtm = (DefaultTableModel) doctorDetails.getModel();
+        dtm.setRowCount(0);
+        
+         //System.out.println("Res len "+ system.getDoctorDirectory().getDoctorList());
+       String city = user.getEmployee().getCity();
+         
+        if(system.findNetwork(city).getEnterpriseDirectory().findEnterprise(user.getEmployee().getName()).getOrganizationDirectory().getOrganizationList()!=null &&system.findNetwork(city).getEnterpriseDirectory().findEnterprise(user.getEmployee().getName()).getOrganizationDirectory().getDoctorDirectory()!=null){
+        for(Doctor org : system.findNetwork(city).getEnterpriseDirectory().findEnterprise(user.getEmployee().getName()).getOrganizationDirectory().getDoctorDirectory().getDocList()) {
+           //System.out.println(org.getEnterpriseType1().getClass()+" "+ org.getEnterpriseType1().getValue());
+              
+                    
+          
+            Object row[] = new Object[3];
+            row[0] = org;
+            row[1] = org.getSpecialization();
+            dtm.addRow(row);
+        
+        }
+        System.out.println("hooos "+hosname);
+   }
+        }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,19 +73,135 @@ public class DoctorJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jScrollPane1 = new javax.swing.JScrollPane();
+        doctorDetails = new javax.swing.JTable();
+        createNewDoctor = new javax.swing.JButton();
+        deleteDoctor = new javax.swing.JButton();
+        enterpriseLabel = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        deleteDoctor1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        doctorDetails.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Doctor name", "Doctor Specialization"
+            }
+        ));
+        jScrollPane1.setViewportView(doctorDetails);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 580, 119));
+
+        createNewDoctor.setBackground(new java.awt.Color(24, 31, 46));
+        createNewDoctor.setForeground(new java.awt.Color(255, 255, 255));
+        createNewDoctor.setText("Create New Doctor");
+        createNewDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
+        createNewDoctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                createNewDoctorActionPerformed(evt);
+            }
+        });
+        add(createNewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
+
+        deleteDoctor.setBackground(new java.awt.Color(24, 31, 46));
+        deleteDoctor.setForeground(new java.awt.Color(255, 255, 255));
+        deleteDoctor.setText("Delete Doctor");
+        deleteDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
+        deleteDoctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteDoctorActionPerformed(evt);
+            }
+        });
+        add(deleteDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, -1, -1));
+
+        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setText("MANAGE DOCTORS");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, 180, 30));
+
+        jButton6.setText("Back");
+        jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, -1, -1));
+
+        deleteDoctor1.setBackground(new java.awt.Color(24, 31, 46));
+        deleteDoctor1.setForeground(new java.awt.Color(255, 255, 255));
+        deleteDoctor1.setText("Refresh");
+        deleteDoctor1.setPreferredSize(new java.awt.Dimension(156, 43));
+        deleteDoctor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteDoctor1ActionPerformed(evt);
+            }
+        });
+        add(deleteDoctor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 480, -1));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void createNewDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createNewDoctorActionPerformed
+        // TODO add your handling code here:
+
+        AddDoctorJpanel createDoctorJPanel = new AddDoctorJpanel(userProcessContainer, system,user);
+        userProcessContainer.add("CreateDoctor", createDoctorJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_createNewDoctorActionPerformed
+
+    private void deleteDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteDoctorActionPerformed
+        // TODO add your handling code here:
+
+        int selectedRow = doctorDetails.getSelectedRow();
+        if(selectedRow < 0) {
+            JOptionPane.showMessageDialog(null,"Please Select a row from table first", "Warining", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        Doctor doc = (Doctor)doctorDetails.getValueAt(selectedRow,0);
+        system.findNetwork(user.getEmployee().getCity()).getEnterpriseDirectory().findEnterprise(user.getEmployee().getName()).getOrganizationDirectory().deleteOrganization(doc);
+        System.out.println("doctor deleted"+doc);
+        system.findNetwork(user.getEmployee().getCity()).getEnterpriseDirectory().findEnterprise(user.getEmployee().getName()).getOrganizationDirectory().getDoctorDirectory().deleteDoctor(doc);
+        UserAccount ua = system.getUserAccountDirectory().findUserAccount(doc.getName());
+        system.getUserAccountDirectory().getUserAccountList().remove(ua);
+        populateTable();
+        dB4OUtil.storeSystem(system);
+    }//GEN-LAST:event_deleteDoctorActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+        //        Component[] comps = this.userProcessContainer.getComponents();
+        //        for(Component comp : comps){
+            //            if(comp instanceof SystemAdminWorkAreaJPanel){
+                //                SystemAdminWorkAreaJPanel systemAdminWorkAreaJPanel= (SystemAdminWorkAreaJPanel) comp;
+                //                systemAdminWorkAreaJPanel.populateTree();
+                //            }
+            //        }
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void deleteDoctor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteDoctor1ActionPerformed
+        // TODO add your handling code here:
+        populateTable();
+    }//GEN-LAST:event_deleteDoctor1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton createNewDoctor;
+    private javax.swing.JButton deleteDoctor;
+    private javax.swing.JButton deleteDoctor1;
+    private javax.swing.JTable doctorDetails;
+    private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

@@ -31,7 +31,7 @@ public class AddDoctorJpanel extends javax.swing.JPanel {
     private EcoSystem system;
     private UserAccount user;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
-    public AddDoctorJpanel() {
+    public AddDoctorJpanel(JPanel userProcessContainer,EcoSystem system,UserAccount user) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.system=system;

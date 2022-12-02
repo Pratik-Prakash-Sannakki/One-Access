@@ -33,11 +33,11 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.system = system;
         this.user = user;
-        viewTable();
+        populateTable1();
         jPanel1.setVisible(false);
     }
     
-    public void viewTable(){
+    public void populateTable1(){
 
         DefaultTableModel dtm = (DefaultTableModel) docDetails.getModel();
         dtm.setRowCount(0);
@@ -54,7 +54,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         }}}
     }
     
-    public void viewTable1(String name){
+    public void populateTable1(String name){
         
         DefaultTableModel dtm = (DefaultTableModel) docDetails1.getModel();
         dtm.setRowCount(0);
@@ -198,7 +198,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please Select a row from table first", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        viewTable1(value);
+        populateTable1(value);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
