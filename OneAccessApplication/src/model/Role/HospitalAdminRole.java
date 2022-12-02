@@ -15,10 +15,7 @@ import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
 
-/**
- *
- * @author raunak
- */
+
 public class HospitalAdminRole extends Role{
 
     @Override
