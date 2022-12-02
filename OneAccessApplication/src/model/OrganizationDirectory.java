@@ -5,6 +5,10 @@
 package model;
 
 import java.util.ArrayList;
+import model.Doctor.Doctor;
+import model.Doctor.DoctorDirectory;
+import model.Patient.Patient;
+import model.Patient.PatientDirectory;
 
 /**
  *

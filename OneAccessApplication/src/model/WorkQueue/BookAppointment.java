@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  * @author adityaillur
  */
-public class BookAppointment {
+public class BookAppointment extends WorkRequest {
     String comment;
     Medicine med;
 
