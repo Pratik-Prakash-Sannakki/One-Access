@@ -10,6 +10,7 @@ package model.Role;
  */
 
 
+import UI.CustomerRole.CustomerAreaJPanel;
 import javax.swing.JPanel;
 
 import javax.swing.JPanel;

@@ -5,7 +5,6 @@
  */
 package UI.SystemAdminWorkArea;
 
-import userinterface.HospitalAdminRole.AddPatientJPanel;
 import model.EcoSystem;
 import model.Enterprise;
 import model.Network;

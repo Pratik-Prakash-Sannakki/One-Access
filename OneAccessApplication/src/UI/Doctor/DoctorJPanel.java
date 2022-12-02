@@ -99,7 +99,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 580, 119));
 
-        createNewDoctor.setBackground(new java.awt.Color(24, 31, 46));
+        createNewDoctor.setBackground(new java.awt.Color(51, 51, 255));
         createNewDoctor.setForeground(new java.awt.Color(255, 255, 255));
         createNewDoctor.setText("Create New Doctor");
         createNewDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -110,7 +110,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
         });
         add(createNewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
 
-        deleteDoctor.setBackground(new java.awt.Color(24, 31, 46));
+        deleteDoctor.setBackground(new java.awt.Color(51, 51, 255));
         deleteDoctor.setForeground(new java.awt.Color(255, 255, 255));
         deleteDoctor.setText("Delete Doctor");
         deleteDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -123,7 +123,7 @@ public class DoctorJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("MANAGE DOCTORS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, 180, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 290, 40));
 
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -132,9 +132,9 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, -1, -1));
 
-        deleteDoctor1.setBackground(new java.awt.Color(24, 31, 46));
+        deleteDoctor1.setBackground(new java.awt.Color(51, 51, 255));
         deleteDoctor1.setForeground(new java.awt.Color(255, 255, 255));
         deleteDoctor1.setText("Refresh");
         deleteDoctor1.setPreferredSize(new java.awt.Dimension(156, 43));
