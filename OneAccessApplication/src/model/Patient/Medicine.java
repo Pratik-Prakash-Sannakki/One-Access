@@ -11,13 +11,15 @@ import java.util.ArrayList;
  * @author adityaillur
  */
 public class Medicine {
-        ArrayList<String> med;
+        ArrayList<String> medicine;
 
-    public ArrayList<String> getMed() {
-        return med;
+    public ArrayList<String> getMedicine() {
+        return medicine;
     }
 
-    public void setMed(ArrayList<String> med) {
-        this.med = med;
+    public void setMedicine(ArrayList<String> medicine) {
+        this.medicine = medicine;
     }
+        
+
 }

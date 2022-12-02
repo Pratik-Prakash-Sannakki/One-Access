@@ -11,7 +11,7 @@ package model.Role;
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
-import userinterface.Doctor.DoctorAdminJPanel;
+import UI.Doctor.DoctorAdminJPanel;
 
 
 public class DoctorRole extends Role{

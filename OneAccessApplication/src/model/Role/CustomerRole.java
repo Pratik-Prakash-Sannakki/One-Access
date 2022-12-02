@@ -10,8 +10,6 @@ package model.Role;
  */
 
 
-
-import userinterface.CustomerRole.CustomerAreaJPanel;
 import javax.swing.JPanel;
 
 import javax.swing.JPanel;
@@ -24,8 +22,8 @@ public class CustomerRole extends Role{
     }
 
     
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem business) {
-        return new CustomerAreaJPanel(userProcessContainer, account,business);
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem model) {
+        return new CustomerAreaJPanel(userProcessContainer, account,model);
     }
     
     
