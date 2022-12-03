@@ -12,7 +12,7 @@ import model.SupplierAdmin.Inventory;
  *
  * @author adityaillur
  */
-public class OrderInventoryWorkRequest {
+public class OrderInventoryWorkRequest extends WorkRequest {
      private List<Inventory> inventoryList = new ArrayList<Inventory>();
 
     public List<Inventory> getInventoryList() {
