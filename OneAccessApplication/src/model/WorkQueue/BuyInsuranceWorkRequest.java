@@ -10,7 +10,7 @@ import model.InsuranceAdmin.InsurancePlan;
  *
  * @author adityaillur
  */
-public class BuyInsuranceWorkRequest {
+public class BuyInsuranceWorkRequest extends WorkRequest {
     InsurancePlan plan;
 
     public InsurancePlan getPlan() {

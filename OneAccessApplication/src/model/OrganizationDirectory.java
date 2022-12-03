@@ -7,11 +7,15 @@ package model;
 import java.util.ArrayList;
 import model.Doctor.Doctor;
 import model.Doctor.DoctorDirectory;
+import model.InsuranceAdmin.InsuranceAdminDirectory;
+import model.LabAdmin.Lab;
+import model.LabAdmin.LabDirectory;
 import model.Organization.Type;
 import model.Patient.Patient;
 import model.Patient.PatientDirectory;
 import model.SupplierAdmin.Supplier;
 import model.SupplierAdmin.SupplierDirectory;
+
 
 /**
  *

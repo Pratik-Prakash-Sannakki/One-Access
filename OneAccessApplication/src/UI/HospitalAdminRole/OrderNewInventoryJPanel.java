@@ -36,6 +36,7 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
     UserAccount userAccount;
     String supplierName;
     ArrayList<Inventory> order;
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     public OrderNewInventoryJPanel(JPanel userProcessContainer,UserAccount userAccount,EcoSystem system ) {
         initComponents();
          
@@ -227,14 +228,15 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
             orderInventoryWorkRequest.setInventoryList(sup.getInventoryDirectory().getInventoryList());
             System.out.println("list of items "+sup.getInventoryDirectory().getInventoryList());
             orderInventoryWorkRequest.setSender(this.userAccount);
+  
             int selectedValue = SupplierJComboBox.getSelectedIndex();
             //           System.out.println(lab.getName());
             //           System.out.println(lab.getClass());
             //
-            orderInventoryWorkRequest.setReceiver(system.getUserAccountDirectory().findUserAccount(supplierName));
-            orderInventoryWorkRequest.setMessage(CommentsTxtArea.getText());
-            orderInventoryWorkRequest.setRequestDate(new Date());
-            orderInventoryWorkRequest.setStatus("Item ordered");
+            orderInventoryWorkRequest.setRecevr(system.getUserAccountDirectory().findUserAccount(supplierName));
+            orderInventoryWorkRequest.setMsg(CommentsTxtArea.getText());
+            orderInventoryWorkRequest.setReqDate(new Date());
+            orderInventoryWorkRequest.setStat("Item ordered");
             system.getWorkQueue().addWorkRequest(orderInventoryWorkRequest);
 
         }

@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author adityaillur
  */
-public class BookTestWorkRequest {
+public class BookTestWorkRequest extends WorkRequest {
     private int testID;
     private static int count = 1;
     private Date dateBooked;
