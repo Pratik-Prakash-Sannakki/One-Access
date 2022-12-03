@@ -6,6 +6,7 @@ package model.WorkQueue;
 
 import java.util.ArrayList;
 import java.util.List;
+import model.SupplierAdmin.Inventory;
 
 /**
  *

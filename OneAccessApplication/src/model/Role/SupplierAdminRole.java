@@ -12,7 +12,7 @@ package model.Role;
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
-import userinterface.SupplierAdmin.SupplierAdminJPanel;
+
 
 
 public class SupplierAdminRole extends Role{
