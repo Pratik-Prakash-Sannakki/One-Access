@@ -7,8 +7,11 @@ package model;
 import java.util.ArrayList;
 import model.Doctor.Doctor;
 import model.Doctor.DoctorDirectory;
+import model.Organization.Type;
 import model.Patient.Patient;
 import model.Patient.PatientDirectory;
+import model.SupplierAdmin.Supplier;
+import model.SupplierAdmin.SupplierDirectory;
 
 /**
  *
@@ -150,7 +153,7 @@ DoctorDirectory doctorDirectory;
             doctor.setName(name);
             doctor.setSpecialization(random);
             doclist.add(doctor);
-            doctordirectory.setDoctorList(doclist);
+            doctordirectory.setDocList(doclist);
             setDoctorDirectory(doctordirectory);
             }else{
                 getDoctorDirectory().createDoctor(name, random);
@@ -169,7 +172,7 @@ DoctorDirectory doctorDirectory;
             pa.setName(name);
             //doctor.setSpecialization(random);
             paList.add(pa);
-            paD.setPatientList(paList);
+            paD.setPatList(paList);
             setPatientDirectory(paD);
             }else{
                 getPatientDirectory().createPatient(name);

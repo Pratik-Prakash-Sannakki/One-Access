@@ -10,7 +10,7 @@ package model.Role;
  */
 
 
-import userinterface.HospitalAdminRole.AdminWorkAreaJPanel;
+import UI.HospitalAdminRole.AdminWorkAreaJPanel;
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
