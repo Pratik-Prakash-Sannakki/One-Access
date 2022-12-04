@@ -11,13 +11,14 @@ import model.UserAccount.UserAccount;
  *
  * @author adityaillur
  */
-public class WorkRequest {
-    private String msg;
+public abstract class WorkRequest {
+
+    private String message;
     private UserAccount sender;
-    private UserAccount recevr;
-    private String stat;
-    private Date reqDate;
-    private Date resDate;
+    private UserAccount receiver;
+    private String status;
+    private Date requestDate;
+    private Date resolveDate;
 
     public UserAccount getDeliveryMan() {
         return deliveryMan;
@@ -29,15 +30,15 @@ public class WorkRequest {
     private UserAccount deliveryMan;
     
     public WorkRequest(){
-        reqDate = new Date();
+        requestDate = new Date();
     }
 
-    public String getMsg() {
-        return msg;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public UserAccount getSender() {
@@ -48,32 +49,32 @@ public class WorkRequest {
         this.sender = sender;
     }
 
-    public UserAccount getRecevr() {
-        return recevr;
+    public UserAccount getReceiver() {
+        return receiver;
     }
 
-    public void setRecevr(UserAccount recevr) {
-        this.recevr = recevr;
+    public void setReceiver(UserAccount receiver) {
+        this.receiver = receiver;
     }
 
-    public String getStat() {
-        return stat;
+    public String getStatus() {
+        return status;
     }
 
-    public void setStat(String stat) {
-        this.stat = stat;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public Date getReqDate() {
-        return reqDate;
+    public Date getRequestDate() {
+        return requestDate;
     }
 
-    public void setReqDate(Date reqDate) {
-        this.reqDate = reqDate;
+    public void setRequestDate(Date requestDate) {
+        this.requestDate = requestDate;
     }
 
-    public Date getResDate() {
-        return resDate;
+    public Date getResolveDate() {
+        return resolveDate;
     }
 
     @Override
@@ -81,7 +82,7 @@ public class WorkRequest {
         return sender.getEmployee().getName();
     }
 
-    public void setResDate(Date resDate) {
-        this.resDate = resDate;
+    public void setResolveDate(Date resolveDate) {
+        this.resolveDate = resolveDate;
     }
 }

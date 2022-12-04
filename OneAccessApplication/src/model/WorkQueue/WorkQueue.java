@@ -18,7 +18,7 @@ public class WorkQueue {
         workReqList = new ArrayList();
     }
 
-    public ArrayList<WorkRequest> getWorkReqList() {
+    public ArrayList<WorkRequest> getWorkRequestList() {
         return workReqList;
     }
     public void addWorkRequest(WorkRequest workRequest) {

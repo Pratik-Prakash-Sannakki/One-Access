@@ -11,10 +11,10 @@ import java.util.List;
  *
  * @author adityaillur
  */
-public class PlaceNewOrderWorkRequest extends WorkRequest  {
+public class PlaceNewOrderWorkRequest extends WorkRequest {
     private int orderId;
     private static int count = 1;
-    private List<PharmacyOrder> orderTot = new ArrayList<PharmacyOrder>();
+    private List<PharmacyOrder> orderTotal = new ArrayList<PharmacyOrder>();
 
     public int getOrderId() {
         return orderId;
@@ -24,16 +24,16 @@ public class PlaceNewOrderWorkRequest extends WorkRequest  {
         this.orderId = orderId;
     }
 
-    public List<PharmacyOrder> getOrderTot() {
-        return orderTot;
+    public List<PharmacyOrder> getOrderTotal() {
+        return orderTotal;
     }
 
-    public void setOrderTot(List<PharmacyOrder> orderTot) {
-        this.orderTot = orderTot;
+    public void setOrderTotal(List<PharmacyOrder> orderTotal) {
+        this.orderTotal = orderTotal;
     }
 
     public PharmacyOrder addItem(PharmacyOrder orderItemTotal) {
-        orderTot.add(orderItemTotal);
+        orderTotal.add(orderItemTotal);
         return orderItemTotal;
     }
         public PlaceNewOrderWorkRequest(){
@@ -49,4 +49,5 @@ public class PlaceNewOrderWorkRequest extends WorkRequest  {
     public static void setCount(int count) {
         PlaceNewOrderWorkRequest.count = count;
     }
+    
 }
