@@ -9,10 +9,11 @@ package model.Role;
  * @author Akshatha
  */
 
+import UI.InsuranceAdmin.InsuranceAdminJPanel;
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
-import userinterface.InsuranceAdmin.InsuranceAdminJPanel;
+
 
 
 public class InsuranceAdminRole extends Role{

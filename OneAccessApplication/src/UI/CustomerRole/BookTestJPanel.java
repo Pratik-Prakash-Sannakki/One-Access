@@ -288,27 +288,27 @@ public class BookTestJPanel extends javax.swing.JPanel {
             System.out.println(lab.getName());
             System.out.println(lab.getClass());
             //
-            bookNewTestWorkRequest.setReceiver(system.getUserAccountDirectory().findUserAccount(labName));
+            bookNewTestWorkRequest.setRecevr(system.getUserAccountDirectory().findUserAccount(labName));
             //            bookNewTestWorkRequest.getReceiver().setUsername(lab.getUserAccountDirectory().findUserAccount(lab.getName()).getUsername());
 
-            bookNewTestWorkRequest.setTestId(1);
+            bookNewTestWorkRequest.setTestID(1);
 
             //     bookNewTestWorkRequest.getReceiver().setUsername(lab.getUserAccountDirectory().findUserAccount(l1.getName()).getUsername());
-            jDateChooser2. setMinSelectableDate(Calendar.getInstance().getTime());
+            jDateChooser1. setMinSelectableDate(Calendar.getInstance().getTime());
             SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
-            Date d = jDateChooser2.getDate();
-            bookNewTestWorkRequest.setDateBooked(d);
-            bookNewTestWorkRequest.setRequestDate(new Date());
-            bookNewTestWorkRequest.setStatus("Lab Test Booked");
+            Date d = jDateChooser1.getDate();
+            bookNewTestWorkRequest.setdateBooked(d);
+            bookNewTestWorkRequest.setReqDate(new Date());
+            bookNewTestWorkRequest.setStat("Lab Test Booked");
             system.getWorkQueue().addWorkRequest(bookNewTestWorkRequest);
 
         }
 
         if (flag) {
             JOptionPane.showMessageDialog(null, "Lab test booked Successfully");
-            System.out.println(userAccount.getWorkQueue().getWorkRequestList());
+            System.out.println(userAccount.getWorkQueue().getWorkReqList());
             System.out.println("prev");
-            List<WorkRequest> r = this.userAccount.getWorkQueue().getWorkRequestList();
+            List<WorkRequest> r = this.userAccount.getWorkQueue().getWorkReqList();
 
             ViewTestBookingsJPanel cust = new ViewTestBookingsJPanel(userProcessContainer, userAccount, system);
             userProcessContainer.add("CustomerAreaJPanel", cust);
@@ -402,7 +402,7 @@ System.out.println("test list " +system.findNetwork(userAccount.getEmployee().ge
                 row[0] = lab;
                 row[1] = t;
                 SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
-                String d = sdf.format(jDateChooser2.getDate());
+                String d = sdf.format(jDateChooser1.getDate());
                 row[2] = d;
                 row[3] = t.getPrice();
                 dtm.addRow(row);

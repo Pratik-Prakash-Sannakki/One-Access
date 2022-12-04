@@ -116,8 +116,8 @@ public class ViewEmergencyRequestStatusJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         
                         Object[] row = new Object[2];
-                row[0] = emergencyWorkRequest.getReceiver();
-                row[1] = emergencyWorkRequest.getStatus();
+                row[0] = emergencyWorkRequest.getRecevr();
+                row[1] = emergencyWorkRequest.getStat();
                 model.addRow(row);
     }
 }

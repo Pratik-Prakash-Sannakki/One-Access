@@ -8,10 +8,11 @@ package model.Role;
  *
  * @author Akshatha
  */
+import UI.Labadmin.LabAdminJPanel;
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
-import userinterface.Labadmin.LabAdminJPanel;
+
 
 
 public class LabAdminRole extends Role{

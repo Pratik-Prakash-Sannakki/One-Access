@@ -10,7 +10,7 @@ import model.Patient.Patient;
  *
  * @author adityaillur
  */
-public class EmergencyWorkRequest {
+public class EmergencyWorkRequest extends WorkRequest{
     Patient pat;
 
     public Patient getPat() {
