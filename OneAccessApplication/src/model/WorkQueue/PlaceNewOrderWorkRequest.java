@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author adityaillur
  */
-public class PlaceNewOrderWorkRequest {
+public class PlaceNewOrderWorkRequest extends WorkRequest  {
     private int orderId;
     private static int count = 1;
     private List<PharmacyOrder> orderTot = new ArrayList<PharmacyOrder>();

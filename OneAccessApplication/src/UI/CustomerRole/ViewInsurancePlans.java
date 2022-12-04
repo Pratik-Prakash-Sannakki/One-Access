@@ -27,7 +27,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Mudit Mathur
+ * 
  */
 
 public class ViewInsurancePlans extends javax.swing.JPanel {
@@ -254,7 +254,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
             InsuranceeAdmin  icc = system.findNetwork(userAccount.getEmployee().getCity()).getEnterpriseDirectory().findEnterprise(name).getOrganizationDirectory().getInsuranceAdminDirectory().getInsuranceList().get(selectedValue);
             //            Lab lab2 = labDirectory.findLab(l1.getUsername());
 
-            buyInsuranceRequest.setReceiver(system.getUserAccountDirectory().findUserAccount(icc.getName()));
+            buyInsuranceRequest.setRecevr(system.getUserAccountDirectory().findUserAccount(icc.getName()));
             //            System.out.println(" YO " +l1.getUsername());
             //            buyInsuranceRequest.getReceiver().);
         //            bookNewTestWorkRequest.setRec(l);
@@ -268,8 +268,8 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         //            SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
         //            String d = sdf.format(jDateChooser1.getDate());
         //            buyInsuranceRequest.setRequestDate();
-        buyInsuranceRequest.setRequestDate(new Date());
-        buyInsuranceRequest.setStatus("Insurance ordered");
+        buyInsuranceRequest.setReqDate(new Date());
+        buyInsuranceRequest.setStat("Insurance ordered");
         system.getWorkQueue().addWorkRequest(buyInsuranceRequest);
 
         }
@@ -293,9 +293,9 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         //        }
         if (flag) {
             JOptionPane.showMessageDialog(null, "Insurance ordered successfully! Thank you for your payment");
-            System.out.println(userAccount.getWorkQueue().getWorkRequestList());
+            System.out.println(userAccount.getWorkQueue().getWorkReqList());
             //            System.out.println("prev");
-            List<WorkRequest> r = this.userAccount.getWorkQueue().getWorkRequestList();
+            List<WorkRequest> r = this.userAccount.getWorkQueue().getWorkReqList();
 
             ViewCurrentPlans view = new ViewCurrentPlans(userProcessContainer, userAccount, system);
             userProcessContainer.add("ViewPlans", view);

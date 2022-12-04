@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author Mudit Mathur
+ * 
  */
 public class ViewTestBookingsJPanel extends javax.swing.JPanel {
 
@@ -123,17 +123,17 @@ private void populateTable() {
 
         model.setRowCount(0);
 //        System.out.println("R is");
-        for (WorkRequest request : system.getWorkQueue().getWorkRequestList()) {
+        for (WorkRequest request : system.getWorkQueue().getWorkReqList()) {
 //            System.out.println("Receiver would be");
 //            System.out.println(request.getReceiver());
             if (request.getSender().getUsername().equals(userAccount.getUsername())) {
                 if(request instanceof BookTestWorkRequest)
                 {                BookTestWorkRequest testRequest = (BookTestWorkRequest) request;
             Object[] row = new Object[4];
-            row[0] = request.getReceiver();
-            row[1] = request.getRequestDate();
-            row[2] = testRequest.getDateBooked();
-            row[3] = request.getStatus();
+            row[0] = request.getRecevr();
+            row[1] = request.getReqDate();
+            row[2] = testRequest.getdateBooked();
+            row[3] = request.getStat();
 
 
             model.addRow(row);

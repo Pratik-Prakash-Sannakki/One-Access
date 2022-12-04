@@ -29,7 +29,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Mudit Mathur
+ *
  */
 public class CustomerAreaJPanel extends javax.swing.JPanel {
 
@@ -291,15 +291,15 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         timings = String.valueOf(restList2.getSelectedItem());
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
-        Date d = jDateChooser2.getDate();
+        Date d = jDateChooser1.getDate();
         BookAppointment appointment = new BookAppointment();
         appointment.setSender(user);
         System.out.println("ajcjac       "+system.getUserAccountDirectory().findUserAccount(docname));
-        appointment.setReceiver( system.getUserAccountDirectory().findUserAccount(docname));
-        appointment.setStatus("Appointment Booked");
-        appointment.setMessage(jTextArea1.getText());
+        appointment.setRecevr(system.getUserAccountDirectory().findUserAccount(docname));
+        appointment.setStat("Appointment Booked");
+        appointment.setMsg(jTextArea1.getText());
 
-        appointment.setRequestDate(d);
+        appointment.setReqDate(d);
         system.getWorkQueue().addWorkRequest(appointment);
         system.findNetwork(user.getEmployee().getCity()).getEnterpriseDirectory().findEnterprise(hospitalName).getOrganizationDirectory().getDoctorDirectory().findDoctor(docname).updateTimings(timings);
         JOptionPane.showMessageDialog(this, "Appointment fixed");
@@ -315,13 +315,13 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         for(WorkRequest wq : system.getWorkQueue().findWorkRequestByRec(user)) {
             if(wq instanceof BookAppointment){
                 if(wq.getSender().getEmployee().getName().equals(user.getEmployee().getName())){
-                System.out.println("comm" + ((BookAppointment) wq).getComments());
+                System.out.println("comm" + ((BookAppointment) wq).getComment());
            Object row[] = new Object[5];
             row[0] = wq.getSender().getEmployee().getName();
-            row[1] = ((BookAppointment) wq).getMeds().getMedicines().get(0);
-            row[2] = ((BookAppointment) wq).getMeds().getMedicines().get(1);
-            row[3] = ((BookAppointment) wq).getMeds().getMedicines().get(2);
-            row[4]=((BookAppointment) wq).getComments();
+            row[1] = ((BookAppointment) wq).getMed().getMedicine().get(0);
+            row[2] = ((BookAppointment) wq).getMed().getMedicine().get(1);
+            row[3] = ((BookAppointment) wq).getMed().getMedicine().get(2);
+            row[4]=((BookAppointment) wq).getComment();
             dtm.addRow(row);
             }}}
            
@@ -393,13 +393,13 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         emergencyWorkRequest.setSender(this.user);
 
         //            System.out.println("getting sender uname "+name3.getEmployee().getName());
-        emergencyWorkRequest.setReceiver(name3);
+        emergencyWorkRequest.setRecevr(name3);
 
-        System.out.println("asasqqqq555 " + emergencyWorkRequest.getReceiver());
-        emergencyWorkRequest.setStatus("emergency assistance needed");
+        System.out.println("asasqqqq555 " + emergencyWorkRequest.getRecevr());
+        emergencyWorkRequest.setStat("emergency assistance needed");
 
         system.getWorkQueue().addWorkRequest(emergencyWorkRequest);
-        System.out.println("wooook" + system.getWorkQueue().getWorkRequestList());
+        System.out.println("wooook" + system.getWorkQueue().getWorkReqList());
         JOptionPane.showMessageDialog(this, "Help is on the way!");
     }//GEN-LAST:event_jButton5ActionPerformed
 
