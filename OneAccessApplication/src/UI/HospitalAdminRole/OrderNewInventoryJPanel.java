@@ -233,19 +233,19 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
             //           System.out.println(lab.getName());
             //           System.out.println(lab.getClass());
             //
-            orderInventoryWorkRequest.setRecevr(system.getUserAccountDirectory().findUserAccount(supplierName));
-            orderInventoryWorkRequest.setMsg(CommentsTxtArea.getText());
-            orderInventoryWorkRequest.setReqDate(new Date());
-            orderInventoryWorkRequest.setStat("Item ordered");
+            orderInventoryWorkRequest.setReceiver(system.getUserAccountDirectory().findUserAccount(supplierName));
+            orderInventoryWorkRequest.setMessage(CommentsTxtArea.getText());
+            orderInventoryWorkRequest.setRequestDate(new Date());
+            orderInventoryWorkRequest.setStatus("Item ordered");
             system.getWorkQueue().addWorkRequest(orderInventoryWorkRequest);
 
         }
 
         if (flag) {
             JOptionPane.showMessageDialog(null, "inventory item order placed");
-            System.out.println(userAccount.getWorkQueue().getWorkReqList());
+            System.out.println(userAccount.getWorkQueue().getWorkRequestList());
             System.out.println("prev");
-            List<WorkRequest> r = this.userAccount.getWorkQueue().getWorkReqList();
+            List<WorkRequest> r = this.userAccount.getWorkQueue().getWorkRequestList();
 
             ViewInventoryOrderJPanel cust = new ViewInventoryOrderJPanel(userProcessContainer, userAccount, system);
             userProcessContainer.add("CustomerAreaJPanel", cust);

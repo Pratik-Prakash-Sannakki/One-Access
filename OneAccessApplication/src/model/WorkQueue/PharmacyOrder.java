@@ -4,6 +4,8 @@
  */
 package model.WorkQueue;
 
+import model.PharmacyCatalog.PharmacyCatalog;
+
 /**
  *
  * @author adityaillur

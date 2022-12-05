@@ -62,7 +62,6 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
         addrTxtField = new javax.swing.JTextField();
         nameTxtField = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -113,7 +112,6 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, 110));
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -149,9 +147,6 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel2.setText("Name:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 40, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2021-12-12 at 3.10.29 PM.jpeg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 390, 290));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -258,7 +253,6 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;

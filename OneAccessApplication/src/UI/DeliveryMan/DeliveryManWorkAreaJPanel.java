@@ -13,6 +13,7 @@ import model.DB4OUtil.DB4OUtil;
 import model.DeliveryMan.DeliveryManDirectory;
 import model.EcoSystem;
 import model.Patient.Patient;
+import model.Pharmacist.PharamacyAdmin;
 import model.UserAccount.UserAccount;
 import model.WorkQueue.OrderInventoryWorkRequest;
 import model.WorkQueue.PharmacyOrder;
@@ -135,7 +136,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Order is already completed!");
             } else {
                 WorkRequest request = (WorkRequest) delManTbl.getValueAt(selectedRow, 0);
-                request.setStat("Pending");
+                request.setStatus("Pending");
                 populateTable();
             }
 
@@ -156,7 +157,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Order is already processed and completed!");
         } else {
 
-            request.setStat("Delivered");
+            request.setStatus("Delivered");
             populateTable();
         }
 
@@ -180,9 +181,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 public void populateTable(){
                 DefaultTableModel dtm = (DefaultTableModel) delManTbl.getModel();
         dtm.setRowCount(0);
-        System.out.println(system.getWorkQueue().getWorkReqList());
+        System.out.println(system.getWorkQueue().getWorkRequestList());
 
-        for (WorkRequest request : system.getWorkQueue().getWorkReqList()) {
+        for (WorkRequest request : system.getWorkQueue().getWorkRequestList()) {
             System.out.println(request);
             System.out.println(this.user);
             if(request instanceof PlaceNewOrderWorkRequest|| request instanceof OrderInventoryWorkRequest) {
@@ -192,9 +193,9 @@ public void populateTable(){
                 Object[] row = new Object[4];
                 //row[0] = request;
                 row[0] = request;
-                row[1] = request.getRecevr().getEmployee().getName();
-                row[2] = request.getStat();
-                row[3] = request.getReqDate();
+                row[1] = request.getReceiver().getEmployee().getName();
+                row[2] = request.getStatus();
+                row[3] = request.getRequestDate();
                 dtm.addRow(row);
             }
                 }

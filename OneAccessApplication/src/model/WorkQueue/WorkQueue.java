@@ -28,7 +28,7 @@ public class WorkQueue {
         ArrayList<WorkRequest> array1 = new ArrayList<>();
          
         for(WorkRequest net : workReqList){
-            if(net.getRecevr().equals(name)){
+            if(net.getReceiver().equals(name)){
                 
                 array1.add(net);
                 //return array1;

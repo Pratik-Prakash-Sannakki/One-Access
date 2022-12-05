@@ -175,8 +175,8 @@ private void populateTable() {
         DefaultTableModel model = (DefaultTableModel) insuranceJTable.getModel();
         model.setRowCount(0);
 //        System.out.println("R is");
-        System.out.println(system.getWorkQueue().getWorkReqList());
-        for (WorkRequest request : system.getWorkQueue().getWorkReqList()) {
+        System.out.println(system.getWorkQueue().getWorkRequestList());
+        for (WorkRequest request : system.getWorkQueue().getWorkRequestList()) {
             if(request instanceof BuyInsuranceWorkRequest){
             BuyInsuranceWorkRequest buyInsurance = (BuyInsuranceWorkRequest ) request;
 //            System.out.println("REC "+request.getReceiver().getUsername());
@@ -184,12 +184,12 @@ private void populateTable() {
 //            System.out.println("class: " +request.getSender().getPassword());
 //            System.out.println("HELLO "+this.userAccount);
             
-            if (request.getRecevr().getUsername().equals(this.userAccount.getUsername())) {
+            if (request.getReceiver().getUsername().equals(this.userAccount.getUsername())) {
                 Object[] row = new Object[4];
                 row[0] = request;
                 row[1] = buyInsurance.getPlan().getName();
-                row[2] = request.getReqDate();
-                row[3] = request.getStat();
+                row[2] = request.getRequestDate();
+                row[3] = request.getStatus();
                 model.addRow(row);
             }
     }}

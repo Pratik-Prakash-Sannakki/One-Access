@@ -32,7 +32,7 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
         this.userAccount=userAccount;
         this.system=system;
         
-        for (WorkRequest request :  system.getWorkQueue().getWorkReqList()) {
+        for (WorkRequest request :  system.getWorkQueue().getWorkRequestList()) {
             if(request instanceof BuyInsuranceWorkRequest){
             if (request.getSender().getUsername().equals(userAccount.getUsername())){
                 BuyInsuranceWorkRequest buyInsurance = (BuyInsuranceWorkRequest) request;
@@ -40,13 +40,13 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
                 yrsTxtField.setText(String.valueOf(buyInsurance.getPlan().getTotalYears()));
                 monthlTxtField.setText(String.valueOf(buyInsurance.getPlan().getMonthlyPremium()));
                 totalTxtField.setText(String.valueOf(buyInsurance.getPlan().getTotalPremium()));
-                purchaseDateTxtField.setText(String.valueOf(request.getReqDate()));
+                purchaseDateTxtField.setText(String.valueOf(request.getRequestDate()));
                 Calendar c = Calendar.getInstance();
-                c.setTime(request.getReqDate());
+                c.setTime(request.getRequestDate());
                 c.add(Calendar.YEAR, buyInsurance.getPlan().getTotalYears());
                 Date validity = c.getTime();
                 validityTxtField.setText(String.valueOf(validity));
-                statusTxtField.setText(buyInsurance.getStat());
+                statusTxtField.setText(buyInsurance.getStatus());
                 
                 
 //            System.out.println("Receiver would be");

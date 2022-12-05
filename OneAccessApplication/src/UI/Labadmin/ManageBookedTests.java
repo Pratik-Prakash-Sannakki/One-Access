@@ -178,22 +178,22 @@ private void populateTable() {
         DefaultTableModel model = (DefaultTableModel) bookedTestTable.getModel();
         model.setRowCount(0);
 //        System.out.println("R is");
-        System.out.println(system.getWorkQueue().getWorkReqList());
-        for (WorkRequest request : system.getWorkQueue().getWorkReqList()) {
+        System.out.println(system.getWorkQueue().getWorkRequestList());
+        for (WorkRequest request : system.getWorkQueue().getWorkRequestList()) {
 //            
 //            System.out.println("REC "+request.getReceiver().getUsername());
 //            System.out.println("class: " +request.getSender().getUsername());
 //            System.out.println("class: " +request.getSender().getPassword());
 //            System.out.println("HELLO "+this.userAccount);
             if(request instanceof BookTestWorkRequest){
-            if (request.getRecevr().getUsername().equals(this.userAccount.getUsername())) {
+            if (request.getReceiver().getUsername().equals(this.userAccount.getUsername())) {
                 
                 BookTestWorkRequest bookrequest = (BookTestWorkRequest) request;
                 Object[] row = new Object[4];
                 row[0] = request;
-                row[1] = request.getReqDate();
+                row[1] = request.getRequestDate();
                 row[2] = bookrequest.getdateBooked();
-                row[3] = request.getStat();
+                row[3] = request.getStatus();
                 model.addRow(row);
             }
     }}

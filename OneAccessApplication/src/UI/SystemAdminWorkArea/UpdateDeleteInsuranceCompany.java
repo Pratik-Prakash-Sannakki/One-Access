@@ -63,7 +63,6 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         nameTxtField = new javax.swing.JTextField();
         addrTxtField = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -132,7 +131,6 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
         jLabel6.setText("City Name");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 60, 20));
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -160,10 +158,6 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
 
         addrTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 94, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/P11.gif"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -275,7 +269,6 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;

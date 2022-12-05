@@ -70,8 +70,6 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         nameTxtField = new javax.swing.JTextField();
         addrTxtField = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -134,7 +132,6 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
         });
         add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 170, -1));
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -157,10 +154,6 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
 
         addrTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, 94, -1));
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/P14.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1250, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void labTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labTableMouseClicked
@@ -267,12 +260,10 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable labTable;
     private javax.swing.JTextField nameTxtField;

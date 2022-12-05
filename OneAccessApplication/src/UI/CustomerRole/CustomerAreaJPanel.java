@@ -295,11 +295,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         BookAppointment appointment = new BookAppointment();
         appointment.setSender(user);
         System.out.println("ajcjac       "+system.getUserAccountDirectory().findUserAccount(docname));
-        appointment.setRecevr(system.getUserAccountDirectory().findUserAccount(docname));
-        appointment.setStat("Appointment Booked");
-        appointment.setMsg(jTextArea1.getText());
+        appointment.setReceiver(system.getUserAccountDirectory().findUserAccount(docname));
+        appointment.setStatus("Appointment Booked");
+        appointment.setMessage(jTextArea1.getText());
 
-        appointment.setReqDate(d);
+        appointment.setRequestDate(d);
         system.getWorkQueue().addWorkRequest(appointment);
         system.findNetwork(user.getEmployee().getCity()).getEnterpriseDirectory().findEnterprise(hospitalName).getOrganizationDirectory().getDoctorDirectory().findDoctor(docname).updateTimings(timings);
         JOptionPane.showMessageDialog(this, "Appointment fixed");
@@ -393,13 +393,13 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         emergencyWorkRequest.setSender(this.user);
 
         //            System.out.println("getting sender uname "+name3.getEmployee().getName());
-        emergencyWorkRequest.setRecevr(name3);
+        emergencyWorkRequest.setReceiver(name3);
 
-        System.out.println("asasqqqq555 " + emergencyWorkRequest.getRecevr());
-        emergencyWorkRequest.setStat("emergency assistance needed");
+        System.out.println("asasqqqq555 " + emergencyWorkRequest.getReceiver());
+        emergencyWorkRequest.setStatus("emergency assistance needed");
 
         system.getWorkQueue().addWorkRequest(emergencyWorkRequest);
-        System.out.println("wooook" + system.getWorkQueue().getWorkReqList());
+        System.out.println("wooook" + system.getWorkQueue().getWorkRequestList());
         JOptionPane.showMessageDialog(this, "Help is on the way!");
     }//GEN-LAST:event_jButton5ActionPerformed
 

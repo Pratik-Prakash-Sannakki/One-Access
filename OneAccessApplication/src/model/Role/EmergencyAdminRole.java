@@ -11,7 +11,7 @@ package model.Role;
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
-import userinterface.EmergencyAdmin.EmergencyAdminJPanel;
+import UI.EmergencyAdmin.EmergencyAdminJPanel;
 
 
 public class EmergencyAdminRole extends Role{
