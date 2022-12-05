@@ -39,7 +39,7 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         this.system=system;
         this.request= request;
         patientNameTxtField.setText(request.getInventoryList().toString());
-        DateBookedTxtField.setText(String.valueOf(request.getReqDate()));
+        DateBookedTxtField.setText(String.valueOf(request.getRequestDate()));
         populatetable();
         populateComboBox();
     }
@@ -177,7 +177,7 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Order is already completed!");
             } else {
                 WorkRequest request = (WorkRequest) InventoryTable.getValueAt(selectedRow, 0);
-                request.setStat("Accepted");
+                request.setStatus("Accepted");
                 populatetable();
             }
 
@@ -199,7 +199,7 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Order is already processed and completed!");
         } else {
 
-            request.setStat("Declined");
+            request.setStatus("Declined");
             populatetable();
         }
 
@@ -224,9 +224,9 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
             DeliveryMan deliveryMan = system.findNetwork(userAccount.getEmployee().getCity()).getEnterpriseDirectory().findEnterprise(selectedPharmacy).getOrganizationDirectory().getDeliveryManDirectory().findDeliveryMan(selectedPharmacy);
 
             p.setDeliveryMan(system.getUserAccountDirectory().findUserAccount(deliveryMan.getDeliveryManName()));
-            p.setStat("Assigned");
+            p.setStatus("Assigned");
             request.setDeliveryMan(system.getUserAccountDirectory().findUserAccount(deliveryMan.getDeliveryManName()));
-            request.setStat("Assigned");
+            request.setStatus("Assigned");
             System.out.println("assignment");
             System.out.println(request.getDeliveryMan().getUsername());
             JOptionPane.showMessageDialog(null, "Delivery man has been assigned");
@@ -269,8 +269,8 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 Object row[] = new Object[4];
                 row[0] = request;
                 row[1] = request.getInventoryList().toString();
-                row[2] = request.getReqDate();
-                row[3] = request.getStat();
+                row[2] = request.getRequestDate();
+                row[3] = request.getStatus();
 
                 dtm.addRow(row);
                         

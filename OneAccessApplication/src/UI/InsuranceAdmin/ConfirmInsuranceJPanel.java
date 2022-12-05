@@ -41,13 +41,13 @@ public class ConfirmInsuranceJPanel extends javax.swing.JPanel {
         yrsTxtField.setText(String.valueOf(buyInsurance.getPlan().getTotalYears()));
         monthTxtField.setText(String.valueOf(buyInsurance.getPlan().getMonthlyPremium()));
         totalTxtField.setText(String.valueOf(buyInsurance.getPlan().getTotalPremium()));
-        purchaseDateTxtField.setText(String.valueOf(buyInsurance.getReqDate()));
+        purchaseDateTxtField.setText(String.valueOf(buyInsurance.getRequestDate()));
         Calendar c = Calendar.getInstance();
-        c.setTime(buyInsurance.getReqDate());
+        c.setTime(buyInsurance.getRequestDate());
         c.add(Calendar.YEAR, buyInsurance.getPlan().getTotalYears());
         Date validity = c.getTime();
         validityTxtField.setText(String.valueOf(validity));
-        statusTxtField.setText(buyInsurance.getStat());
+        statusTxtField.setText(buyInsurance.getStatus());
         
         
     }
@@ -193,18 +193,18 @@ public class ConfirmInsuranceJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
 
         JOptionPane.showMessageDialog(this, " Purchase confirmed");
-        buyInsurance.setStat("Purchase confirmed");
+        buyInsurance.setStatus("Purchase confirmed");
         buyInsurance.getSender().getEmployee().setHasInsurance(true);
-        statusTxtField.setText(buyInsurance.getStat());
+        statusTxtField.setText(buyInsurance.getStatus());
         dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(this, " Purchase declined! If money deducted refund will be initiated");
-        buyInsurance.setStat("Purchase declined : refund initiated");
+        buyInsurance.setStatus("Purchase declined : refund initiated");
         buyInsurance.getSender().getEmployee().setHasInsurance(false);
-        statusTxtField.setText(buyInsurance.getStat());
+        statusTxtField.setText(buyInsurance.getStatus());
         dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_jButton3ActionPerformed
 

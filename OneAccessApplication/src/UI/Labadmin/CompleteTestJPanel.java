@@ -182,34 +182,34 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
 
-        this.request.setStat("Test Sample Collected");
+        this.request.setStatus("Test Sample Collected");
         jRadioButton2.setSelected(false);
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         // TODO add your handling code here:
-        this.request.setStat("Awaiting sample collection");
+        this.request.setStatus("Awaiting sample collection");
         jRadioButton1.setSelected(false);
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
         // TODO add your handling code here:
-        this.request.setStat("Test results published ");
+        this.request.setStatus("Test results published ");
         jRadioButton4.setSelected(false);
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
         // TODO add your handling code here:
-        this.request.setStat("Awaiting results ");
+        this.request.setStatus("Awaiting results ");
         jRadioButton3.setSelected(false);
     }//GEN-LAST:event_jRadioButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(request.getStat().equals("Test Sample Collected")){
+        if(request.getStatus().equals("Test Sample Collected")){
             JOptionPane.showMessageDialog(this, "Test Sample has been collected!");
         }
-        else if(request.getStat().equals("Awaiting sample collection")){
+        else if(request.getStatus().equals("Awaiting sample collection")){
             JOptionPane.showMessageDialog(this, "Awaiting Test Sample to be collected!");
         }
         //               jRadioButton1.setSelected(false);
@@ -219,10 +219,10 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        if(request.getStat().equals("Test results published ")){
+        if(request.getStatus().equals("Test results published ")){
             JOptionPane.showMessageDialog(this, "Test results have been published!");
         }
-        else if(request.getStat().equals("Awaiting results ")){
+        else if(request.getStatus().equals("Awaiting results ")){
             JOptionPane.showMessageDialog(this, "Awaiting test results");
         }
         dB4OUtil.storeSystem(system);

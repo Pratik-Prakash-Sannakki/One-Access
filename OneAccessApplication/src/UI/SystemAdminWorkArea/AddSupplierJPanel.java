@@ -62,7 +62,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         dspe1 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -102,7 +101,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         jLabel7.setText("ADD SUPPLIER");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 300, 37));
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -145,9 +143,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel10.setText("Phone");
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 40, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/p7.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 550, 400));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addHospitalActionPerformed
@@ -266,7 +261,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private javax.swing.JTextField dspe1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

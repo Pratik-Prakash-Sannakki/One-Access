@@ -4,6 +4,7 @@
  */
 package model.Role;
 
+import UI.PharmacyAdmin.PharamacyAdminJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -13,7 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.JPanel;
 import model.EcoSystem;
 import model.UserAccount.UserAccount;
-import userinterface.PharamacyAdmin.PharamacyAdminJPanel;
+
 
 public class PharamacyAdminRole extends Role{
 

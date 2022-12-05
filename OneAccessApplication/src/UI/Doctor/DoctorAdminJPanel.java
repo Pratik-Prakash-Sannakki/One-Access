@@ -43,13 +43,13 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         dtm.setRowCount(0);
         
        if( system.getWorkQueue()!=null){
-        for(WorkRequest wq :system.getWorkQueue().getWorkReqList()) {
+        for(WorkRequest wq :system.getWorkQueue().getWorkRequestList()) {
             if(wq instanceof BookAppointment){
             Object row[] = new Object[4];
             row[0] = wq;
-            row[1] = wq.getMsg();
-            row[2] = wq.getStat();
-            row[3] = wq.getReqDate();
+            row[1] = wq.getMessage();
+            row[2] = wq.getStatus();
+            row[3] = wq.getRequestDate();
             dtm.addRow(row);
         }}}
     }
@@ -62,7 +62,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         int row1 = docDetails.getSelectedRow();
         int column = 0;
         String value = docDetails.getModel().getValueAt(row1, column).toString();
-        for(WorkRequest wq : system.getWorkQueue().getWorkReqList()) {
+        for(WorkRequest wq : system.getWorkQueue().getWorkRequestList()) {
             if(wq instanceof BookAppointment){
                 System.out.println("reciever "+value);
                 if(wq.getSender().getEmployee().getName().equals(value)){

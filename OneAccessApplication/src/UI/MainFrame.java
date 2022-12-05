@@ -25,6 +25,8 @@ public class MainFrame extends javax.swing.JFrame {
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     public MainFrame() {
         initComponents();
+        system = dB4OUtil.retrieveSystem();
+        this.setSize(1680, 1050);
     }
 
     /**

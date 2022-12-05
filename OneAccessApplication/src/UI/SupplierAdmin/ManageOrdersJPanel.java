@@ -40,17 +40,17 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) bookedTestTable.getModel();
         model.setRowCount(0);
 //        System.out.println("R is");
-        System.out.println(system.getWorkQueue().getWorkReqList());
-        for (WorkRequest request : system.getWorkQueue().getWorkReqList()) {
+        System.out.println(system.getWorkQueue().getWorkRequestList());
+        for (WorkRequest request : system.getWorkQueue().getWorkRequestList()) {
             
  
-            if (request.getRecevr().getUsername().equals(this.userAccount.getUsername())) {
+            if (request.getReceiver().getUsername().equals(this.userAccount.getUsername())) {
                 OrderInventoryWorkRequest bookrequest = (OrderInventoryWorkRequest) request;
                 Object[] row = new Object[4];
                 row[0] = request;
-                row[1] = request.getMsg();
-                row[2] = request.getReqDate();
-                row[3] = request.getStat();
+                row[1] = request.getMessage();
+                row[2] = request.getRequestDate();
+                row[3] = request.getStatus();
                 model.addRow(row);
             }
     }

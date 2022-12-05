@@ -63,7 +63,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         dName1 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         dspe1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -106,7 +105,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         jLabel8.setText("Add Lab");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 160, 37));
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -153,10 +151,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
 
         dspe1.setPreferredSize(new java.awt.Dimension(15, 30));
         add(dspe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 164, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/p4.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, -1, 470));
     }// </editor-fold>//GEN-END:initComponents
 
     private void labNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_labNameActionPerformed
@@ -279,7 +273,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private javax.swing.JTextField dspe1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;

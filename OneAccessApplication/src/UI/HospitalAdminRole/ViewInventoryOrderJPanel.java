@@ -138,16 +138,16 @@ public class ViewInventoryOrderJPanel extends javax.swing.JPanel {
 private void populateRequestTable() {
          //To change body of generated methods, choose Tools | Templates.
         DefaultTableModel model = (DefaultTableModel) InventoryRequestJTable.getModel();
-        for (WorkRequest request :  system.getWorkQueue().getWorkReqList()) {
+        for (WorkRequest request :  system.getWorkQueue().getWorkRequestList()) {
             
         
             if (request.getSender().equals(userAccount)){
         model.setRowCount(0);
 //        System.out.println("R is");
             Object[] row = new Object[3];
-            row[0] = request.getRecevr().getEmployee().getName();
-            row[1] = request.getReqDate();
-            row[2] = request.getStat();
+            row[0] = request.getReceiver().getEmployee().getName();
+            row[1] = request.getRequestDate();
+            row[2] = request.getStatus();
 
 
             model.addRow(row);

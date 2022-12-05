@@ -71,7 +71,6 @@ public class AddDelivery extends javax.swing.JPanel {
         dName1 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         dspe1 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -112,7 +111,6 @@ public class AddDelivery extends javax.swing.JPanel {
         jLabel1.setText("ADD DELIVERY MAN");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 380, 37));
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -149,10 +147,6 @@ public class AddDelivery extends javax.swing.JPanel {
 
         dspe1.setPreferredSize(new java.awt.Dimension(15, 30));
         add(dspe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 164, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/P15.jpg"))); // NOI18N
-        jLabel8.setText("jLabel8");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addHospitalActionPerformed
@@ -265,7 +259,6 @@ public class AddDelivery extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 
 private boolean strongUsername() {

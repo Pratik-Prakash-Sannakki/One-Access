@@ -110,16 +110,16 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private void populatetable(){
         DefaultTableModel dtm = (DefaultTableModel) jTable1.getModel();
         dtm.setRowCount(0);
-        for(WorkRequest request : system.getWorkQueue().getWorkReqList()){
+        for(WorkRequest request : system.getWorkQueue().getWorkRequestList()){
             if(request instanceof PlaceNewOrderWorkRequest){
         placeworkRequest = (PlaceNewOrderWorkRequest) request;
-        for (PharmacyOrder orderItemTotal : placeworkRequest.getOrderTot()){
+        for (PharmacyOrder orderItemTotal : placeworkRequest.getOrderTotal()){
              if(request.getSender().getUsername().equals(user.getUsername())){
                 Object row[] = new Object[5];
                 row[0] = placeworkRequest.getOrderId();
                 row[1] = orderItemTotal.getCatalog().getItemName();
                 row[2] = orderItemTotal.getCatalog().getItemPrice();
-                row[3] = request.getStat();
+                row[3] = request.getStatus();
      
 
                 dtm.addRow(row);
@@ -269,13 +269,13 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
             flag = false;
         } else {
             PlaceNewOrderWorkRequest newWorkRequest = new PlaceNewOrderWorkRequest();
-            newWorkRequest.setOrderTot(orderItemList);
+            newWorkRequest.setOrderTotal(orderItemList);
             //System.out.println(this.user.getEmployee().getName());
             newWorkRequest.setSender(user);
             //Lab = (Lab) LabTable.getValueAt(0, 0);
-            newWorkRequest.setRecevr(system.getUserAccountDirectory().findUserAccount(selectedPharmacy));
-            newWorkRequest.setReqDate(new Date());
-            newWorkRequest.setStat("Ordered");
+            newWorkRequest.setReceiver(system.getUserAccountDirectory().findUserAccount(selectedPharmacy));
+            newWorkRequest.setRequestDate(new Date());
+            newWorkRequest.setStatus("Ordered");
             system.getWorkQueue().addWorkRequest(newWorkRequest);
             //            System.out.println("Work req size"+system.getWorkQueue().getWorkRequestList().size());
             //            System.out.println("Sender000"+newWorkRequest.getSender());

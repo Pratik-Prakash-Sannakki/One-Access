@@ -64,12 +64,10 @@ public class AddPharmacy extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel7 = new javax.swing.JLabel();
         dName1 = new javax.swing.JTextField();
         dspe1 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -113,7 +111,6 @@ public class AddPharmacy extends javax.swing.JPanel {
         });
         add(addHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -139,7 +136,6 @@ public class AddPharmacy extends javax.swing.JPanel {
             }
         });
         add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 180, 170, -1));
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         dName1.setPreferredSize(new java.awt.Dimension(15, 30));
         add(dName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 230, 164, -1));
@@ -154,9 +150,6 @@ public class AddPharmacy extends javax.swing.JPanel {
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel9.setText("Phone");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 280, 50, -1));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/P3.jpg"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 70, -1, 370));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addHospitalActionPerformed
@@ -268,13 +261,11 @@ public class AddPharmacy extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
