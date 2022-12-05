@@ -64,8 +64,6 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
         jButton1 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -130,7 +128,6 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
         enterpriseLabel.setText("ADD INSURANCE PLAN");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 26, 260, 30));
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -139,12 +136,6 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
             }
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 320, 160, 40));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2021-12-12 at 3.10.30 PM.jpeg"))); // NOI18N
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 400));
-
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void nameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTxtFieldActionPerformed
@@ -228,12 +219,10 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField monthlTxtField;
     private javax.swing.JTextField nameTxtField;
     private javax.swing.JTextField totalTxtField;

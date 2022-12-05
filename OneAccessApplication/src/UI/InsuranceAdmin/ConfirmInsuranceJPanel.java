@@ -80,8 +80,6 @@ public class ConfirmInsuranceJPanel extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -160,7 +158,6 @@ public class ConfirmInsuranceJPanel extends javax.swing.JPanel {
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, -1, -1));
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -173,12 +170,6 @@ public class ConfirmInsuranceJPanel extends javax.swing.JPanel {
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("CONFIRM INSURANCE");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, 260, 30));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2021-12-12 at 3.10.30 PM.jpeg"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1, 310, 540));
-
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void planNameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planNameTxtFieldActionPerformed
@@ -229,8 +220,6 @@ public class ConfirmInsuranceJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

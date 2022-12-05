@@ -67,7 +67,6 @@ public class ViewUpdateDeleteIPlansJPanel extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -162,7 +161,6 @@ public class ViewUpdateDeleteIPlansJPanel extends javax.swing.JPanel {
         jLabel2.setText("Plan Name:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, -1));
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -171,9 +169,6 @@ public class ViewUpdateDeleteIPlansJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2021-12-12 at 3.10.30 PM.jpeg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void monthlTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monthlTxtFieldActionPerformed
@@ -289,7 +284,6 @@ public class ViewUpdateDeleteIPlansJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

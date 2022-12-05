@@ -44,7 +44,6 @@ public class LabAdminJPanel extends javax.swing.JPanel {
         manageOrganizationJButton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -85,9 +84,6 @@ public class LabAdminJPanel extends javax.swing.JPanel {
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("LAB ADMIN");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 30, 120, 30));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/p7.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 390));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageEmployeeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonActionPerformed
@@ -117,7 +113,6 @@ public class LabAdminJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton manageEmployeeJButton;
     private javax.swing.JButton manageOrganizationJButton;
     // End of variables declaration//GEN-END:variables

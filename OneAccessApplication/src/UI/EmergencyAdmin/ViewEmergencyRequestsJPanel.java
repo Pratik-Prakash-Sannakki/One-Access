@@ -52,8 +52,6 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -107,10 +105,6 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 100, 40));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/P5.jpg"))); // NOI18N
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, 630, 330));
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -142,8 +136,6 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 

@@ -84,9 +84,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -198,7 +196,6 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
             }
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, -1));
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 330, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(24, 31, 46));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
@@ -210,10 +207,6 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
             }
         });
         add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 120, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2021-12-12 at 3.10.29 PM.jpeg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 960, 350));
     }// </editor-fold>//GEN-END:initComponents
 
     private void insuranceCompanyJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insuranceCompanyJComboBoxActionPerformed
@@ -371,13 +364,11 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField monthlTxtField;
     private javax.swing.JTextField nameTxtField;

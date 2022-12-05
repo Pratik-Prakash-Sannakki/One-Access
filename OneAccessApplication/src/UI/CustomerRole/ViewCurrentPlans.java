@@ -80,8 +80,6 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
         statusTxtField = new javax.swing.JTextField();
         enterpriseLabel = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -161,10 +159,6 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
             }
         });
         add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -40, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/p2.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 760, 600));
     }// </editor-fold>//GEN-END:initComponents
 
     private void nameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTxtFieldActionPerformed
@@ -202,7 +196,6 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -210,7 +203,6 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField monthlTxtField;
     private javax.swing.JTextField nameTxtField;
     private javax.swing.JTextField purchaseDateTxtField;

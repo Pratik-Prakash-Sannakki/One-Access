@@ -151,8 +151,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         jButton1 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(255, 255, 255));
@@ -252,10 +250,6 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
             }
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 85, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/project.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 850, 440));
     }// </editor-fold>//GEN-END:initComponents
 
     private void orderBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderBtnActionPerformed
@@ -358,9 +352,7 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;

@@ -53,7 +53,6 @@ public class ManageBookedTests extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -83,7 +82,6 @@ public class ManageBookedTests extends javax.swing.JPanel {
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, -1));
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -107,9 +105,6 @@ public class ManageBookedTests extends javax.swing.JPanel {
             }
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/p7.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 390));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -169,7 +164,6 @@ public class ManageBookedTests extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
