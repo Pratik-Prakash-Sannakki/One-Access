@@ -14,6 +14,8 @@ import model.Employee.Employee;
 import model.Organization;
 import model.Role.CustomerRole;
 import model.UserAccount.UserAccount;
+import UI.HospitalAdminRole.sendPatRegMail;
+
 
 /**
  *
@@ -242,6 +244,12 @@ public class AddPatientJPanel extends javax.swing.JPanel {
                 system.findNetwork(city).getEnterpriseDirectory().findEnterprise(user.getEmployee().getName()).getOrganizationDirectory().createOrganization(name, Organization.Type.Patient,"test");
                 //            system.findNetwork(city).getEnterpriseDirectory().findEnterprise(name).getOrganizationDirectory().createOrganization(name, Organization.Type.Patient, "Test");
                 JOptionPane.showMessageDialog(this," Patient created");
+                String msg = dName.getText();
+                
+                String Email = dName1.getText();
+                msg="Hi  "+msg+" your Patient registration has been done. You now have access to use all the Facilities on our One Access Application. Enjoy!!! ";
+                sendPatRegMail spm= new sendPatRegMail();
+        spm.mailfunc(msg,Email);
                 dName.setText("");
                 dspe.setText("");
                 dspe2.setText("");
@@ -261,6 +269,8 @@ public class AddPatientJPanel extends javax.swing.JPanel {
 
             }
         }
+        
+        
     }//GEN-LAST:event_addPatientActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
