@@ -10,8 +10,6 @@ import model.Employee.Employee;
 import model.Enterprise;
 import static model.Organization.Type.LabAdmin;
 import static model.Role.Role.RoleType.LabAdmin;
-//import Business.Lab.Lab;
-//import Business.Lab.LabDirectory;
 import model.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.regex.Matcher;

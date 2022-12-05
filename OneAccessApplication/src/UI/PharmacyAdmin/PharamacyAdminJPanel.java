@@ -60,7 +60,6 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
         manageEmployeeJButton = new javax.swing.JButton();
         manageOrganizationJButton = new javax.swing.JButton();
         enterpriseLabel1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -89,11 +88,6 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
         enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel1.setText("PHARMACY ADMIN");
         add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 180, 30));
-
-        jLabel1.setBackground(new java.awt.Color(51, 51, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/P12.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 670));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageEmployeeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonActionPerformed
@@ -117,7 +111,6 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton manageEmployeeJButton;
     private javax.swing.JButton manageOrganizationJButton;
     // End of variables declaration//GEN-END:variables

@@ -6,7 +6,10 @@ package UI.SystemAdminWorkArea;
 
 import model.DB4OUtil.DB4OUtil;
 import model.EcoSystem;
+import model.Employee.Employee;
 import model.Enterprise;
+import static model.Organization.Type.InsuranceAdmin;
+import static model.Role.Role.RoleType.InsuranceAdmin;
 import model.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.regex.Matcher;
@@ -29,15 +32,16 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     public UpdateDeleteInsuranceCompany(JPanel userProcessContainer, EcoSystem system, UserAccount user) {
         initComponents();
-                        initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system=system;
         this.user = user;
-         if(system.getNetworkList().size()>0 ){
+        if(system.getNetworkList().size()>0 ){
             populateTable();
         }else{
-             JOptionPane.showMessageDialog(null, "No Insurance added");
+             JOptionPane.showMessageDialog(null, "No Labs added");
         }
+        
+
     }
 
 
@@ -154,9 +158,19 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 315, 33, -1));
 
         nameTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
+        nameTxtField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameTxtFieldActionPerformed(evt);
+            }
+        });
         add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 304, 94, -1));
 
         addrTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
+        addrTxtField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addrTxtFieldActionPerformed(evt);
+            }
+        });
         add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 94, -1));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -178,7 +192,7 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
 
             //            LabDirectory ld = system.getLabDirectory();
             //            ld.deleteLab(l);
-            JOptionPane.showMessageDialog(null, "Insurance " + nameTxtField.getText() + " deleted");
+            JOptionPane.showMessageDialog(null, "Lab " + nameTxtField.getText() + " deleted");
             populateTable();
             nameTxtField.setText("");
             addrTxtField.setText("");
@@ -195,6 +209,7 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Please select a row");
             return;
         } else {
+
             //            updateJPanel.setVisible(true);
             //            System.out.println("I am here");
             Object selectedItem = jComboBox1.getSelectedItem();
@@ -212,10 +227,9 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
             else if (strongUsername() == false) {
 
                 addrTxtField.setText("");
-                JOptionPane.showMessageDialog(null, "Username should be at least 6 digits and contain at least one upper case letter, one lower case letter, one digit and one special character $, *, # or &.");
+                JOptionPane.showMessageDialog(null, "should be at least 6 digits and contain at least one upper case letter, one lower case letter, one digit and one special character $, *, # or &.");
                 return;
-            }
-            else {
+            }else {
             }
             lab.setName(nameTxtField.getText());
             ua.getEmployee().setName(nameTxtField.getText());
@@ -260,6 +274,14 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void nameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTxtFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameTxtFieldActionPerformed
+
+    private void addrTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addrTxtFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addrTxtFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
