@@ -77,7 +77,7 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         dPass.setPreferredSize(new java.awt.Dimension(164, 30));
         add(dPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, -1, -1));
 
-        addHospital.setBackground(new java.awt.Color(24, 31, 46));
+        addHospital.setBackground(new java.awt.Color(0, 0, 255));
         addHospital.setForeground(new java.awt.Color(255, 255, 255));
         addHospital.setText("Add Supplier");
         addHospital.setPreferredSize(new java.awt.Dimension(164, 43));
