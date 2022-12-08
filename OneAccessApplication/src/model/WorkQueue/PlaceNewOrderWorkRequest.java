@@ -39,7 +39,6 @@ public class PlaceNewOrderWorkRequest extends WorkRequest {
         public PlaceNewOrderWorkRequest(){
         orderId = count;
         count++;
-
     }
 
     public static int getCount() {

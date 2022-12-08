@@ -156,7 +156,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -208,6 +208,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please Select a row from table first", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
+        
         BookAppointment pa = (BookAppointment)docDetails.getValueAt(selectedRow,0);
         PrescriptionJPanel prescriptionJPanel = new PrescriptionJPanel(userProcessContainer, system,pa);
         userProcessContainer.add("add Prescription", prescriptionJPanel);

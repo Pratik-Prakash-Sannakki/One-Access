@@ -50,7 +50,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     
     
- public CustomerAreaJPanel(JPanel userProcessContainer, UserAccount user,EcoSystem system) {
+    public CustomerAreaJPanel(JPanel userProcessContainer, UserAccount user,EcoSystem system) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
