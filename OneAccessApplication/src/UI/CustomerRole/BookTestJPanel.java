@@ -77,6 +77,7 @@ public class BookTestJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 51, 255));
 
@@ -88,25 +89,25 @@ public class BookTestJPanel extends javax.swing.JPanel {
                 LabComboBoxActionPerformed(evt);
             }
         });
-        jPanel1.add(LabComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 157, -1));
+        jPanel1.add(LabComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 180, -1));
 
         testJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 testJComboBoxActionPerformed(evt);
             }
         });
-        jPanel1.add(testJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 157, -1));
+        jPanel1.add(testJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 180, -1));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel3.setText("TEST");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
+        jLabel3.setText("TEST NAME");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 90, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel4.setText("DATE");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
+        jLabel4.setText("TEST DATE");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 70, 20));
 
         jButton1.setBackground(new java.awt.Color(0, 51, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setText("ADD");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +118,7 @@ public class BookTestJPanel extends javax.swing.JPanel {
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 51, 255));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton2.setText("DELETE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -125,7 +126,7 @@ public class BookTestJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 470, -1, -1));
 
         LabTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -140,10 +141,10 @@ public class BookTestJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(LabTable);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, -1, 115));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 500, 140));
 
         jButton3.setBackground(new java.awt.Color(0, 51, 255));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton3.setText("CONFIRM");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -151,20 +152,21 @@ public class BookTestJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, -1, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 470, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel5.setText("TOTAL:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 340, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 395, 60, 20));
 
         totalTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 totalTxtFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 340, 140, -1));
+        jPanel1.add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 390, 150, 30));
 
         jButton4.setBackground(new java.awt.Color(0, 51, 255));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton4.setText("View Test History");
         jButton4.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -174,6 +176,7 @@ public class BookTestJPanel extends javax.swing.JPanel {
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 150, 134, -1));
 
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -181,16 +184,20 @@ public class BookTestJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 110, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setText("Patient Book Test");
-        jPanel1.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 180, 30));
+        jPanel1.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 290, 60));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel1.setText("LAB");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
-        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 160, -1));
+        jLabel1.setText("SELECT LAB");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 180, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/lab.PNG"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 550));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -357,6 +364,7 @@ public class BookTestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton6;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

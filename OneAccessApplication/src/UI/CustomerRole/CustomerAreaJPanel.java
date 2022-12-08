@@ -120,36 +120,37 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel5 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("PATIENT DASHBOARD");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 290, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 480, 50));
 
         restList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 restListActionPerformed(evt);
             }
         });
-        add(restList, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 293, -1));
+        add(restList, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 293, -1));
 
         restList1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 restList1ActionPerformed(evt);
             }
         });
-        add(restList1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 293, -1));
+        add(restList1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 293, -1));
 
         restList2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 restList2ActionPerformed(evt);
             }
         });
-        add(restList2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 293, -1));
+        add(restList2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 293, -1));
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setText("Submit Appointment");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -163,10 +164,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 290, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 300, -1));
 
         jButton2.setBackground(new java.awt.Color(51, 51, 255));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton2.setText("Check prescription");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -174,7 +175,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -197,18 +198,18 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 450, 190));
 
         InsuranceJButton.setBackground(new java.awt.Color(51, 51, 255));
-        InsuranceJButton.setForeground(new java.awt.Color(255, 255, 255));
-        InsuranceJButton.setText("Insurance");
+        InsuranceJButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        InsuranceJButton.setText("Check Insurance Plans");
         InsuranceJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         InsuranceJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 InsuranceJButtonActionPerformed(evt);
             }
         });
-        add(InsuranceJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, -1, -1));
+        add(InsuranceJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, -1, -1));
 
         OrderBtn.setBackground(new java.awt.Color(51, 51, 255));
-        OrderBtn.setForeground(new java.awt.Color(255, 255, 255));
+        OrderBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         OrderBtn.setText("Order Medicine");
         OrderBtn.setPreferredSize(new java.awt.Dimension(156, 43));
         OrderBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -216,10 +217,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 OrderBtnActionPerformed(evt);
             }
         });
-        add(OrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, -1, -1));
+        add(OrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(51, 51, 255));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton4.setText("Book Test ");
         jButton4.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -227,21 +228,21 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 150, -1, -1));
 
         jButton5.setBackground(new java.awt.Color(51, 51, 255));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("SOS");
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton5.setText("Help");
         jButton5.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, -1, -1));
+        add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel1.setText("Select Time");
+        jLabel1.setText("Select Appointmant Time");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -250,12 +251,15 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel3.setText("Select Doctor");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel4.setText("DATE");
+        jLabel4.setText("Select Appointment Date");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
-        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 290, -1));
+        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 290, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/patientui.PNG"))); // NOI18N
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 690));
     }// </editor-fold>//GEN-END:initComponents
 
     private void restListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restListActionPerformed
@@ -410,6 +414,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
