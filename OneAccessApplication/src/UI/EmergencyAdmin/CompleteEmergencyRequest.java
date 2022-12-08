@@ -57,7 +57,7 @@ public class CompleteEmergencyRequest extends javax.swing.JPanel {
     private void initComponents() {
 
         patnamelbl = new javax.swing.JLabel();
-        patstatuslbl = new javax.swing.JLabel();
+        patientstatuslbl = new javax.swing.JLabel();
         pNameTxtField = new javax.swing.JTextField();
         pAgeTxtField = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
@@ -73,9 +73,9 @@ public class CompleteEmergencyRequest extends javax.swing.JPanel {
         patnamelbl.setText("Patient Name:");
         add(patnamelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 120, -1));
 
-        patstatuslbl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        patstatuslbl.setText("Patient Status:");
-        add(patstatuslbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 110, 20));
+        patientstatuslbl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        patientstatuslbl.setText("Patient Status:");
+        add(patientstatuslbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 110, 20));
         add(pNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 180, -1));
         add(pAgeTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 180, -1));
 
@@ -161,7 +161,7 @@ public class CompleteEmergencyRequest extends javax.swing.JPanel {
     private javax.swing.JButton jButton4;
     private javax.swing.JTextField pAgeTxtField;
     private javax.swing.JTextField pNameTxtField;
+    private javax.swing.JLabel patientstatuslbl;
     private javax.swing.JLabel patnamelbl;
-    private javax.swing.JLabel patstatuslbl;
     // End of variables declaration//GEN-END:variables
 }
