@@ -23,8 +23,11 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
+import model.WorkQueue.BookAppointment;
+import model.WorkQueue.WorkRequest;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -43,18 +46,18 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     JPanel userProcessContainer;
     EcoSystem system;
     UserAccount user;
-       Network network;
-        Enterprise enterprise;
-        Organization organization;
+    Network network;
+     Enterprise enterprise;
+     Organization organization;
     public SystemAdminWorkAreaJPanel(JPanel userProcessContainer,EcoSystem system,UserAccount user) {
-        initComponents();
-        this.userProcessContainer=userProcessContainer;
-        this.system=system;
-        this.user = user;
-        
-        populateTree();
-        jPanel3.setVisible(false);
-        jPanel4.setVisible(false);
+     initComponents();
+     this.userProcessContainer=userProcessContainer;
+     this.system=system;
+     this.user = user;
+
+     populateTree();
+     jPanel3.setVisible(false);
+     jPanel4.setVisible(false);
         
     }
     
@@ -132,6 +135,8 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jButton10 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        FeedTable = new javax.swing.JTable();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -289,7 +294,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel2.setText("ADMIN DASHBOARD");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(280, 70, 380, 40);
+        jLabel2.setBounds(300, 50, 380, 40);
         jPanel2.add(jLabel7);
         jLabel7.setBounds(-20, 140, 0, 0);
 
@@ -323,15 +328,15 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 310, Short.MAX_VALUE)
+            .addGap(0, 80, Short.MAX_VALUE)
         );
 
         jPanel2.add(jPanel4);
-        jPanel4.setBounds(20, 490, 380, 310);
+        jPanel4.setBounds(20, 720, 100, 80);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -339,15 +344,31 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 430, Short.MAX_VALUE)
+            .addGap(0, 220, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
+            .addGap(0, 140, Short.MAX_VALUE)
         );
 
         jPanel2.add(jPanel3);
-        jPanel3.setBounds(410, 460, 430, 340);
+        jPanel3.setBounds(620, 660, 220, 140);
+
+        FeedTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Patient", "Feedback"
+            }
+        ));
+        jScrollPane2.setViewportView(FeedTable);
+
+        jPanel2.add(jScrollPane2);
+        jScrollPane2.setBounds(100, 490, 670, 150);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -490,7 +511,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
 
     
-         public void populateData() {
+      public void populateData() {
          
         
         DefaultPieDataset dataSet = new DefaultPieDataset();
@@ -592,8 +613,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                    SupplierAdmin++;
                 } else if (org.getEnterpriseType1().getValue().equals("EmergencyAdmin")) {
                  EmergencyAdmin++;
-                }
-                
+                }  
             
         }
        
@@ -625,11 +645,26 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         }
 
     }
+      public void populateTable2(){
+
+        DefaultTableModel dtm = (DefaultTableModel) FeedTable.getModel();
+        dtm.setRowCount(0);
+        
+       if( system.getWorkQueue()!=null){
+        for(WorkRequest wq :system.getWorkQueue().getWorkRequestList()) {
+            if(wq instanceof BookAppointment){
+            Object row[] = new Object[4];
+            row[0] = wq;
+            row[1] = wq.getMessage();
+            dtm.addRow(row);
+        }}}
+    }
     
     
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable FeedTable;
     private javax.swing.JButton btnManageAdmin;
     private javax.swing.JButton btnManageNetwork;
     private javax.swing.JButton btnManageNetwork1;
@@ -652,6 +687,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane;
     private javax.swing.JTree jTree;
     private javax.swing.JLabel lblSelectedNode;
