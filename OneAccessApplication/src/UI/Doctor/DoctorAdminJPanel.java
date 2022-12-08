@@ -106,7 +106,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         docDetails1 = new javax.swing.JTable();
         jButton2 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -123,10 +123,10 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(docDetails);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 700, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 700, 140));
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Check prescription");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +134,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 210, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 210, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -163,15 +163,15 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 720, 140));
 
         jButton2.setBackground(new java.awt.Color(51, 51, 255));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Create a prescription");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -179,14 +179,14 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 210, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 210, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("DOCTOR DASHBOARD");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 230, 30));
 
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, -30, 330, 590));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p10.png"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 800, 700));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -223,7 +223,7 @@ public class DoctorAdminJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

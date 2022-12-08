@@ -53,6 +53,7 @@ public class ViewTestBookingsJPanel extends javax.swing.JPanel {
         testsBookedTable = new javax.swing.JTable();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -70,12 +71,14 @@ public class ViewTestBookingsJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(testsBookedTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 680, 200));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 680, 150));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("VIEW TEST BOOKINGS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 270, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 330, 50));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -83,7 +86,10 @@ public class ViewTestBookingsJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, 110, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p4.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 550));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -105,6 +111,7 @@ public class ViewTestBookingsJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable testsBookedTable;
     // End of variables declaration//GEN-END:variables

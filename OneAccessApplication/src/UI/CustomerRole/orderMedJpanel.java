@@ -151,13 +151,14 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         jButton1 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         orderBtn.setBackground(new java.awt.Color(51, 51, 255));
-        orderBtn.setForeground(new java.awt.Color(255, 255, 255));
+        orderBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         orderBtn.setText("Order");
         orderBtn.setPreferredSize(new java.awt.Dimension(156, 43));
         orderBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +166,7 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
                 orderBtnActionPerformed(evt);
             }
         });
-        add(orderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 140, -1));
+        add(orderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 140, -1));
 
         pharmacyCom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Pharmacy" }));
         pharmacyCom.addActionListener(new java.awt.event.ActionListener() {
@@ -173,8 +174,9 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
                 pharmacyComActionPerformed(evt);
             }
         });
-        add(pharmacyCom, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 147, -1));
+        add(pharmacyCom, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 170, -1));
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("Pharmacy:");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, 20));
 
@@ -199,10 +201,10 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         });
         jScrollPane1.setViewportView(medTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 325, 101));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 430, 101));
 
         addcartBtn.setBackground(new java.awt.Color(51, 51, 255));
-        addcartBtn.setForeground(new java.awt.Color(255, 255, 255));
+        addcartBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         addcartBtn.setText("Add");
         addcartBtn.setPreferredSize(new java.awt.Dimension(156, 43));
         addcartBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -225,10 +227,10 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         ));
         jScrollPane3.setViewportView(jTable1);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, 330, 100));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 430, 100));
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Track");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -236,12 +238,14 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 480, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 490, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("PATIENT PHARMACY ORDER ");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 280, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 280, 30));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -249,7 +253,10 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 100, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p4.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 610));
     }// </editor-fold>//GEN-END:initComponents
 
     private void orderBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderBtnActionPerformed
@@ -352,6 +359,7 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;

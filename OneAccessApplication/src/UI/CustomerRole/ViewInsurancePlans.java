@@ -85,11 +85,13 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("SELECT COMPANY: ");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 80, 130, 30));
 
         insuranceCompanyJComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         insuranceCompanyJComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -97,10 +99,10 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 insuranceCompanyJComboBoxActionPerformed(evt);
             }
         });
-        add(insuranceCompanyJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 70, 130, -1));
+        add(insuranceCompanyJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 80, 130, -1));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Pay");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +110,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 530, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 580, -1, -1));
 
         plansJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -128,19 +130,23 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(plansJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 630, 150));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 190, 630, 150));
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("Plan Name:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText("Total years of duration:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 160, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 420, 160, -1));
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("Monthly premium amount:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 450, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 460, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setText("Total premium amount:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 490, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 500, -1, -1));
 
         nameTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         nameTxtField.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +154,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 nameTxtFieldActionPerformed(evt);
             }
         });
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 370, 160, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 370, 160, -1));
 
         yrsTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         yrsTxtField.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +162,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 yrsTxtFieldActionPerformed(evt);
             }
         });
-        add(yrsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 410, 160, -1));
+        add(yrsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 410, 160, -1));
 
         monthlTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         monthlTxtField.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +170,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 monthlTxtFieldActionPerformed(evt);
             }
         });
-        add(monthlTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 450, 160, -1));
+        add(monthlTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 450, 160, -1));
 
         totalTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         totalTxtField.addActionListener(new java.awt.event.ActionListener() {
@@ -172,9 +178,10 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 totalTxtFieldActionPerformed(evt);
             }
         });
-        add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 490, 160, -1));
+        add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 490, 160, -1));
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton3.setText("VIEW PLANS");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -182,12 +189,14 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, -1, 50));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("INSURANCE COMPANIES AND PLANS");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 400, 30));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -195,10 +204,10 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 110, 50));
 
-        jButton4.setBackground(new java.awt.Color(24, 31, 46));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setBackground(new java.awt.Color(51, 51, 255));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Check Plans");
         jButton4.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -206,7 +215,10 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 120, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insuranceplans.PNG"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 660));
     }// </editor-fold>//GEN-END:initComponents
 
     private void insuranceCompanyJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insuranceCompanyJComboBoxActionPerformed
@@ -364,6 +376,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

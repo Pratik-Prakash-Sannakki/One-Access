@@ -45,35 +45,35 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        patNamelbl = new javax.swing.JLabel();
+        med1lbl = new javax.swing.JLabel();
         dName = new javax.swing.JTextField();
         dmed = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        medlab2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         dmed2 = new javax.swing.JTextField();
         dmed3 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        commentslbl = new javax.swing.JLabel();
         dcomments = new javax.swing.JTextField();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
+        med3labl = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel2.setText("Patient Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, -1, -1));
+        patNamelbl.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        patNamelbl.setText("Patient Name");
+        add(patNamelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 100, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel3.setText("Medicine 1");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
-        add(dName, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 150, -1));
-        add(dmed, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 150, -1));
+        med1lbl.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        med1lbl.setText("Medicine 1");
+        add(med1lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
+        add(dName, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 160, -1));
+        add(dmed, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 160, -1));
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Add presecription");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -81,27 +81,29 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel4.setText("Medicine 2");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
+        medlab2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        medlab2.setText("Medicine 2");
+        add(medlab2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Medicine 3");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, -1, -1));
-        add(dmed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 150, -1));
-        add(dmed3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 150, -1));
+        add(dmed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 160, -1));
+        add(dmed3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 160, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel6.setText("Comments");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, -1, -1));
-        add(dcomments, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 150, -1));
+        commentslbl.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        commentslbl.setText("Comments");
+        add(commentslbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, -1, -1));
+        add(dcomments, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 160, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("ADD PRESCRIPTION");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 230, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 280, 30));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -109,8 +111,10 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 30, -1, -1));
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 860, 590));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, -1, -1));
+
+        med3labl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p10.png"))); // NOI18N
+        add(med3labl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 860, 590));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -175,6 +179,7 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel commentslbl;
     private javax.swing.JTextField dName;
     private javax.swing.JTextField dcomments;
     private javax.swing.JTextField dmed;
@@ -183,11 +188,10 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel med1lbl;
+    private javax.swing.JLabel med3labl;
+    private javax.swing.JLabel medlab2;
+    private javax.swing.JLabel patNamelbl;
     // End of variables declaration//GEN-END:variables
 }
