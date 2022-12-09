@@ -96,7 +96,7 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, 150, -1));
 
         labTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -144,7 +144,7 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 440, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 150, 40));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boston", "San francisco" }));
         jComboBox2.setPreferredSize(new java.awt.Dimension(140, 30));

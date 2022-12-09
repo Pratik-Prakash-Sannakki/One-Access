@@ -92,7 +92,7 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, 110));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
+        jButton2.setBackground(new java.awt.Color(0, 0, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -103,7 +103,7 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, 40));
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
+        jButton3.setBackground(new java.awt.Color(0, 0, 255));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -132,6 +132,7 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
         jLabel6.setText("City Name");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 60, 20));
 
+        jButton4.setBackground(new java.awt.Color(0, 0, 255));
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -139,7 +140,7 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 160, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel5.setText("PHARMACY DETAILS");
