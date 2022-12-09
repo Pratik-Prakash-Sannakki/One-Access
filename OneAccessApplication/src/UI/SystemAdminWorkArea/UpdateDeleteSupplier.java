@@ -70,8 +70,8 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
         jLabel3.setText("Username:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 60, -1));
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBackground(new java.awt.Color(0, 0, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -81,8 +81,8 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(0, 0, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +112,8 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, 110));
 
+        jButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -119,7 +121,7 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, 150, 40));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel5.setText("SUPPLIER  DETAILS");
@@ -139,10 +141,10 @@ public class UpdateDeleteSupplier extends javax.swing.JPanel {
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 70, 20));
 
         addrTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, 94, -1));
+        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, 110, -1));
 
         nameTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 94, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 110, -1));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel2.setText("Name:");

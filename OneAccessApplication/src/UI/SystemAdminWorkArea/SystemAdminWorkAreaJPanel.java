@@ -134,9 +134,8 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        FeedTable = new javax.swing.JTable();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -150,16 +149,13 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setPreferredSize(new java.awt.Dimension(1825, 1000));
         jPanel2.setLayout(null);
-
-        jLabel1.setText("Selected Node:");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(40, 31, 90, 17);
-
-        lblSelectedNode.setText("<View_selected_node>");
+        jLabel1.setBounds(40, 31, 0, 0);
         jPanel2.add(lblSelectedNode);
-        lblSelectedNode.setBounds(168, 31, 137, 17);
+        lblSelectedNode.setBounds(168, 31, 0, 0);
 
-        btnManageNetwork.setBackground(new java.awt.Color(24, 31, 46));
+        btnManageNetwork.setBackground(new java.awt.Color(51, 51, 255));
+        btnManageNetwork.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
         btnManageNetwork.setText("Add Hospital");
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
@@ -168,9 +164,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(btnManageNetwork);
-        btnManageNetwork.setBounds(100, 160, 156, 43);
+        btnManageNetwork.setBounds(100, 140, 156, 43);
 
-        btnManageAdmin.setBackground(new java.awt.Color(24, 31, 46));
+        btnManageAdmin.setBackground(new java.awt.Color(51, 51, 255));
+        btnManageAdmin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnManageAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnManageAdmin.setText("Add Deliveryman");
         btnManageAdmin.addActionListener(new java.awt.event.ActionListener() {
@@ -179,9 +176,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(btnManageAdmin);
-        btnManageAdmin.setBounds(100, 290, 156, 43);
+        btnManageAdmin.setBounds(100, 260, 156, 43);
 
-        jButton1.setBackground(new java.awt.Color(24, 31, 46));
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Add Labs");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -190,9 +188,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton1);
-        jButton1.setBounds(100, 230, 156, 43);
+        jButton1.setBounds(100, 200, 156, 43);
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Manage Labs");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -201,9 +200,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(100, 350, 156, 43);
+        jButton2.setBounds(100, 320, 156, 43);
 
-        btnManageNetwork1.setBackground(new java.awt.Color(24, 31, 46));
+        btnManageNetwork1.setBackground(new java.awt.Color(51, 51, 255));
+        btnManageNetwork1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnManageNetwork1.setForeground(new java.awt.Color(255, 255, 255));
         btnManageNetwork1.setText("Add Pharmacy");
         btnManageNetwork1.addActionListener(new java.awt.event.ActionListener() {
@@ -212,9 +212,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(btnManageNetwork1);
-        btnManageNetwork1.setBounds(350, 160, 156, 43);
+        btnManageNetwork1.setBounds(350, 140, 170, 43);
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Add Insurance");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -223,9 +224,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton3);
-        jButton3.setBounds(610, 160, 156, 43);
+        jButton3.setBounds(610, 140, 170, 43);
 
-        jButton4.setBackground(new java.awt.Color(24, 31, 46));
+        jButton4.setBackground(new java.awt.Color(51, 51, 255));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Add Emergency");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -234,9 +236,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton4);
-        jButton4.setBounds(350, 230, 156, 43);
+        jButton4.setBounds(350, 200, 170, 43);
 
-        jButton5.setBackground(new java.awt.Color(24, 31, 46));
+        jButton5.setBackground(new java.awt.Color(51, 51, 255));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Add Supplier");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -245,9 +248,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton5);
-        jButton5.setBounds(610, 230, 156, 43);
+        jButton5.setBounds(610, 200, 170, 43);
 
-        jButton6.setBackground(new java.awt.Color(24, 31, 46));
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Manage Insurance");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -256,9 +260,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton6);
-        jButton6.setBounds(610, 290, 156, 43);
+        jButton6.setBounds(610, 260, 170, 43);
 
-        jButton7.setBackground(new java.awt.Color(24, 31, 46));
+        jButton7.setBackground(new java.awt.Color(51, 51, 255));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("Manage Emergency");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -267,9 +272,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton7);
-        jButton7.setBounds(350, 350, 156, 43);
+        jButton7.setBounds(350, 320, 170, 43);
 
-        jButton8.setBackground(new java.awt.Color(24, 31, 46));
+        jButton8.setBackground(new java.awt.Color(51, 51, 255));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("Manage Supplier");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -278,9 +284,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton8);
-        jButton8.setBounds(610, 350, 156, 43);
+        jButton8.setBounds(610, 320, 170, 43);
 
-        manPhar.setBackground(new java.awt.Color(24, 31, 46));
+        manPhar.setBackground(new java.awt.Color(51, 51, 255));
+        manPhar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         manPhar.setForeground(new java.awt.Color(255, 255, 255));
         manPhar.setText("Manage Pharmacy");
         manPhar.addActionListener(new java.awt.event.ActionListener() {
@@ -289,16 +296,17 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(manPhar);
-        manPhar.setBounds(350, 290, 160, 43);
+        manPhar.setBounds(350, 260, 170, 43);
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel2.setText("ADMIN DASHBOARD");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(300, 50, 380, 40);
+        jLabel2.setBounds(260, 50, 380, 40);
         jPanel2.add(jLabel7);
         jLabel7.setBounds(-20, 140, 0, 0);
 
-        jButton9.setBackground(new java.awt.Color(24, 31, 46));
+        jButton9.setBackground(new java.awt.Color(51, 51, 255));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Chart Enterprises ");
         jButton9.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -308,9 +316,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton9);
-        jButton9.setBounds(100, 410, 156, 43);
+        jButton9.setBounds(100, 380, 160, 43);
 
-        jButton10.setBackground(new java.awt.Color(24, 31, 46));
+        jButton10.setBackground(new java.awt.Color(51, 51, 255));
+        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("Chart Organizations");
         jButton10.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -320,7 +329,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(jButton10);
-        jButton10.setBounds(610, 410, 156, 43);
+        jButton10.setBounds(610, 380, 170, 43);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -338,37 +347,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.add(jPanel4);
         jPanel4.setBounds(20, 720, 100, 80);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
-        );
-
-        jPanel2.add(jPanel3);
-        jPanel3.setBounds(620, 660, 220, 140);
-
-        FeedTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
-            },
-            new String [] {
-                "Patient", "Feedback"
-            }
-        ));
-        jScrollPane2.setViewportView(FeedTable);
-
-        jPanel2.add(jScrollPane2);
-        jScrollPane2.setBounds(100, 490, 670, 150);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/P11.gif"))); // NOI18N
+        jPanel2.add(jLabel4);
+        jLabel4.setBounds(0, 440, 840, 370);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -382,16 +363,31 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(92, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jSplitPane.setLeftComponent(jPanel1);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 97, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 822, Short.MAX_VALUE)
+        );
+
+        jSplitPane.setRightComponent(jPanel3);
 
         add(jSplitPane, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
@@ -403,16 +399,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             lblSelectedNode.setText(selectedNode.toString());
         }
     }//GEN-LAST:event_jTreeValueChanged
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-        populateData1();
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-        populateData();
-    }//GEN-LAST:event_jButton9ActionPerformed
 
     private void manPharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manPharActionPerformed
         // TODO add your handling code here:
@@ -508,6 +494,16 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
     }//GEN-LAST:event_btnManageNetworkActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        populateData1();
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        populateData();
+    }//GEN-LAST:event_jButton9ActionPerformed
 
 
     
@@ -645,26 +641,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         }
 
     }
-      public void populateTable2(){
 
-        DefaultTableModel dtm = (DefaultTableModel) FeedTable.getModel();
-        dtm.setRowCount(0);
-        
-       if( system.getWorkQueue()!=null){
-        for(WorkRequest wq :system.getWorkQueue().getWorkRequestList()) {
-            if(wq instanceof BookAppointment){
-            Object row[] = new Object[4];
-            row[0] = wq;
-            row[1] = wq.getMessage();
-            dtm.addRow(row);
-        }}}
-    }
-    
     
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable FeedTable;
     private javax.swing.JButton btnManageAdmin;
     private javax.swing.JButton btnManageNetwork;
     private javax.swing.JButton btnManageNetwork1;
@@ -681,13 +662,13 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane;
     private javax.swing.JTree jTree;
     private javax.swing.JLabel lblSelectedNode;

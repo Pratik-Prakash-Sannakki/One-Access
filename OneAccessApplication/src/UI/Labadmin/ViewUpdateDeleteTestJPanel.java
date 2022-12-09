@@ -69,8 +69,8 @@ public class ViewUpdateDeleteTestJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -78,10 +78,10 @@ public class ViewUpdateDeleteTestJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 480, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 490, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -89,43 +89,49 @@ public class ViewUpdateDeleteTestJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Lower Range:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, -1, -1));
-        add(lowerRangeTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, 116, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, -1, -1));
+        add(lowerRangeTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 140, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setText("Apparatus:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, -1));
-        add(apparatusTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 420, 116, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, -1, -1));
+        add(apparatusTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, 140, -1));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel7.setText("Upper Range:");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 380, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setText("Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 50, 20));
 
         upperRangeTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 upperRangeTxtFieldActionPerformed(evt);
             }
         });
-        add(upperRangeTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 380, 116, -1));
+        add(upperRangeTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 140, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("Price: ");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 450, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 450, 40, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("Sample Required:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, -1));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 270, 116, -1));
-        add(sampleTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 310, 116, -1));
-        add(priceTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, 116, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, -1, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 140, -1));
+        add(sampleTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 140, -1));
+
+        priceTxtField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                priceTxtFieldActionPerformed(evt);
+            }
+        });
+        add(priceTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, 140, -1));
 
         TestDetailsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -145,12 +151,14 @@ public class ViewUpdateDeleteTestJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(TestDetailsTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 479, 122));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 80, 660, 122));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("TEST DETAILS");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 140, 30));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +166,7 @@ public class ViewUpdateDeleteTestJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -285,6 +293,10 @@ public class ViewUpdateDeleteTestJPanel extends javax.swing.JPanel {
                 //            }
             //        }
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void priceTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_priceTxtFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_priceTxtFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

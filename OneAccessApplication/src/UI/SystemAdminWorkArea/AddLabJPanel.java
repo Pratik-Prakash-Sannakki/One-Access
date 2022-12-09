@@ -63,6 +63,7 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         dName1 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         dspe1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -78,8 +79,8 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         labUName.setPreferredSize(new java.awt.Dimension(164, 30));
         add(labUName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
 
-        addLab.setBackground(new java.awt.Color(24, 31, 46));
-        addLab.setForeground(new java.awt.Color(255, 255, 255));
+        addLab.setBackground(new java.awt.Color(51, 51, 255));
+        addLab.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         addLab.setText("Add lab ");
         addLab.setPreferredSize(new java.awt.Dimension(156, 43));
         addLab.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +106,8 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         jLabel8.setText("Add Lab");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 160, 37));
 
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -112,45 +115,49 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, 120, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 160, 40));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setText("Lab Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 60, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 70, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("Username");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 60, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 80, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Password");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 60, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setText("City Name");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 60, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 80, -1));
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         dspe.setPreferredSize(new java.awt.Dimension(164, 30));
         add(dspe, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("Address");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 50, -1));
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel10.setText("Email");
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 40, -1));
 
         dName1.setPreferredSize(new java.awt.Dimension(15, 30));
         add(dName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 164, -1));
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel11.setText("Phone");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 40, -1));
 
         dspe1.setPreferredSize(new java.awt.Dimension(15, 30));
         add(dspe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 164, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/lab.PNG"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 520));
     }// </editor-fold>//GEN-END:initComponents
 
     private void labNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_labNameActionPerformed
@@ -273,6 +280,7 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private javax.swing.JTextField dspe1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;

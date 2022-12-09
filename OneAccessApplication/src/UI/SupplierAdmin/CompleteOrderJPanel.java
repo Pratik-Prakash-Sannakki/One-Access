@@ -68,10 +68,11 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setText("Items:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 75, -1));
 
@@ -83,7 +84,7 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         add(patientNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 150, -1));
         add(DateBookedTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, 150, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Date Ordered");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, 90, -1));
 
@@ -100,10 +101,10 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(InventoryTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 480, 111));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 480, 111));
 
-        acceptOrder.setBackground(new java.awt.Color(24, 31, 46));
-        acceptOrder.setForeground(new java.awt.Color(255, 255, 255));
+        acceptOrder.setBackground(new java.awt.Color(51, 51, 255));
+        acceptOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         acceptOrder.setText("Accept");
         acceptOrder.setPreferredSize(new java.awt.Dimension(156, 43));
         acceptOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -113,8 +114,8 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         });
         add(acceptOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, 90, -1));
 
-        declineOrder.setBackground(new java.awt.Color(24, 31, 46));
-        declineOrder.setForeground(new java.awt.Color(255, 255, 255));
+        declineOrder.setBackground(new java.awt.Color(51, 51, 255));
+        declineOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         declineOrder.setText("Decline");
         declineOrder.setPreferredSize(new java.awt.Dimension(156, 43));
         declineOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -124,9 +125,9 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         });
         add(declineOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel8.setText("Assign DeliveryMan:");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, -1, -1));
 
         delManCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select" }));
         delManCombo.addActionListener(new java.awt.event.ActionListener() {
@@ -134,10 +135,10 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 delManComboActionPerformed(evt);
             }
         });
-        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 180, -1));
+        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, 180, -1));
 
-        jButton1.setBackground(new java.awt.Color(24, 31, 46));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Assign");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -145,12 +146,14 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 300, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("COMPLETE ORDER");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 220, 30));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -158,8 +161,11 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, -1, 40));
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, 270));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/supplier.PNG"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
     }// </editor-fold>//GEN-END:initComponents
 
     private void patientNameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientNameTxtFieldActionPerformed
@@ -256,6 +262,7 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;

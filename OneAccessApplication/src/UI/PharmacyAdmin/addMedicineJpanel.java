@@ -97,6 +97,7 @@ public class addMedicineJpanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -113,26 +114,26 @@ public class addMedicineJpanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(addMedTbl);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 350, 103));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 430, 103));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setText("Medicine Name:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setText("Medicine Price:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, -1, -1));
 
         medNameTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 medNameTxtActionPerformed(evt);
             }
         });
-        add(medNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, 170, -1));
-        add(medPriceTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 170, -1));
+        add(medNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 170, -1));
+        add(medPriceTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 170, -1));
 
-        addMedBtn.setBackground(new java.awt.Color(24, 31, 46));
-        addMedBtn.setForeground(new java.awt.Color(255, 255, 255));
+        addMedBtn.setBackground(new java.awt.Color(51, 51, 255));
+        addMedBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         addMedBtn.setText("Add");
         addMedBtn.setPreferredSize(new java.awt.Dimension(156, 43));
         addMedBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -140,10 +141,10 @@ public class addMedicineJpanel extends javax.swing.JPanel {
                 addMedBtnActionPerformed(evt);
             }
         });
-        add(addMedBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, -1, 30));
+        add(addMedBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(416, 200, 160, -1));
 
-        jButton1.setBackground(new java.awt.Color(24, 31, 46));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Refresh");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -151,8 +152,10 @@ public class addMedicineJpanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 120, 30));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 420, 120, 40));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -160,11 +163,14 @@ public class addMedicineJpanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 370, 90, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 90, 40));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("Add Medicine");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 260, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 310, 50));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p10.png"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 550));
     }// </editor-fold>//GEN-END:initComponents
 
     private void medNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_medNameTxtActionPerformed
@@ -256,7 +262,7 @@ public class addMedicineJpanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-        
+
     }//GEN-LAST:event_jButton6ActionPerformed
 
 
@@ -268,6 +274,7 @@ public class addMedicineJpanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField medNameTxt;
     private javax.swing.JTextField medPriceTxt;
