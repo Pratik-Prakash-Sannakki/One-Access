@@ -150,9 +150,8 @@ private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
         jLabel9.setText("Phone Number");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 120, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p7.jpg"))); // NOI18N
-        jLabel7.setText("jLabel7");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 490, 500));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/ezgif.com-gif-maker (1).gif"))); // NOI18N
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, 720, 580));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addHospitalActionPerformed
