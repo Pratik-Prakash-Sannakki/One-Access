@@ -69,72 +69,77 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setText("Patient Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, 100, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 100, -1));
 
         patientNameTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 patientNameTxtFieldActionPerformed(evt);
             }
         });
-        add(patientNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 160, -1));
-        add(testIdTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, 160, -1));
-        add(DateBookedTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 160, -1));
+        add(patientNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, 160, -1));
+        add(testIdTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 160, -1));
+        add(DateBookedTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 160, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("Test ID");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 75, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 75, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Date booked");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 100, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 100, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setText("Sample collected:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel7.setText("Results published:");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, -1, -1));
 
+        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton1.setText("YES");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
             }
         });
-        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, -1, -1));
+        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, -1, -1));
 
+        jRadioButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton2.setText("NO");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
             }
         });
-        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 190, -1, -1));
+        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, -1, -1));
 
+        jRadioButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton3.setText("YES");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton3ActionPerformed(evt);
             }
         });
-        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, -1, -1));
+        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, -1, -1));
 
+        jRadioButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton4.setText("NO");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton4ActionPerformed(evt);
             }
         });
-        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 230, -1, -1));
+        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(24, 31, 46));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Submit");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -142,10 +147,10 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 180, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, -1, 30));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Submit");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -153,12 +158,14 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 220, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, -1, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("COMPLETE TESTING");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 190, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 220, 30));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -166,7 +173,10 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 420, 90, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/lab.PNG"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 530));
     }// </editor-fold>//GEN-END:initComponents
 
     private void patientNameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientNameTxtFieldActionPerformed
@@ -244,6 +254,7 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;

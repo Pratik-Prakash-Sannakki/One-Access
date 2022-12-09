@@ -51,6 +51,7 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -68,10 +69,10 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(insuranceJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 409, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 470, 130));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("View details");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -79,10 +80,10 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("REFRESH");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -90,8 +91,10 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, -1));
 
+        jButton4.setBackground(new java.awt.Color(51, 51, 255));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -99,11 +102,14 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 300, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 90, 40));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("MANGE INSURANCE  ORDERS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 300, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 330, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insurance.PNG"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 530));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -160,6 +166,7 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 

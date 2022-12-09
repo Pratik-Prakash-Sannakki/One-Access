@@ -53,31 +53,32 @@ public class AddInventoryItemJPanel extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setText("Name:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
         add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 150, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("Manufacturer:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
         add(manufacTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, 150, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("Price per Item:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
         add(priceTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 150, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Number of units available: ");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, -1, 30));
         add(availTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 150, -1));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Add");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -85,8 +86,10 @@ public class AddInventoryItemJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 110, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 110, 40));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -94,11 +97,15 @@ public class AddInventoryItemJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 110, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, 110, 40));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("ADD INVENTORY ITEMS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 230, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 230, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insurance.PNG"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -50, 850, 580));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -168,6 +175,7 @@ public class AddInventoryItemJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

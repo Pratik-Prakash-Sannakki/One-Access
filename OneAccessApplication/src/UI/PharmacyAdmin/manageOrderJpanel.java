@@ -113,11 +113,12 @@ public class manageOrderJpanel extends javax.swing.JPanel {
         orderTbl = new javax.swing.JTable();
         jButton6 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        acceptOrder.setBackground(new java.awt.Color(51, 51, 255));
-        acceptOrder.setForeground(new java.awt.Color(255, 255, 255));
+        acceptOrder.setBackground(new java.awt.Color(255, 153, 153));
+        acceptOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         acceptOrder.setText("Accept");
         acceptOrder.setPreferredSize(new java.awt.Dimension(156, 43));
         acceptOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -127,8 +128,8 @@ public class manageOrderJpanel extends javax.swing.JPanel {
         });
         add(acceptOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
 
-        declineOrder.setBackground(new java.awt.Color(51, 51, 255));
-        declineOrder.setForeground(new java.awt.Color(255, 255, 255));
+        declineOrder.setBackground(new java.awt.Color(255, 153, 153));
+        declineOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         declineOrder.setText("Decline");
         declineOrder.setPreferredSize(new java.awt.Dimension(156, 43));
         declineOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -148,10 +149,10 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 delManComboActionPerformed(evt);
             }
         });
-        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 150, -1));
+        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 380, 150, -1));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(255, 153, 153));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Assign");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -159,7 +160,7 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, -1, -1));
 
         orderTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -176,6 +177,8 @@ public class manageOrderJpanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 640, 150));
 
+        jButton6.setBackground(new java.awt.Color(255, 153, 153));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -183,11 +186,14 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, -1, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 490, -1, 40));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("MANAGE ORDERS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 180, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 180, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/delivery.PNG"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
     }// </editor-fold>//GEN-END:initComponents
 
     private void acceptOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptOrderActionPerformed
@@ -274,6 +280,7 @@ public class manageOrderJpanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable orderTbl;

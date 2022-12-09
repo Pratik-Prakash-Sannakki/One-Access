@@ -76,6 +76,7 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
         plansJTable = new javax.swing.JTable();
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -86,8 +87,8 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
         });
         add(unitsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, 150, -1));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -97,8 +98,8 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -106,21 +107,21 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setText("Inventory Name");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("Manufacturer:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 117, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("Price per unit");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Units available");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, -1));
 
@@ -163,12 +164,14 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(plansJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 526, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 526, 100));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("MANAGE INVENTORY");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 200, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 200, 30));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +179,11 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 520, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p7.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 330, 410));
     }// </editor-fold>//GEN-END:initComponents
 
     private void unitsTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitsTxtFieldActionPerformed
@@ -295,6 +302,7 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
