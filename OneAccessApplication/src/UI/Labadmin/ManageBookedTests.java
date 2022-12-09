@@ -53,6 +53,7 @@ public class ManageBookedTests extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -69,10 +70,10 @@ public class ManageBookedTests extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(bookedTestTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 520, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 520, 100));
 
-        jButton2.setBackground(new java.awt.Color(24, 31, 46));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("COMPLETE TEST");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -80,8 +81,10 @@ public class ManageBookedTests extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
 
+        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -89,14 +92,14 @@ public class ManageBookedTests extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, 100, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 100, 40));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("MANAGE BOOKED TESTS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 260, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 300, 30));
 
-        jButton3.setBackground(new java.awt.Color(24, 31, 46));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("REFRESH");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +107,10 @@ public class ManageBookedTests extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insurance.PNG"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 530));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -164,6 +170,7 @@ public class ManageBookedTests extends javax.swing.JPanel {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 

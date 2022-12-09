@@ -64,7 +64,7 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         manageEmployeeJButton.setBackground(new java.awt.Color(51, 51, 255));
-        manageEmployeeJButton.setForeground(new java.awt.Color(255, 255, 255));
+        manageEmployeeJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         manageEmployeeJButton.setText("Add new medications");
         manageEmployeeJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +75,7 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
         add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 210, -1));
 
         manageOrganizationJButton.setBackground(new java.awt.Color(51, 51, 255));
-        manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
+        manageOrganizationJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         manageOrganizationJButton.setText("Manage Orders");
         manageOrganizationJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +87,7 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
 
         enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel1.setText("PHARMACY ADMIN");
-        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 180, 30));
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 180, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageEmployeeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonActionPerformed

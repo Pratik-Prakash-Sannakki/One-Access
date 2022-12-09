@@ -179,7 +179,7 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 520, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 520, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p7.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
