@@ -4,11 +4,7 @@
  * and open the template in the editor.
  */
 package UI.CustomerRole;
-import java.awt.CardLayout;
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
 
 
 /**
