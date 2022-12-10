@@ -5,6 +5,7 @@
  */
 package UI.CustomerRole;
 
+import UI.HospitalAdminRole.sms;
 import model.DB4OUtil.DB4OUtil;
 import model.EcoSystem;
 import model.Enterprise;
@@ -39,7 +40,6 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     
     
     private JPanel userProcessContainer;
-
     private UserAccount user;
     private EcoSystem system;
     private String hospitalName;
@@ -275,6 +275,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jButton3.setBackground(new java.awt.Color(51, 51, 255));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Give Feedback");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, 160, 40));
 
         jTextArea2.setColumns(20);
@@ -424,6 +429,12 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private void OrderBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrderBtn1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_OrderBtn1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        sms.smms(jTextArea2.getText());
+        jTextArea2.setText("");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
