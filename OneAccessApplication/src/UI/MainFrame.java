@@ -5,7 +5,14 @@
 package UI;
 
 import UI.HospitalAdminRole.sendPatRegMail;
-import UI.HospitalAdminRole.sms;
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import model.DB4OUtil.DB4OUtil;
+import model.EcoSystem;
+import model.Organization;
+import model.UserAccount.UserAccount;
+//import UI.HospitalAdminRole.sms;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -256,7 +263,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        sms.smms();
+//        sms.smms();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
