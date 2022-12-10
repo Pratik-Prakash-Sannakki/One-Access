@@ -10,12 +10,12 @@ public class sms {
     public static final String ACCOUNT_SID = "AC5521533cadaf8cd209708dc445cdf91e";
     public static final String AUTH_TOKEN = "276942d143d719305d56f8fed0ccc625";
 
-    public static void smms() {
+    public static void smms(String s) {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message message = Message.creator(
                 new com.twilio.type.PhoneNumber("+18573135748"),
                 new com.twilio.type.PhoneNumber("+13346058410"),
-                "Where's Wallace?")
+                s)
             .create();
 
         System.out.println(message.getSid());

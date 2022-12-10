@@ -194,7 +194,7 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
 
             //            LabDirectory ld = system.getLabDirectory();
             //            ld.deleteLab(l);
-            JOptionPane.showMessageDialog(null, "Lab " + nameTxtField.getText() + " deleted");
+            JOptionPane.showMessageDialog(null, "Insurance " + nameTxtField.getText() + " deleted");
             populateTable();
             nameTxtField.setText("");
             addrTxtField.setText("");
