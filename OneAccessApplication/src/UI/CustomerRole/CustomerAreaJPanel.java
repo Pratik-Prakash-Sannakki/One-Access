@@ -120,7 +120,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jLabel5 = new javax.swing.JLabel();
+        OrderBtn1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -195,7 +198,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane2);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 450, 190));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 450, 90));
 
         InsuranceJButton.setBackground(new java.awt.Color(51, 51, 255));
         InsuranceJButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -258,8 +261,27 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
         add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 290, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/patientui.PNG"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 690));
+        OrderBtn1.setBackground(new java.awt.Color(51, 51, 255));
+        OrderBtn1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        OrderBtn1.setText("Order Medicine");
+        OrderBtn1.setPreferredSize(new java.awt.Dimension(156, 43));
+        OrderBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OrderBtn1ActionPerformed(evt);
+            }
+        });
+        add(OrderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, -1, -1));
+
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton3.setText("Give Feedback");
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, 160, 40));
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane3.setViewportView(jTextArea2);
+
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 400, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void restListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restListActionPerformed
@@ -399,14 +421,20 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(this, "Help is on the way!");
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void OrderBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrderBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OrderBtn1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton InsuranceJButton;
     private javax.swing.JButton OrderBtn;
+    private javax.swing.JButton OrderBtn1;
     private javax.swing.JTable doctorDetails1;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private com.toedter.calendar.JDateChooser jDateChooser1;
@@ -414,11 +442,12 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JComboBox<String> restList;
     private javax.swing.JComboBox<String> restList1;
     private javax.swing.JComboBox<String> restList2;
