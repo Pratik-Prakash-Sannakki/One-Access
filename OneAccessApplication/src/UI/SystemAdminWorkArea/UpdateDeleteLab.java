@@ -69,8 +69,10 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
         nameTxtField = new javax.swing.JTextField();
         addrTxtField = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        labTable.setBackground(new java.awt.Color(204, 255, 204));
         labTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -89,9 +91,9 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(labTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, -1, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, -1, 110));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 255));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -100,10 +102,10 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 470, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 470, 150, -1));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 255));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBackground(new java.awt.Color(51, 153, 255));
+        jButton3.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -111,15 +113,15 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 320, 120, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel3.setText("Username:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 70, -1));
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel3.setText("UserName:");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, 110, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel5.setText("LAB DETAILS");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, 250, 37));
+        jLabel5.setText("Lab Details");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 250, 37));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boston", "San francisco" }));
         jComboBox1.setPreferredSize(new java.awt.Dimension(140, 30));
@@ -128,9 +130,9 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 170, -1));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 170, -1));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jButton4.setBackground(new java.awt.Color(51, 153, 255));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -139,21 +141,23 @@ public class UpdateDeleteLab extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 540, 160, 40));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 530, 150, 40));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, 50, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 90, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel6.setText("City Name");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 60, 20));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 100, 20));
 
+        nameTxtField.setBackground(new java.awt.Color(204, 255, 255));
         nameTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 370, 94, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 150, -1));
 
+        addrTxtField.setBackground(new java.awt.Color(204, 255, 255));
         addrTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, 94, -1));
+        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, 150, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void labTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labTableMouseClicked

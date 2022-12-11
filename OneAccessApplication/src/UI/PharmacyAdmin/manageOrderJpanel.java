@@ -117,7 +117,7 @@ public class manageOrderJpanel extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        acceptOrder.setBackground(new java.awt.Color(255, 153, 153));
+        acceptOrder.setBackground(new java.awt.Color(102, 255, 102));
         acceptOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         acceptOrder.setText("Accept");
         acceptOrder.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -126,9 +126,9 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 acceptOrderActionPerformed(evt);
             }
         });
-        add(acceptOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
+        add(acceptOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, -1, -1));
 
-        declineOrder.setBackground(new java.awt.Color(255, 153, 153));
+        declineOrder.setBackground(new java.awt.Color(255, 102, 102));
         declineOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         declineOrder.setText("Decline");
         declineOrder.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -137,11 +137,11 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 declineOrderActionPerformed(evt);
             }
         });
-        add(declineOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, -1, -1));
+        add(declineOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 350, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel6.setText("Assign DeliveryMan:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 140, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 470, 180, -1));
 
         delManCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select" }));
         delManCombo.addActionListener(new java.awt.event.ActionListener() {
@@ -149,9 +149,9 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 delManComboActionPerformed(evt);
             }
         });
-        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 380, 150, -1));
+        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 470, 160, 30));
 
-        jButton1.setBackground(new java.awt.Color(255, 153, 153));
+        jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Assign");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -160,8 +160,9 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, -1, 40));
 
+        orderTbl.setBackground(new java.awt.Color(204, 255, 204));
         orderTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -175,7 +176,7 @@ public class manageOrderJpanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(orderTbl);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 640, 150));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 640, 200));
 
         jButton6.setBackground(new java.awt.Color(255, 153, 153));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -186,14 +187,14 @@ public class manageOrderJpanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 490, -1, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 120, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("MANAGE ORDERS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 180, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Manage Orders");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 270, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/delivery.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/zzmanageordr.gif"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, 440, 260));
     }// </editor-fold>//GEN-END:initComponents
 
     private void acceptOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptOrderActionPerformed

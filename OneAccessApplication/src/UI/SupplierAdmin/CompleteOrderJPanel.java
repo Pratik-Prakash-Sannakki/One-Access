@@ -70,24 +70,26 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Items:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 75, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 110, 30));
 
         patientNameTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 patientNameTxtFieldActionPerformed(evt);
             }
         });
-        add(patientNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 150, -1));
-        add(DateBookedTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, 150, -1));
+        add(patientNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 150, 30));
+        add(DateBookedTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 150, 30));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel5.setText("Date Ordered");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, 90, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 120, 30));
 
+        InventoryTable.setBackground(new java.awt.Color(204, 255, 204));
         InventoryTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -101,9 +103,9 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(InventoryTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 480, 111));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 670, 111));
 
-        acceptOrder.setBackground(new java.awt.Color(51, 51, 255));
+        acceptOrder.setBackground(new java.awt.Color(102, 255, 102));
         acceptOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         acceptOrder.setText("Accept");
         acceptOrder.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -112,9 +114,9 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 acceptOrderActionPerformed(evt);
             }
         });
-        add(acceptOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, 90, -1));
+        add(acceptOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 110, 40));
 
-        declineOrder.setBackground(new java.awt.Color(51, 51, 255));
+        declineOrder.setBackground(new java.awt.Color(255, 102, 102));
         declineOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         declineOrder.setText("Decline");
         declineOrder.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -123,11 +125,11 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 declineOrderActionPerformed(evt);
             }
         });
-        add(declineOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, -1, -1));
+        add(declineOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, 120, 40));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel8.setText("Assign DeliveryMan:");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 210, 30));
 
         delManCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select" }));
         delManCombo.addActionListener(new java.awt.event.ActionListener() {
@@ -135,9 +137,9 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 delManComboActionPerformed(evt);
             }
         });
-        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, 180, -1));
+        add(delManCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 330, 150, 30));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Assign");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -146,13 +148,13 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 370, 150, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("COMPLETE ORDER");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 220, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Complete Order");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, 290, 50));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(255, 204, 204));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -161,11 +163,11 @@ public class CompleteOrderJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, -1, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, -1, 40));
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, 270));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/supplier.PNG"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/zzordercomplete.gif"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 190, 490, 280));
     }// </editor-fold>//GEN-END:initComponents
 
     private void patientNameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientNameTxtFieldActionPerformed

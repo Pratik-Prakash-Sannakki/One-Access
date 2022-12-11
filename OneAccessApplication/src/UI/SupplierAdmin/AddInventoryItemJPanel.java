@@ -55,29 +55,38 @@ public class AddInventoryItemJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 150, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, 30));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        nameTxtField.setBackground(new java.awt.Color(204, 255, 255));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 150, 40));
+
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Manufacturer:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
-        add(manufacTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, 150, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, 30));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        manufacTxtField.setBackground(new java.awt.Color(204, 255, 255));
+        add(manufacTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, 150, 40));
+
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel4.setText("Price per Item:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
-        add(priceTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 150, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, 30));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        priceTxtField.setBackground(new java.awt.Color(204, 255, 255));
+        add(priceTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 150, 40));
+
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel5.setText("Number of units available: ");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, -1, 30));
-        add(availTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 150, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, 40));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        availTxtField.setBackground(new java.awt.Color(204, 255, 255));
+        add(availTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 150, 40));
+
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Add");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -86,9 +95,9 @@ public class AddInventoryItemJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 110, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, 150, 40));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(255, 204, 204));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -97,15 +106,14 @@ public class AddInventoryItemJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, 110, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 110, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("ADD INVENTORY ITEMS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 230, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Add Inventory Items");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 360, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insurance.PNG"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -50, 850, 580));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/zzinventoryitems.gif"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 180, 340, 250));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

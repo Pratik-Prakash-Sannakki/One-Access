@@ -70,8 +70,10 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        labTable.setBackground(new java.awt.Color(204, 255, 204));
         labTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -90,9 +92,9 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(labTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, -1, 110));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 255));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -101,9 +103,9 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 140, 40));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 255));
+        jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -112,27 +114,27 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, 40));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 330, 130, -1));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 40, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 80, -1));
 
         nameTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 310, 94, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, 140, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Username:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 60, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 440, 100, -1));
 
         addrTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 354, 94, -1));
+        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, 140, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel6.setText("City Name");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 60, 20));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 100, 20));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jButton4.setBackground(new java.awt.Color(255, 204, 204));
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -140,11 +142,11 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 160, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 120, 40));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel5.setText("PHARMACY DETAILS");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 390, 37));
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jLabel5.setText("Pharmacy Details");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 390, 37));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boston", "San francisco" }));
         jComboBox1.setPreferredSize(new java.awt.Dimension(140, 30));
@@ -153,7 +155,7 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 170, -1));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, 170, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void labTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labTableMouseClicked

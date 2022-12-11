@@ -64,22 +64,32 @@ public class AddEmergencyUnitJPanel extends javax.swing.JPanel {
         dspe1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        dName.setBackground(new java.awt.Color(204, 255, 255));
         dName.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(dName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, -1, -1));
+        add(dName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, -1, -1));
 
+        dspe.setBackground(new java.awt.Color(204, 255, 255));
         dspe.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(dspe, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, -1, -1));
+        add(dspe, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, -1, -1));
 
+        dUname.setBackground(new java.awt.Color(204, 255, 255));
         dUname.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(dUname, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, -1));
+        dUname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dUnameActionPerformed(evt);
+            }
+        });
+        add(dUname, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 430, -1, -1));
 
+        dPass.setBackground(new java.awt.Color(204, 255, 255));
         dPass.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(dPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, -1, -1));
+        add(dPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, -1, -1));
 
-        addHospital.setBackground(new java.awt.Color(51, 51, 255));
-        addHospital.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        addHospital.setBackground(new java.awt.Color(102, 204, 255));
+        addHospital.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         addHospital.setText("Add Emergency Unit");
         addHospital.setPreferredSize(new java.awt.Dimension(164, 43));
         addHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +97,7 @@ public class AddEmergencyUnitJPanel extends javax.swing.JPanel {
                 addHospitalActionPerformed(evt);
             }
         });
-        add(addHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, 190, -1));
+        add(addHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 520, 190, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boston", "San francisco" }));
         jComboBox1.setPreferredSize(new java.awt.Dimension(140, 30));
@@ -96,10 +106,10 @@ public class AddEmergencyUnitJPanel extends javax.swing.JPanel {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 170, -1));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, 160, -1));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(255, 204, 204));
+        jButton2.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -107,49 +117,62 @@ public class AddEmergencyUnitJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, 120, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 120, 40));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 51, 51));
         jLabel8.setText("Add Emergency Unit");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 380, 50));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 490, 50));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(102, 255, 51));
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Emergency Unit Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 140, 20));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 210, 20));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setBackground(new java.awt.Color(102, 255, 51));
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Address");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 80, 20));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 80, 20));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel4.setBackground(new java.awt.Color(102, 255, 51));
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel4.setText("Username");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 100, 20));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, 100, 20));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setBackground(new java.awt.Color(102, 255, 51));
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel5.setText("Password");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 90, 20));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 90, 20));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setBackground(new java.awt.Color(102, 255, 51));
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel6.setText("City Name");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 110, 20));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 110, 20));
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel10.setBackground(new java.awt.Color(102, 255, 51));
+        jLabel10.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel10.setText("Email");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 70, 20));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 70, 20));
 
+        dName1.setBackground(new java.awt.Color(204, 255, 255));
         dName1.setPreferredSize(new java.awt.Dimension(15, 30));
-        add(dName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 164, -1));
+        add(dName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 164, -1));
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel11.setBackground(new java.awt.Color(102, 255, 51));
+        jLabel11.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel11.setText("Phone");
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 70, 20));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 70, 20));
 
+        dspe1.setBackground(new java.awt.Color(204, 255, 255));
         dspe1.setPreferredSize(new java.awt.Dimension(15, 30));
-        add(dspe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 164, -1));
+        add(dspe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 164, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/5e4d2bb71b44ea32261af277f990642e.gif"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, 460, 450));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 204));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/SystemAdminWorkArea/zzyyzz.gif"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 570, 420));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addHospitalActionPerformed
@@ -241,6 +264,10 @@ public class AddEmergencyUnitJPanel extends javax.swing.JPanel {
                 //            }
             //        }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void dUnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dUnameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dUnameActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

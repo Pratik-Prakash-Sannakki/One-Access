@@ -60,20 +60,26 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         med3labl = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         patNamelbl.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         patNamelbl.setText("Patient Name");
-        add(patNamelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 100, -1));
+        add(patNamelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, 100, -1));
 
         med1lbl.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         med1lbl.setText("Medicine 1");
-        add(med1lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
-        add(dName, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 160, -1));
-        add(dmed, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 160, -1));
+        add(med1lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        dName.setBackground(new java.awt.Color(204, 255, 255));
+        add(dName, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 160, -1));
+
+        dmed.setBackground(new java.awt.Color(204, 255, 255));
+        add(dmed, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 160, -1));
+
+        jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Add presecription");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -81,29 +87,36 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 160, 40));
 
         medlab2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         medlab2.setText("Medicine 2");
-        add(medlab2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
+        add(medlab2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Medicine 3");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, -1, -1));
-        add(dmed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 160, -1));
-        add(dmed3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 160, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, -1, -1));
+
+        dmed2.setBackground(new java.awt.Color(204, 255, 255));
+        add(dmed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, 160, -1));
+
+        dmed3.setBackground(new java.awt.Color(204, 255, 255));
+        add(dmed3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 270, 160, -1));
 
         commentslbl.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         commentslbl.setText("Comments");
-        add(commentslbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, -1, -1));
-        add(dcomments, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 160, -1));
+        add(commentslbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, -1, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("ADD PRESCRIPTION");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 280, 30));
+        dcomments.setBackground(new java.awt.Color(204, 255, 255));
+        add(dcomments, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 160, -1));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Add Prescription");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 410, 60));
+
+        jButton6.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Yellow"));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -111,10 +124,11 @@ public class PrescriptionJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
 
+        med3labl.setBackground(new java.awt.Color(204, 255, 255));
         med3labl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p10.png"))); // NOI18N
-        add(med3labl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 860, 590));
+        add(med3labl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -80, 880, 1040));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

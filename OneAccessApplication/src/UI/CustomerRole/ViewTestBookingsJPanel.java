@@ -55,9 +55,10 @@ public class ViewTestBookingsJPanel extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        testsBookedTable.setBackground(new java.awt.Color(204, 255, 204));
         testsBookedTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -71,13 +72,13 @@ public class ViewTestBookingsJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(testsBookedTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 680, 150));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 680, 270));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("VIEW TEST BOOKINGS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 330, 50));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("View Test Bookings");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 420, 50));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(255, 204, 204));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -86,10 +87,10 @@ public class ViewTestBookingsJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, 110, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 110, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p4.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 550));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 120, 730, 460));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed

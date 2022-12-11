@@ -82,8 +82,10 @@ public class DoctorJPanel extends javax.swing.JPanel {
         deleteDoctor1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        doctorDetails.setBackground(new java.awt.Color(204, 255, 204));
         doctorDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -97,10 +99,11 @@ public class DoctorJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(doctorDetails);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 580, 119));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 580, 120));
 
-        createNewDoctor.setBackground(new java.awt.Color(51, 51, 255));
+        createNewDoctor.setBackground(new java.awt.Color(51, 153, 255));
         createNewDoctor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        createNewDoctor.setForeground(new java.awt.Color(255, 255, 255));
         createNewDoctor.setText("Create New Doctor");
         createNewDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
         createNewDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -108,10 +111,11 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 createNewDoctorActionPerformed(evt);
             }
         });
-        add(createNewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 180, -1));
+        add(createNewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 380, 180, 40));
 
-        deleteDoctor.setBackground(new java.awt.Color(51, 51, 255));
+        deleteDoctor.setBackground(new java.awt.Color(255, 102, 102));
         deleteDoctor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        deleteDoctor.setForeground(new java.awt.Color(255, 255, 255));
         deleteDoctor.setText("Delete Doctor");
         deleteDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
         deleteDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -119,13 +123,13 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 deleteDoctorActionPerformed(evt);
             }
         });
-        add(deleteDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, -1, -1));
+        add(deleteDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 380, -1, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("        MANAGE DOCTORS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 400, 40));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Manage Doctors");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 50, 400, 40));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(255, 204, 204));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -134,10 +138,11 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, 90, 30));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 140, 40));
 
-        deleteDoctor1.setBackground(new java.awt.Color(51, 51, 255));
+        deleteDoctor1.setBackground(new java.awt.Color(51, 153, 255));
         deleteDoctor1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        deleteDoctor1.setForeground(new java.awt.Color(255, 255, 255));
         deleteDoctor1.setText("Refresh");
         deleteDoctor1.setPreferredSize(new java.awt.Dimension(156, 43));
         deleteDoctor1.addActionListener(new java.awt.event.ActionListener() {
@@ -145,10 +150,10 @@ public class DoctorJPanel extends javax.swing.JPanel {
                 deleteDoctor1ActionPerformed(evt);
             }
         });
-        add(deleteDoctor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, -1, -1));
+        add(deleteDoctor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/managedoctors.PNG"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 490));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, 780, 700));
     }// </editor-fold>//GEN-END:initComponents
 
     private void createNewDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createNewDoctorActionPerformed

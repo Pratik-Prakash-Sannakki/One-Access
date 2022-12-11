@@ -61,10 +61,11 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
         manageOrganizationJButton = new javax.swing.JButton();
         enterpriseLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        manageEmployeeJButton.setBackground(new java.awt.Color(51, 51, 255));
-        manageEmployeeJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageEmployeeJButton.setBackground(new java.awt.Color(51, 153, 255));
+        manageEmployeeJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         manageEmployeeJButton.setText("Add new medications");
         manageEmployeeJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -72,10 +73,10 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 210, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 310, 230, -1));
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(51, 51, 255));
-        manageOrganizationJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageOrganizationJButton.setBackground(new java.awt.Color(51, 153, 255));
+        manageOrganizationJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         manageOrganizationJButton.setText("Manage Orders");
         manageOrganizationJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -83,11 +84,11 @@ public PharamacyAdminJPanel(JPanel userProcessContainer, UserAccount ua,EcoSyste
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 210, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 190, 230, -1));
 
-        enterpriseLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel1.setText("PHARMACY ADMIN");
-        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 180, 30));
+        enterpriseLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel1.setText("Pharmacy Admin");
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 340, 80));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageEmployeeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonActionPerformed

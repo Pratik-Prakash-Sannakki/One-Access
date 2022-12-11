@@ -181,7 +181,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 490, 160, -1));
 
         jButton3.setBackground(new java.awt.Color(51, 51, 255));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jButton3.setText("VIEW PLANS");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -189,7 +189,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, -1, 50));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 220, 120));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("INSURANCE COMPANIES AND PLANS");

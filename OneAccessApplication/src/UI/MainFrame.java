@@ -58,7 +58,8 @@ public class MainFrame extends javax.swing.JFrame {
         container = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         title = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -66,6 +67,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
+        loginbtn.setBackground(new java.awt.Color(204, 204, 255));
         loginbtn.setText("Login");
         loginbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +75,9 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        userName.setBackground(new java.awt.Color(255, 255, 204));
+
+        pwdfield.setBackground(new java.awt.Color(255, 255, 204));
         pwdfield.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pwdfieldActionPerformed(evt);
@@ -85,6 +90,7 @@ public class MainFrame extends javax.swing.JFrame {
         pwdlbl.setForeground(new java.awt.Color(255, 255, 255));
         pwdlbl.setText("Password");
 
+        logoutbtn.setForeground(new java.awt.Color(255, 204, 204));
         logoutbtn.setText("Logout");
         logoutbtn.setEnabled(false);
         logoutbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +133,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(loginbtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(logoutbtn)
-                .addContainerGap(644, Short.MAX_VALUE))
+                .addContainerGap(640, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
@@ -135,46 +141,43 @@ public class MainFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(255, 255, 255));
         container.setLayout(new java.awt.CardLayout());
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel2.setBackground(new java.awt.Color(240, 246, 232));
 
         title.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         title.setForeground(new java.awt.Color(204, 0, 0));
-        title.setText("     ONE ACCESS APPLICATION");
+        title.setText("                      OneAccess Application");
         title.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 titleActionPerformed(evt);
             }
         });
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jTextArea1.setBackground(new java.awt.Color(204, 255, 255));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Helvetica Neue", 3, 18)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("\n\n\n\n\n\n\t\tAditya Ashok Illur - 002776756\n\t\tAkshata Patil        - 002657158\n\t \tPrathik Sannakki  - 002780000");
+        jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(306, 306, 306)
-                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 574, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(229, 229, 229)
-                        .addComponent(jButton1)))
-                .addContainerGap(1189, Short.MAX_VALUE))
+                .addGap(233, 233, 233)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1)
+                    .addComponent(title, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE))
+                .addContainerGap(1021, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jButton1)
-                .addGap(41, 41, 41)
-                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(406, Short.MAX_VALUE))
+                .addGap(64, 64, 64)
+                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(291, Short.MAX_VALUE))
         );
 
         container.add(jPanel2, "card2");
@@ -261,11 +264,6 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_pwdfieldActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -281,10 +279,11 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel container;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton loginbtn;
     private javax.swing.JButton logoutbtn;
     private javax.swing.JPasswordField pwdfield;
