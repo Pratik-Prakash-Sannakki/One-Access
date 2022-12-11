@@ -3,7 +3,7 @@
 ![Architecture](https://user-images.githubusercontent.com/71171604/205473487-2e56d2a1-1183-4958-b0cd-f19141e6b6cd.png)
 
 # Class Diagram:
-
+![AED_FINAL_PROJECT_UML](https://user-images.githubusercontent.com/114355226/206935286-d6205488-014f-4cfb-9b8c-bf6b4ed69e7a.png)
 
 # Proposal:
 
