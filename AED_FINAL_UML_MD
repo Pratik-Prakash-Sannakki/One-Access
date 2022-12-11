@@ -1,0 +1,188 @@
+classDiagram
+direction BT
+class ConfigureASystem {
+  + ConfigureASystem() 
+  + configure() EcoSystem
+}
+class DeliveryEnterprise {
+  + DeliveryEnterprise(String) 
+   ArrayList~Role~ supportedRole
+}
+class EcoSystem {
+  - EcoSystem() 
+  - ArrayList~Network~ networkList
+  + findNetwork(String) Network
+  + checkIfUserIsUnique(String) boolean
+  + createNetwork(String) Network
+   EcoSystem instance
+   ArrayList~Network~ networkList
+   ArrayList~Role~ supportedRole
+}
+class EmergencyEnterprise {
+  + EmergencyEnterprise(String) 
+   ArrayList~Role~ supportedRole
+}
+class Enterprise {
+  + Enterprise(String, EnterpriseType) 
+  - OrganizationDirectory organizationDirectory
+  - EnterpriseType enterpriseType
+   OrganizationDirectory organizationDirectory
+   EnterpriseType enterpriseType
+}
+class EnterpriseDirectory {
+  + EnterpriseDirectory() 
+  - ArrayList~Enterprise~ enterpriseList
+  + findEnterpriseType(String) Enterprise
+  + createAndAddEnterprise(String, EnterpriseType) Enterprise
+  + findEnterprise(String) Enterprise
+   ArrayList~Enterprise~ enterpriseList
+}
+class EnterpriseType {
+<<enumeration>>
+  - EnterpriseType(String) 
+  - String value
+  + values() EnterpriseType[]
+  + toString() String
+  + valueOf(String) EnterpriseType
+   String value
+}
+class HospitalEnterprise {
+  + HospitalEnterprise(String) 
+   ArrayList~Role~ supportedRole
+}
+class InsuranceEnterprise {
+  + InsuranceEnterprise(String) 
+   ArrayList~Role~ supportedRole
+}
+class LabEnterprise {
+  + LabEnterprise(String) 
+   ArrayList~Role~ supportedRole
+}
+class Network {
+  + Network() 
+  - String name
+  - EnterpriseDirectory enterpriseDirectory
+  + toString() String
+   EnterpriseDirectory enterpriseDirectory
+   String name
+}
+class Organization {
+  + Organization(String) 
+  + Organization() 
+  - WorkQueue workQueue
+  ~ Type enterpriseType1
+  ~ String name
+  - EmployeeDirectory employeeDirectory
+  - UserAccountDirectory userAccountDirectory
+  - int organizationID
+  + toString() String
+   String name
+   EmployeeDirectory employeeDirectory
+   ArrayList~Role~ supportedRole
+   WorkQueue workQueue
+   UserAccountDirectory userAccountDirectory
+   Type enterpriseType1
+   int organizationID
+}
+class OrganizationDirectory {
+  + OrganizationDirectory() 
+  ~ PatientDirectory patientDirectory
+  ~ LabDirectory labDirectory
+  ~ EmergencyDirectory emergencyDirectory
+  ~ DoctorDirectory doctorDirectory
+  ~ InsuranceAdminDirectory insuranceAdminDirectory
+  ~ DeliveryManDirectory deliveryManDirectory
+  ~ ArrayList~Organization~ organizationList
+  ~ PharamacyAdminDirectory pharmacyAdminDirectory
+  ~ SupplierDirectory supplierDirectory
+  + findOrganization(String) Organization
+  + findOrganizationType(Type) ArrayList~Organization~
+  + deleteOrganization(Organization) void
+  + createOrganization(String, Type, String) Organization
+   PatientDirectory patientDirectory
+   PharamacyAdminDirectory pharmacyAdminDirectory
+   DoctorDirectory doctorDirectory
+   SupplierDirectory supplierDirectory
+   ArrayList~Organization~ organizationList
+   DeliveryManDirectory deliveryManDirectory
+   EmergencyDirectory emergencyDirectory
+   InsuranceAdminDirectory insuranceAdminDirectory
+   LabDirectory labDirectory
+}
+class PatientOrganization {
+  + PatientOrganization() 
+   ArrayList~Role~ supportedRole
+}
+class PharmacyEnterprise {
+  + PharmacyEnterprise(String) 
+   ArrayList~Role~ supportedRole
+}
+class SupplierEnterprise {
+  + SupplierEnterprise(String) 
+   ArrayList~Role~ supportedRole
+}
+class Type {
+<<enumeration>>
+  - Type(String) 
+  - String value
+  + values() Type[]
+  + valueOf(String) Type
+   String value
+}
+class node10
+class node12
+class node1
+class node16
+class node27
+class node7
+class node24
+class node0
+class node15
+class node4
+class node18
+class node14
+class node2
+class node26
+class node3
+
+ConfigureASystem  ..>  EcoSystem 
+ConfigureASystem  ..>  Organization 
+DeliveryEnterprise  -->  Enterprise 
+EcoSystem "1" *--> "business 1" EcoSystem 
+EcoSystem  ..>  EcoSystem : «create»
+EcoSystem  ..>  Network : «create»
+EcoSystem  -->  Organization 
+EmergencyEnterprise  -->  Enterprise 
+Enterprise "1" *--> "enterpriseType 1" EnterpriseType 
+Enterprise  -->  Organization 
+Enterprise  ..>  OrganizationDirectory : «create»
+Enterprise "1" *--> "organizationDirectory 1" OrganizationDirectory 
+EnterpriseDirectory  ..>  DeliveryEnterprise : «create»
+EnterpriseDirectory  ..>  EmergencyEnterprise : «create»
+EnterpriseDirectory  ..>  Enterprise 
+EnterpriseDirectory  ..>  EnterpriseType 
+EnterpriseDirectory  ..>  HospitalEnterprise : «create»
+EnterpriseDirectory  ..>  InsuranceEnterprise : «create»
+EnterpriseDirectory  ..>  LabEnterprise : «create»
+EnterpriseDirectory  ..>  Organization 
+EnterpriseDirectory  ..>  PharmacyEnterprise : «create»
+EnterpriseDirectory  ..>  SupplierEnterprise : «create»
+Enterprise  -->  EnterpriseType 
+HospitalEnterprise  -->  Enterprise 
+InsuranceEnterprise  -->  Enterprise 
+InsuranceEnterprise  ..>  EnterpriseType 
+LabEnterprise  -->  Enterprise 
+LabEnterprise  ..>  EnterpriseType 
+Network  ..>  EnterpriseDirectory : «create»
+Network "1" *--> "enterpriseDirectory 1" EnterpriseDirectory 
+Organization "1" *--> "enterpriseType1 1" Type 
+OrganizationDirectory "1" *--> "system 1" EcoSystem 
+OrganizationDirectory  ..>  Organization 
+OrganizationDirectory  ..>  OrganizationDirectory 
+OrganizationDirectory  ..>  Type 
+PatientOrganization  -->  Organization 
+PatientOrganization  ..>  Type 
+PharmacyEnterprise  -->  Enterprise 
+SupplierEnterprise  -->  Enterprise 
+SupplierEnterprise  ..>  EnterpriseType 
+Organization  -->  Type 
