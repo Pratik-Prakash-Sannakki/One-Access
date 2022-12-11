@@ -37,6 +37,9 @@ Deliveryman (All CRUD operations)
 
 ## CONTRIBUTERS:
 
-- ADITYA ILLUR - `002776756`
-- PRATIK SANNAKKI - `002780000`
-- AKSHATHA PATIL - `002657158`
+- ADITYA ILLUR - `002776756` <br>
+<img src="https://res.cloudinary.com/dj98golzx/image/upload/v1670628560/adi_profile_pic_vwj4gp.jpg" width="10%" height="10%"> <br>
+- PRATIK SANNAKKI - `002780000` <br>
+- <img src="https://media-exp1.licdn.com/dms/image/D5603AQGYqYHDaGGnDw/profile-displayphoto-shrink_400_400/0/1663108903217?e=1676505600&v=beta&t=w4FfBpV_gF14PTo1tPYdMWTT3nHE94O0Typvc7PBbMw" width="10%" height="10%"> <br>
+- AKSHATHA PATIL - `002657158`<br>
+<img src="https://media-exp1.licdn.com/dms/image/D4E35AQHVtsqwD8cOew/profile-framedphoto-shrink_400_400/0/1664753098693?e=1671397200&v=beta&t=HbLTaP5OV9iE09Up8HTzTuDFzntHL3ugZrPOYr93hB0" width="10%" height="10%"> <br>
