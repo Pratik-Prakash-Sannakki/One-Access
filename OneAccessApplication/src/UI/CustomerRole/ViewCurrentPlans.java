@@ -85,6 +85,7 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        nameTxtField.setBackground(new java.awt.Color(204, 255, 255));
         nameTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         nameTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +94,7 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
         });
         add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, 160, -1));
 
+        yrsTxtField.setBackground(new java.awt.Color(204, 255, 255));
         yrsTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         yrsTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +103,7 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
         });
         add(yrsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, 160, -1));
 
+        monthlTxtField.setBackground(new java.awt.Color(204, 255, 255));
         monthlTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         monthlTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +112,7 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
         });
         add(monthlTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, 160, -1));
 
+        totalTxtField.setBackground(new java.awt.Color(204, 255, 255));
         totalTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         totalTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,49 +121,52 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
         });
         add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, 160, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Plan Name:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 110, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel4.setText("Total years of duration:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 170, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 200, -1));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel5.setText("Monthly premium amount:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 190, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 230, -1));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel6.setText("Total premium amount:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel7.setText("Purchased on:");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 110, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 130, -1));
 
+        purchaseDateTxtField.setBackground(new java.awt.Color(204, 255, 255));
         purchaseDateTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         add(purchaseDateTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 160, -1));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel8.setText("Validity:");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 380, -1, -1));
 
+        validityTxtField.setBackground(new java.awt.Color(204, 255, 255));
         validityTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         add(validityTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 370, 160, -1));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel10.setText("Status:");
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 60, -1));
 
+        statusTxtField.setBackground(new java.awt.Color(204, 255, 255));
         statusTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
         add(statusTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 410, 160, -1));
 
-        enterpriseLabel.setBackground(new java.awt.Color(255, 255, 255));
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setBackground(new java.awt.Color(51, 51, 255));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
         enterpriseLabel.setText("View Current Plans Available");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 300, 60));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 500, 60));
 
-        jButton7.setBackground(new java.awt.Color(51, 51, 255));
+        jButton7.setBackground(new java.awt.Color(255, 204, 204));
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton7.setText("Back");
         jButton7.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -168,10 +175,10 @@ public class ViewCurrentPlans extends javax.swing.JPanel {
                 jButton7ActionPerformed(evt);
             }
         });
-        add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 480, 90, 40));
+        add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 90, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insurance.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 570));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/wef.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 670));
     }// </editor-fold>//GEN-END:initComponents
 
     private void nameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTxtFieldActionPerformed

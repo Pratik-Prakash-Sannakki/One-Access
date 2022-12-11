@@ -52,9 +52,10 @@ public class ViewEmergencyRequestStatusJPanel extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        emergencyStatusJTable.setBackground(new java.awt.Color(204, 255, 204));
         emergencyStatusJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -68,11 +69,11 @@ public class ViewEmergencyRequestStatusJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(emergencyStatusJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 120, 470, 80));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 470, 170));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("VIEW EMERGENCY REQUEST STATUS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 440, 30));
+        enterpriseLabel.setText("View Emergency Request Status");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, 440, 30));
 
         jButton6.setBackground(new java.awt.Color(255, 153, 153));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -83,10 +84,10 @@ public class ViewEmergencyRequestStatusJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/emergency.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 520));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 170, 670, 340));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed

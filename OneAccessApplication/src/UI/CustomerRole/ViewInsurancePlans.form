@@ -223,7 +223,7 @@
           <Color blue="ff" green="33" red="33" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="12" style="1"/>
+          <Font name="Helvetica Neue" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VIEW PLANS"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -235,7 +235,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="280" y="280" width="-1" height="50"/>
+          <AbsoluteConstraints x="260" y="280" width="220" height="120"/>
         </Constraint>
       </Constraints>
     </Component>

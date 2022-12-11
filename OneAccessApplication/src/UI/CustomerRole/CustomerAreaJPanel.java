@@ -124,13 +124,16 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jLabel6 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("PATIENT DASHBOARD");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 480, 50));
 
+        restList.setBackground(new java.awt.Color(204, 255, 255));
         restList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 restListActionPerformed(evt);
@@ -138,6 +141,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         });
         add(restList, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 293, -1));
 
+        restList1.setBackground(new java.awt.Color(204, 255, 255));
         restList1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 restList1ActionPerformed(evt);
@@ -145,6 +149,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         });
         add(restList1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 293, -1));
 
+        restList2.setBackground(new java.awt.Color(204, 255, 255));
         restList2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 restList2ActionPerformed(evt);
@@ -152,7 +157,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         });
         add(restList2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 293, -1));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setBackground(new java.awt.Color(255, 204, 204));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setText("Submit Appointment");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -161,16 +166,17 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 180, -1));
 
+        jTextArea1.setBackground(new java.awt.Color(204, 255, 255));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 300, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 300, -1));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(102, 204, 255));
+        jButton2.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton2.setText("Check prescription");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -178,10 +184,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(546, 230, 190, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        doctorDetails1.setBackground(new java.awt.Color(204, 255, 204));
         doctorDetails1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -198,10 +205,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane2);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 450, 90));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 520, 170));
 
-        InsuranceJButton.setBackground(new java.awt.Color(51, 51, 255));
-        InsuranceJButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        InsuranceJButton.setBackground(new java.awt.Color(102, 204, 255));
+        InsuranceJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         InsuranceJButton.setText("Check Insurance Plans");
         InsuranceJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         InsuranceJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -209,10 +216,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 InsuranceJButtonActionPerformed(evt);
             }
         });
-        add(InsuranceJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, -1, -1));
+        add(InsuranceJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(546, 80, 190, -1));
 
-        OrderBtn.setBackground(new java.awt.Color(51, 51, 255));
-        OrderBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        OrderBtn.setBackground(new java.awt.Color(102, 204, 255));
+        OrderBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         OrderBtn.setText("Order Medicine");
         OrderBtn.setPreferredSize(new java.awt.Dimension(156, 43));
         OrderBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -220,10 +227,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 OrderBtnActionPerformed(evt);
             }
         });
-        add(OrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, -1, -1));
+        add(OrderBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(546, 280, 190, -1));
 
-        jButton4.setBackground(new java.awt.Color(51, 51, 255));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton4.setBackground(new java.awt.Color(102, 204, 255));
+        jButton4.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton4.setText("Book Test ");
         jButton4.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -231,10 +238,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 150, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(546, 130, 190, -1));
 
-        jButton5.setBackground(new java.awt.Color(51, 51, 255));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton5.setBackground(new java.awt.Color(102, 204, 255));
+        jButton5.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton5.setText("Help");
         jButton5.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -242,23 +249,29 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 jButton5ActionPerformed(evt);
             }
         });
-        add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, -1, -1));
+        add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(546, 180, 190, -1));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel1.setText("Select Appointmant Time");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jLabel1.setText("Appointmant Time");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 130, -1));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel2.setText("Select Hospital");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 110, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel3.setText("Select Doctor");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 100, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel4.setText("Select Appointment Date");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jLabel4.setText("Appointment Date");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 130, -1));
+
+        jDateChooser1.setBackground(new java.awt.Color(204, 255, 255));
         add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 290, -1));
 
         OrderBtn1.setBackground(new java.awt.Color(51, 51, 255));
@@ -270,9 +283,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 OrderBtn1ActionPerformed(evt);
             }
         });
-        add(OrderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, -1, -1));
+        add(OrderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setBackground(new java.awt.Color(255, 204, 204));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Give Feedback");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -280,13 +293,18 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, 160, 40));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 530, 160, 40));
 
+        jTextArea2.setBackground(new java.awt.Color(204, 255, 255));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         jScrollPane3.setViewportView(jTextArea2);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 400, -1, -1));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 399, 190, 120));
+
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/patientui.PNG"))); // NOI18N
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 670));
     }// </editor-fold>//GEN-END:initComponents
 
     private void restListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restListActionPerformed
@@ -453,6 +471,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

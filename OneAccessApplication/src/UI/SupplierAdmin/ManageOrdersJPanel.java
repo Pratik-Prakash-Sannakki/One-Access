@@ -72,8 +72,10 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        bookedTestTable.setBackground(new java.awt.Color(204, 255, 204));
         bookedTestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -87,9 +89,9 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(bookedTestTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 480, 130));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 540, 170));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setBackground(new java.awt.Color(204, 255, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("COMPLETE ORDER");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -98,13 +100,13 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 190, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 190, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("MANAGE ORDERS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 260, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Manage Orders");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 290, 60));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(255, 204, 204));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -113,7 +115,7 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 430, 120, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 120, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

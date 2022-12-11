@@ -72,10 +72,12 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        assignJButton.setBackground(new java.awt.Color(51, 51, 255));
+        assignJButton.setBackground(new java.awt.Color(51, 153, 255));
         assignJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
         assignJButton.setText("Assign to me");
         assignJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -83,10 +85,11 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
-        processJButton.setBackground(new java.awt.Color(51, 51, 255));
+        processJButton.setBackground(new java.awt.Color(0, 153, 255));
         processJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        processJButton.setForeground(new java.awt.Color(255, 255, 255));
         processJButton.setText("Delivered");
         processJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         processJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -94,9 +97,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, -1, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 430, -1, -1));
 
-        refreshJButton.setBackground(new java.awt.Color(51, 51, 255));
+        refreshJButton.setBackground(new java.awt.Color(0, 153, 255));
         refreshJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshJButton.setText("Refresh");
@@ -106,8 +109,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 40, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
 
+        delManTbl.setBackground(new java.awt.Color(204, 255, 204));
         delManTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -121,14 +125,14 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(delManTbl);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 700, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 700, 160));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("DELIVERY MAN DASHBOARD");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 360, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Delivery Man Dashboard");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, 450, 70));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/delivery.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 600));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 140, 710, 510));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

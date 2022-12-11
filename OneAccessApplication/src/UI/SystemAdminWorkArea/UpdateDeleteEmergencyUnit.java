@@ -67,19 +67,22 @@ public class UpdateDeleteEmergencyUnit extends javax.swing.JPanel {
         jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        addrTxtField.setBackground(new java.awt.Color(204, 255, 255));
         addrTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 570, 150, -1));
+        add(addrTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 450, 150, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Username:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, 90, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, 110, -1));
 
+        nameTxtField.setBackground(new java.awt.Color(204, 255, 255));
         nameTxtField.setPreferredSize(new java.awt.Dimension(164, 30));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 520, 150, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 150, -1));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 255));
+        jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -88,9 +91,9 @@ public class UpdateDeleteEmergencyUnit extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 150, 40));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 255));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -99,8 +102,9 @@ public class UpdateDeleteEmergencyUnit extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 640, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 510, 150, 40));
 
+        labTable.setBackground(new java.awt.Color(204, 255, 204));
         labTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -119,15 +123,15 @@ public class UpdateDeleteEmergencyUnit extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(labTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 470, 130));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel5.setText("EMERGENCY DETAILS");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 430, 90));
+        jLabel5.setText("Emergency Details");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 430, 90));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel6.setText("City Name");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 70, 20));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 120, 20));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boston", "San francisco" }));
         jComboBox1.setPreferredSize(new java.awt.Dimension(140, 30));
@@ -136,9 +140,9 @@ public class UpdateDeleteEmergencyUnit extends javax.swing.JPanel {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 170, -1));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 170, 40));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jButton4.setBackground(new java.awt.Color(255, 204, 204));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -147,11 +151,11 @@ public class UpdateDeleteEmergencyUnit extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 710, -1, -1));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 70, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 410, 90, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

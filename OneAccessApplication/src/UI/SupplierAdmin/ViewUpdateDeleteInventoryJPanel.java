@@ -78,6 +78,7 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         unitsTxtField.addActionListener(new java.awt.event.ActionListener() {
@@ -85,9 +86,9 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
                 unitsTxtFieldActionPerformed(evt);
             }
         });
-        add(unitsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, 150, -1));
+        add(unitsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 440, 150, 30));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -96,9 +97,9 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 483, 150, 40));
 
-        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setBackground(new java.awt.Color(255, 102, 102));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -107,44 +108,44 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, 150, 40));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Inventory Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 317, -1, 30));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel3.setText("Manufacturer:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 117, -1));
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel3.setText("Manufacturer");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 357, 130, 30));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel4.setText("Price per unit");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 397, -1, 30));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel5.setText("Units available");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 437, -1, 30));
 
         nameTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nameTxtFieldActionPerformed(evt);
             }
         });
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 150, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 320, 150, 30));
 
         yrsTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 yrsTxtFieldActionPerformed(evt);
             }
         });
-        add(yrsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 150, -1));
+        add(yrsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 150, 30));
 
         monthlTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 monthlTxtFieldActionPerformed(evt);
             }
         });
-        add(monthlTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 150, -1));
+        add(monthlTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 150, 30));
 
         plansJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -164,13 +165,13 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(plansJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 526, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 520, 170));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("MANAGE INVENTORY");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 200, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Manage Inventory");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 330, 60));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(255, 204, 204));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -179,11 +180,11 @@ public class ViewUpdateDeleteInventoryJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 520, -1, -1));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 110, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/p7.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/zzordermanage.gif"))); // NOI18N
         jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 330, 410));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 100, 640, 470));
     }// </editor-fold>//GEN-END:initComponents
 
     private void unitsTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitsTxtFieldActionPerformed
