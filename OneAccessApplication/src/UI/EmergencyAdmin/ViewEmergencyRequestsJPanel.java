@@ -107,7 +107,7 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 440, 100, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 100, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/emergency.PNG"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 140, 630, 330));

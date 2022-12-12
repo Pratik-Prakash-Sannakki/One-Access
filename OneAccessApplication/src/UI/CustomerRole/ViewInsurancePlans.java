@@ -101,7 +101,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         });
         add(insuranceCompanyJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 80, 130, -1));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Pay");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -180,7 +180,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         });
         add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 490, 160, -1));
 
-        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jButton3.setText("VIEW PLANS");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -189,13 +189,13 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 220, 120));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 220, 80));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("INSURANCE COMPANIES AND PLANS");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 400, 30));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(51, 153, 255));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -206,7 +206,7 @@ public class ViewInsurancePlans extends javax.swing.JPanel {
         });
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 110, 50));
 
-        jButton4.setBackground(new java.awt.Color(51, 51, 255));
+        jButton4.setBackground(new java.awt.Color(51, 153, 255));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Check Plans");
         jButton4.setPreferredSize(new java.awt.Dimension(156, 43));

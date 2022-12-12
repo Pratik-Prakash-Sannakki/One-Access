@@ -48,7 +48,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         userJButton.setBackground(new java.awt.Color(51, 153, 255));
-        userJButton.setForeground(new java.awt.Color(255, 255, 255));
+        userJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         userJButton.setText("Patient");
         userJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         userJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -58,8 +58,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, -1, -1));
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(51, 153, 255));
-        manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
+        manageOrganizationJButton.setBackground(new java.awt.Color(255, 0, 102));
+        manageOrganizationJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         manageOrganizationJButton.setText("Doctors");
         manageOrganizationJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -70,7 +70,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(51, 153, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton1.setText("Order Inventory");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {

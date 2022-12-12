@@ -84,7 +84,6 @@ public class ViewInventoryOrderJPanel extends javax.swing.JPanel {
 
         refreshTestJButton.setBackground(new java.awt.Color(51, 153, 255));
         refreshTestJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        refreshTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshTestJButton.setText("Refresh");
         refreshTestJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +95,6 @@ public class ViewInventoryOrderJPanel extends javax.swing.JPanel {
 
         jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {

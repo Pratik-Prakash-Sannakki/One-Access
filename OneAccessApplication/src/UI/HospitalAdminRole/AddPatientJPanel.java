@@ -105,7 +105,6 @@ public class AddPatientJPanel extends javax.swing.JPanel {
 
         addPatient.setBackground(new java.awt.Color(51, 153, 255));
         addPatient.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        addPatient.setForeground(new java.awt.Color(255, 255, 255));
         addPatient.setText("Add patient");
         addPatient.setPreferredSize(new java.awt.Dimension(156, 43));
         addPatient.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +132,6 @@ public class AddPatientJPanel extends javax.swing.JPanel {
 
         jButton6.setBackground(new java.awt.Color(51, 153, 255));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
