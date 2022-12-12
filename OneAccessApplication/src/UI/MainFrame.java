@@ -144,7 +144,6 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(240, 246, 232));
 
         title.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        title.setForeground(new java.awt.Color(204, 0, 0));
         title.setText("                      OneAccess Application");
         title.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
