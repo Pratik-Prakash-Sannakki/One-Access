@@ -90,7 +90,7 @@ public class MainFrame extends javax.swing.JFrame {
         pwdlbl.setForeground(new java.awt.Color(255, 255, 255));
         pwdlbl.setText("Password");
 
-        logoutbtn.setForeground(new java.awt.Color(255, 204, 204));
+        logoutbtn.setForeground(new java.awt.Color(204, 204, 255));
         logoutbtn.setText("Logout");
         logoutbtn.setEnabled(false);
         logoutbtn.addActionListener(new java.awt.event.ActionListener() {

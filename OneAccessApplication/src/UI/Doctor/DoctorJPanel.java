@@ -103,7 +103,6 @@ public class DoctorJPanel extends javax.swing.JPanel {
 
         createNewDoctor.setBackground(new java.awt.Color(51, 153, 255));
         createNewDoctor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        createNewDoctor.setForeground(new java.awt.Color(255, 255, 255));
         createNewDoctor.setText("Create New Doctor");
         createNewDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
         createNewDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -115,7 +114,6 @@ public class DoctorJPanel extends javax.swing.JPanel {
 
         deleteDoctor.setBackground(new java.awt.Color(255, 102, 102));
         deleteDoctor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        deleteDoctor.setForeground(new java.awt.Color(255, 255, 255));
         deleteDoctor.setText("Delete Doctor");
         deleteDoctor.setPreferredSize(new java.awt.Dimension(156, 43));
         deleteDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -142,7 +140,6 @@ public class DoctorJPanel extends javax.swing.JPanel {
 
         deleteDoctor1.setBackground(new java.awt.Color(51, 153, 255));
         deleteDoctor1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        deleteDoctor1.setForeground(new java.awt.Color(255, 255, 255));
         deleteDoctor1.setText("Refresh");
         deleteDoctor1.setPreferredSize(new java.awt.Dimension(156, 43));
         deleteDoctor1.addActionListener(new java.awt.event.ActionListener() {

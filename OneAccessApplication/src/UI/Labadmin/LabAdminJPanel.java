@@ -49,7 +49,6 @@ public class LabAdminJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         manageEmployeeJButton.setBackground(new java.awt.Color(51, 153, 255));
-        manageEmployeeJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageEmployeeJButton.setText("Complete Test Process");
         manageEmployeeJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +59,6 @@ public class LabAdminJPanel extends javax.swing.JPanel {
         add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 180, -1));
 
         manageOrganizationJButton.setBackground(new java.awt.Color(51, 153, 255));
-        manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageOrganizationJButton.setText("Add Tests");
         manageOrganizationJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +69,6 @@ public class LabAdminJPanel extends javax.swing.JPanel {
         add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 180, -1));
 
         jButton1.setBackground(new java.awt.Color(51, 153, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("View Tests");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {

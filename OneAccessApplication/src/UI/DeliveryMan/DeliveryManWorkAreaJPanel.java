@@ -77,7 +77,6 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
         assignJButton.setBackground(new java.awt.Color(51, 153, 255));
         assignJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
         assignJButton.setText("Assign to me");
         assignJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +88,6 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
         processJButton.setBackground(new java.awt.Color(0, 153, 255));
         processJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        processJButton.setForeground(new java.awt.Color(255, 255, 255));
         processJButton.setText("Delivered");
         processJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         processJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -101,7 +99,6 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
         refreshJButton.setBackground(new java.awt.Color(0, 153, 255));
         refreshJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        refreshJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshJButton.setText("Refresh");
         refreshJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
