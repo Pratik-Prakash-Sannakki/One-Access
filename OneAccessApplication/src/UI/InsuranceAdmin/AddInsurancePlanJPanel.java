@@ -125,7 +125,7 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 490, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, -1, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
         enterpriseLabel.setText("ADD INSURANCE PLAN");
@@ -141,7 +141,7 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 130, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 130, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insuranceplans.PNG"))); // NOI18N
         jLabel1.setText("jLabel1");

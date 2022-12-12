@@ -134,9 +134,9 @@ public class ViewUpdateDeleteIPlansJPanel extends javax.swing.JPanel {
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 580, -1, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         enterpriseLabel.setText("MANAGE INSURANCE");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, 260, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 430, 30));
 
         totalTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -94,7 +94,7 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(51, 153, 255));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -106,14 +106,14 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 90, 40));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 90, 40));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         enterpriseLabel.setText("MANAGE INSURANCE  ORDERS");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 580, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insurance.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 160, 680, 560));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 160, 670, 400));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

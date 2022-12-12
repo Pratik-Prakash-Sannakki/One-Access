@@ -85,7 +85,7 @@ public class InsuranceAdminJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         enterpriseLabel.setText("INSURANCE ADMIN");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 370, 90));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 370, 90));
     }// </editor-fold>//GEN-END:initComponents
 
     private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed
