@@ -95,7 +95,6 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, -1, 110));
 
         jButton2.setBackground(new java.awt.Color(51, 153, 255));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("UPDATE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +105,6 @@ public class UpdateDeletePharmacy extends javax.swing.JPanel {
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 140, 40));
 
         jButton3.setBackground(new java.awt.Color(51, 153, 255));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("DELETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {

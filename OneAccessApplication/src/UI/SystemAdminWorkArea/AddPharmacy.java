@@ -79,7 +79,7 @@ public class AddPharmacy extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Address");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 50, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 120, -1));
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel4.setText("Username");
@@ -158,7 +158,7 @@ public class AddPharmacy extends javax.swing.JPanel {
 
         jLabel9.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel9.setText("PhoneNumber");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 100, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 130, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/zzyyxx.gif"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 730, 410));
