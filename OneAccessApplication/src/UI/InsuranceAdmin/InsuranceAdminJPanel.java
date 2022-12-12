@@ -44,11 +44,12 @@ public class InsuranceAdminJPanel extends javax.swing.JPanel {
         manageOrganizationJButton = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        userJButton.setBackground(new java.awt.Color(51, 51, 255));
+        userJButton.setBackground(new java.awt.Color(51, 153, 255));
         userJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        userJButton.setForeground(new java.awt.Color(255, 255, 255));
         userJButton.setText("Manage Insurance Plan");
         userJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         userJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -56,10 +57,11 @@ public class InsuranceAdminJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 210, -1));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 210, -1));
 
-        manageEmployeeJButton.setBackground(new java.awt.Color(51, 51, 255));
+        manageEmployeeJButton.setBackground(new java.awt.Color(51, 153, 255));
         manageEmployeeJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageEmployeeJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageEmployeeJButton.setText("Add new Insurance");
         manageEmployeeJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -67,10 +69,11 @@ public class InsuranceAdminJPanel extends javax.swing.JPanel {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 210, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 210, -1));
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(51, 51, 255));
+        manageOrganizationJButton.setBackground(new java.awt.Color(51, 153, 255));
         manageOrganizationJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageOrganizationJButton.setText("Manage Insurace Orders");
         manageOrganizationJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -78,11 +81,11 @@ public class InsuranceAdminJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 210, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 210, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         enterpriseLabel.setText("INSURANCE ADMIN");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 190, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 370, 90));
     }// </editor-fold>//GEN-END:initComponents
 
     private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed

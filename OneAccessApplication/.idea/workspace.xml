@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19049c1-ae66-410d-ae94-cdda74a790ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Databank.db4o" beforeDir="false" afterPath="$PROJECT_DIR$/Databank.db4o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/EmergencyAdmin/CompleteEmergencyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/EmergencyAdmin/CompleteEmergencyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyAdminJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyAdminJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyAdminJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyAdminJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyHistoryJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyHistoryJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyHistoryJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/EmergencyAdmin/EmergencyHistoryJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/HospitalAdminRole/AddPatientJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/HospitalAdminRole/AddPatientJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ManageInventoryJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ManageInventoryJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ManageInventoryJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ManageInventoryJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/HospitalAdminRole/OrderNewInventoryJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/HospitalAdminRole/OrderNewInventoryJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ViewInventoryOrderJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ViewInventoryOrderJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ViewInventoryOrderJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/HospitalAdminRole/ViewInventoryOrderJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/InsuranceAdmin/AddInsurancePlanJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InsuranceAdmin/AddInsurancePlanJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/InsuranceAdmin/ManageInsuranceOrdersJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InsuranceAdmin/ManageInsuranceOrdersJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/InsuranceAdmin/ViewUpdateDeleteIPlansJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InsuranceAdmin/ViewUpdateDeleteIPlansJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/InsuranceAdmin/ViewUpdateDeleteIPlansJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/InsuranceAdmin/ViewUpdateDeleteIPlansJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/SystemAdminWorkArea/AddLabJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/SystemAdminWorkArea/AddLabJPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/SystemAdminWorkArea/SystemAdminWorkAreaJPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/SystemAdminWorkArea/SystemAdminWorkAreaJPanel.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670790963542</updated>
-      <workItem from="1670790964983" duration="1291000" />
+      <workItem from="1670790964983" duration="1463000" />
     </task>
     <servers />
   </component>

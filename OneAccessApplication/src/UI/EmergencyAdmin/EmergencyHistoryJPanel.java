@@ -55,9 +55,10 @@ public class EmergencyHistoryJPanel extends javax.swing.JPanel {
 
         jLabel2.setText("jLabel2");
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        emergencyRequestJTable.setBackground(new java.awt.Color(204, 255, 204));
         emergencyRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -71,14 +72,15 @@ public class EmergencyHistoryJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(emergencyRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 620, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 620, 200));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("EMERGENCY DASHBOARD");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 260, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Emergency History");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, 500, 70));
 
-        jButton6.setBackground(new java.awt.Color(255, 102, 102));
+        jButton6.setBackground(new java.awt.Color(51, 153, 255));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -86,10 +88,10 @@ public class EmergencyHistoryJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 100, 30));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 100, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/emergency.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 520));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 170, 620, 370));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed

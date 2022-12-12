@@ -66,45 +66,45 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Plan Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 80, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 150, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Total years of duration:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, 170, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 240, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel4.setText("Monthly premium amount:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 190, 180, 20));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, 250, 20));
 
         nameTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nameTxtFieldActionPerformed(evt);
             }
         });
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 110, 170, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 210, 30));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel5.setText("Total premium amount:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 170, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 240, 20));
 
         yrsTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 yrsTxtFieldActionPerformed(evt);
             }
         });
-        add(yrsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, 170, -1));
+        add(yrsTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, 210, 30));
 
         monthlTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 monthlTxtFieldActionPerformed(evt);
             }
         });
-        add(monthlTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, 170, -1));
+        add(monthlTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 370, 210, 30));
 
         totalTxtField.setEditable(false);
         totalTxtField.setBackground(new java.awt.Color(255, 255, 255));
@@ -113,10 +113,11 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
                 totalTxtFieldActionPerformed(evt);
             }
         });
-        add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 230, 170, -1));
+        add(totalTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 210, 30));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("ADD PLAN");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -124,14 +125,15 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 490, -1, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
         enterpriseLabel.setText("ADD INSURANCE PLAN");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 260, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 420, 70));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(51, 153, 255));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -139,11 +141,11 @@ public AddInsurancePlanJPanel(JPanel userProcessContainer,UserAccount userAccoun
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 370, 160, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 130, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insuranceplans.PNG"))); // NOI18N
         jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 520));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 740));
     }// </editor-fold>//GEN-END:initComponents
 
     private void nameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTxtFieldActionPerformed
