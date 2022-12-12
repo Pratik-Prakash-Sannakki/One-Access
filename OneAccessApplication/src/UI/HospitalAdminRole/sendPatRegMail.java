@@ -48,7 +48,7 @@ public  void mailfunc(String c,String Eemail)
 
           msg.setReplyTo(InternetAddress.parse(fromEmail, false));
 
-          msg.setSubject("app test email", "UTF-8");
+          msg.setSubject("Registration successful", "UTF-8");
 
           msg.setText(c, "UTF-8");
 

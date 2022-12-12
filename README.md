@@ -1,5 +1,8 @@
 ##                          ✨ONE ACCESS APPLICATION✨
 
+# Problem Statement:
+
+With the current healthcare system being manual/semi automated and advancement in technology and virtualisation, lack of an automated system becomes a necessity for ease and a seamless experience. 
 
 # Proposal:
 
