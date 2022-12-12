@@ -54,7 +54,7 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         emergencyRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -73,7 +73,7 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 590, 110));
 
         jButton1.setBackground(new java.awt.Color(255, 102, 102));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jButton1.setText("COMPLETE");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +84,7 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(255, 102, 102));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jButton2.setText("REFRESH");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -94,12 +94,12 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
         });
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 300, 120, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         enterpriseLabel.setText("EMERGENCY DASHBOARD");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 250, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, 250, 30));
 
         jButton6.setBackground(new java.awt.Color(255, 102, 102));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -110,7 +110,7 @@ public class ViewEmergencyRequestsJPanel extends javax.swing.JPanel {
         add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 440, 100, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/emergency.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 940, 600));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 140, 630, 330));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

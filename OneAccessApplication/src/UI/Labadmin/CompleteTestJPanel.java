@@ -73,34 +73,34 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Patient Name:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 100, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 163, 130, 30));
 
         patientNameTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 patientNameTxtFieldActionPerformed(evt);
             }
         });
-        add(patientNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, 160, -1));
-        add(testIdTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 160, -1));
-        add(DateBookedTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 160, -1));
+        add(patientNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 163, 160, 30));
+        add(testIdTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 213, 160, 30));
+        add(DateBookedTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 263, 160, 30));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel3.setText("Test ID");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 75, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 213, 75, 30));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel5.setText("Date booked");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 100, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 263, 120, 30));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel6.setText("Sample collected:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 323, -1, 30));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel7.setText("Results published:");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 373, -1, 30));
 
         jRadioButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton1.setText("YES");
@@ -109,7 +109,7 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jRadioButton1ActionPerformed(evt);
             }
         });
-        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, -1, -1));
+        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 311, -1, 30));
 
         jRadioButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton2.setText("NO");
@@ -118,7 +118,7 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jRadioButton2ActionPerformed(evt);
             }
         });
-        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, -1, -1));
+        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 311, -1, 30));
 
         jRadioButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton3.setText("YES");
@@ -127,7 +127,7 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jRadioButton3ActionPerformed(evt);
             }
         });
-        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, -1, -1));
+        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 371, -1, 30));
 
         jRadioButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jRadioButton4.setText("NO");
@@ -136,9 +136,9 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jRadioButton4ActionPerformed(evt);
             }
         });
-        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, -1, -1));
+        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 371, -1, 30));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setBackground(new java.awt.Color(0, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Submit");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -147,9 +147,9 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, -1, 30));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, 180, 40));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setBackground(new java.awt.Color(0, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Submit");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -158,13 +158,13 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, -1, 30));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, 180, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
         enterpriseLabel.setText("COMPLETE TESTING");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 220, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, 390, 60));
 
-        jButton6.setBackground(new java.awt.Color(51, 51, 255));
+        jButton6.setBackground(new java.awt.Color(0, 153, 255));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("Back");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -173,10 +173,10 @@ public class CompleteTestJPanel extends javax.swing.JPanel {
                 jButton6ActionPerformed(evt);
             }
         });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 420, 90, 40));
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 120, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/lab.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 530));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1270, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void patientNameTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientNameTxtFieldActionPerformed

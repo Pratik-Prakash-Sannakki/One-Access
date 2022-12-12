@@ -80,26 +80,30 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setText("Additional Comments:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 80, 150, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 150, 20));
 
         QuantityJLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         QuantityJLabel.setText("Quantity");
-        add(QuantityJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 130, -1));
+        add(QuantityJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 130, -1));
 
         CommentsTxtArea.setColumns(20);
         CommentsTxtArea.setRows(5);
         jScrollPane2.setViewportView(CommentsTxtArea);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 60, 186, -1));
-        add(QuantityJTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 138, -1));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, 260, 150));
 
+        QuantityJTxtField.setBackground(new java.awt.Color(204, 255, 255));
+        add(QuantityJTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 138, -1));
+
+        SupplierJComboBox.setBackground(new java.awt.Color(204, 255, 255));
         SupplierJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SupplierJComboBoxActionPerformed(evt);
             }
         });
-        add(SupplierJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 138, -1));
+        add(SupplierJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 138, -1));
 
+        InventoryOrderJTable.setBackground(new java.awt.Color(204, 255, 204));
         InventoryOrderJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -115,25 +119,25 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(InventoryOrderJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 520, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 520, 150));
 
         TotalJLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         TotalJLabel.setText("Total:");
-        add(TotalJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 50, -1));
+        add(TotalJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 620, 50, -1));
 
         TotalJTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TotalJTxtFieldActionPerformed(evt);
             }
         });
-        add(TotalJTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 240, 40));
+        add(TotalJTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 610, 170, 30));
 
-        NewOrderJLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        NewOrderJLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
         NewOrderJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        NewOrderJLabel.setText("HOSPITAL ORDER DASHBOARD");
-        add(NewOrderJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 360, 23));
+        NewOrderJLabel.setText("Hospital Order Dashboard");
+        add(NewOrderJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 470, 60));
 
-        ConfirmJButton.setBackground(new java.awt.Color(51, 51, 255));
+        ConfirmJButton.setBackground(new java.awt.Color(51, 153, 255));
         ConfirmJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         ConfirmJButton.setText("Confim");
         ConfirmJButton.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -142,13 +146,13 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
                 ConfirmJButtonActionPerformed(evt);
             }
         });
-        add(ConfirmJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, -1, -1));
+        add(ConfirmJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 660, 130, 30));
 
         RestaurantJLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         RestaurantJLabel.setText("Logistics Company");
-        add(RestaurantJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 140, -1));
+        add(RestaurantJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 140, -1));
 
-        DeleteJButton.setBackground(new java.awt.Color(51, 51, 255));
+        DeleteJButton.setBackground(new java.awt.Color(51, 153, 255));
         DeleteJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         DeleteJButton.setText("Delete");
         DeleteJButton.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -157,13 +161,13 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
                 DeleteJButtonActionPerformed(evt);
             }
         });
-        add(DeleteJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        add(DeleteJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 370, -1, -1));
 
         MenuItemJLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         MenuItemJLabel.setText("Inventory Item");
-        add(MenuItemJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 130, -1));
+        add(MenuItemJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 130, -1));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Add");
         jButton1.setPreferredSize(new java.awt.Dimension(156, 43));
@@ -172,16 +176,17 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, -1, -1));
 
+        InventoryItemJComboBox.setBackground(new java.awt.Color(204, 255, 255));
         InventoryItemJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 InventoryItemJComboBoxActionPerformed(evt);
             }
         });
-        add(InventoryItemJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 138, -1));
+        add(InventoryItemJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 138, -1));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setBackground(new java.awt.Color(255, 204, 204));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
@@ -190,11 +195,11 @@ public class OrderNewInventoryJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 90, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 90, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/supplierorder.PNG"))); // NOI18N
         jLabel3.setText("jLabel3");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 950, 540));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 190, 740, 480));
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierJComboBoxActionPerformed

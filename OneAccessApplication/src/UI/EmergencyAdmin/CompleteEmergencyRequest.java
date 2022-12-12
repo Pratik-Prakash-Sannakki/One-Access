@@ -69,18 +69,19 @@ public class CompleteEmergencyRequest extends javax.swing.JPanel {
         setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        patnamelbl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        patnamelbl.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         patnamelbl.setText("Patient Name:");
-        add(patnamelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 120, -1));
+        add(patnamelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 150, 40));
 
-        patientstatuslbl.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        patientstatuslbl.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         patientstatuslbl.setText("Patient Status:");
-        add(patientstatuslbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 110, 20));
-        add(pNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 180, -1));
-        add(pAgeTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 180, -1));
+        add(patientstatuslbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 140, 30));
+        add(pNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 213, 180, 40));
+        add(pAgeTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 180, 40));
 
-        jButton2.setBackground(new java.awt.Color(255, 102, 102));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("MARK AS COMPLETE");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -88,10 +89,11 @@ public class CompleteEmergencyRequest extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 190, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 190, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 102, 102));
+        jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("MARK AS INCOMPLETE");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +101,7 @@ public class CompleteEmergencyRequest extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 200, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, 200, -1));
 
         jButton4.setBackground(new java.awt.Color(255, 102, 102));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -110,14 +112,14 @@ public class CompleteEmergencyRequest extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, 90, 40));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 90, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("COMPLETE EMERGENCY REQUEST");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 320, 40));
+        enterpriseLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        enterpriseLabel.setText("Complete Emergency Request");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, 550, 40));
 
         imagelbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/emergency.PNG"))); // NOI18N
-        add(imagelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 520));
+        add(imagelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 150, 500, 310));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

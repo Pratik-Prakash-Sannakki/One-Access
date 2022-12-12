@@ -53,9 +53,10 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        insuranceJTable.setBackground(new java.awt.Color(204, 255, 204));
         insuranceJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -69,10 +70,11 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(insuranceJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 470, 130));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 590, 210));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("View details");
         jButton2.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -80,10 +82,11 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("REFRESH");
         jButton3.setPreferredSize(new java.awt.Dimension(156, 43));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -91,10 +94,11 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(51, 51, 255));
+        jButton4.setBackground(new java.awt.Color(51, 153, 255));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Back");
         jButton4.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -102,14 +106,14 @@ public class ManageInsuranceOrdersJPanel extends javax.swing.JPanel {
                 jButton4ActionPerformed(evt);
             }
         });
-        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 90, 40));
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 90, 40));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setText("MANGE INSURANCE  ORDERS");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 330, 30));
+        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        enterpriseLabel.setText("MANAGE INSURANCE  ORDERS");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 580, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/insurance.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 530));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 160, 670, 400));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

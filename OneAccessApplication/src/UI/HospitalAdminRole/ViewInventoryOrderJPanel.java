@@ -48,8 +48,10 @@ public class ViewInventoryOrderJPanel extends javax.swing.JPanel {
         NewOrderJLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        InventoryRequestJTable.setBackground(new java.awt.Color(204, 255, 204));
         InventoryRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -78,10 +80,11 @@ public class ViewInventoryOrderJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(InventoryRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 550, 140));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 550, 140));
 
-        refreshTestJButton.setBackground(new java.awt.Color(51, 51, 255));
+        refreshTestJButton.setBackground(new java.awt.Color(51, 153, 255));
         refreshTestJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        refreshTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshTestJButton.setText("Refresh");
         refreshTestJButton.setPreferredSize(new java.awt.Dimension(156, 43));
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -89,10 +92,11 @@ public class ViewInventoryOrderJPanel extends javax.swing.JPanel {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, -1, -1));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.setPreferredSize(new java.awt.Dimension(80, 30));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -100,16 +104,16 @@ public class ViewInventoryOrderJPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 140, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, 140, 40));
 
-        NewOrderJLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        NewOrderJLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         NewOrderJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         NewOrderJLabel.setText("HOSPITAL VIEW ORDER DASHBOARD");
-        add(NewOrderJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 360, 23));
+        add(NewOrderJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 760, 70));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/lab.PNG"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 600));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1310, 840));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed

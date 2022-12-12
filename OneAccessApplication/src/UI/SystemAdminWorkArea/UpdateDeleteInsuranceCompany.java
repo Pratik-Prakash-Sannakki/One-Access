@@ -68,6 +68,7 @@ public class UpdateDeleteInsuranceCompany extends javax.swing.JPanel {
         nameTxtField = new javax.swing.JTextField();
         addrTxtField = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(240, 246, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
