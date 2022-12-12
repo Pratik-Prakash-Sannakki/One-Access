@@ -1,4 +1,4 @@
-##                          ✨ONE ACCESS APPLICATION✨
+##                          ✨ONE ACCESS✨
 
 # Problem Statement:
 
