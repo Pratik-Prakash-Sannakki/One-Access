@@ -1,14 +1,21 @@
 ##                          ✨ONE ACCESS APPLICATION✨
 
-![Architecture](https://user-images.githubusercontent.com/71171604/205473487-2e56d2a1-1183-4958-b0cd-f19141e6b6cd.png)
-
-# Class Diagram:
-![AED_FINAL_PROJECT_UML](https://user-images.githubusercontent.com/114355226/206935286-d6205488-014f-4cfb-9b8c-bf6b4ed69e7a.png)
 
 # Proposal:
 
 Our application intends to offer a methodical administration system that will enable users to access all medical amenities from a single platform.
 This application provides users a platform where they may buy the essential goods and services, simplifying their lives without exposing them to the continued spread of diseases and saving them a significant amount of time.
+
+
+
+# Eco System Architecture:
+![EcoSystem](https://user-images.githubusercontent.com/71171604/206942183-1cf79907-a4ba-41da-a20c-8fac21db6a23.PNG)
+
+
+# Class Diagram:
+![AED_FINAL_PROJECT_UML](https://user-images.githubusercontent.com/114355226/206935286-d6205488-014f-4cfb-9b8c-bf6b4ed69e7a.png)
+
+
 
 # Key functionalities: 
 
@@ -36,6 +43,40 @@ Deliveryman (All CRUD operations)
 - 	**Emergency Service Provider:** Complete the emergency request from patients
 -	**Supplier:** Supplier is able to CRUD the manufacturers and products. Also manage the orders from different organizations like Hospitals and Labs.
  -	**Delivery Man:** Accept the orders from Hospitals and Patients and complete the delivery request successfully.
+ 
+ # Steps to Access Application:
+ 
+ 1.	System Admin will login in with his/her credentials on login screen. Admin dashboard consists of all entities of the ecosystem. He first creates Hospital Admin,Pharmacy Admin and Delivery Man
+2.	Hospital Admin will login with his/her credentials and adds Doctors and Patients. Also an email is sent to the patients successfully to access all the features of our Application.
+3.	Patient will book an appointment with desired hospital and doctor and submit Book Appointment 
+4.	Doctor creates prescription for the patients who have booked appointment under him by clicking create prescription button
+5.	Patient can view the prescription when he clicks on check prescription button
+6.	Pharmacy Admin add medicines to his pharmacy by clicking add Medicines with their prices
+7.	Patient can order medicines by selecting the pharmacy name and medicines available in that pharmacy. He can pay and confirm the order for the same
+8.	Pharmacy admin can view the orders placed by clicking manage orders button in his dashboard. He now accepts the order and assign the delivery man for the order placed. 
+9.	Delivery man accepts the orders by selecting each order in his dashboard and assign to himself. Now the status of the order changes to pending. Later he selects the order and click on Delivered Button
+10.	Patient can view the status of the ordered medicines. The status now will be changed to delivered 
+11.	System Admin will login to add Lab Admin
+12.	Lab Admin can Add the medical tests along with the price of the tests by clicking Add/Update Tests button in his dashboard
+13.	Patient can click on Book Tests to undergo medical tests. He can select the Lab, Test name and Test date. Now he can confirm the Test by paying the total amount displayed and click on confirm
+14.	Lab Admin will complete the test process of the respective patient. He can also publish results by clicking on submit button 
+15.	System Admin will login to create the Insurance Admin 
+16.	Insurance Admin can now add Insurance Plans. He can add the plan details such as total years of duration, Monthly premium amount and Total premium amount of the plan. He can also manage the plans created by updating or deleting plans by clicking on Manage Plans in his dashboard
+17.	Patient will book the Insurance by clicking on check insurance plans in his dashboard. He can view the plans available and confirm the purchase by clicking on Pay
+18.	Insurance Admin will check the orders placed by clicking on manage orders in his dashboard. He can view the order details and confirm/decline the purchase 
+19.	System Admin will login in to create Supplier Admin
+20.	Supplier Admin will add inventory items with all the details of products .He can also update and delete the products
+21.	Hospital Admin will be able  to order inventory items to his organization and confirms the order by selecting the supplier name and products 
+22.	Supplier Admin can check the orders placed and can confirm the order. He also assign deliveryman to deliver the products
+23.	Delivery man now can check the assigned orders. He will assign to himself and click on Delivered. The status gets updated to delivered 
+24.	System Admin will login to create Emergency Admin
+25.	Patient clicks on Help button in his dashboard during emergency
+26.	Emergency Admin will receive the request for help for respective patient and completes the help
+27.	System Admin can do All CRUD operations on All organizations
+
+
+
+ 
 
 ## CONTRIBUTERS:
 
