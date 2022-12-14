@@ -16,8 +16,8 @@ public class sendPatRegMail
 
 public  void mailfunc(String c,String Eemail)
 {
-	final String fromEmail = "sannakkipratik@gmail.com";//user.getFromEmail(); //requires valid gmail id
-        final String password = "xdrpybmirodorvos";//user.getPassword(); // correct password for gmail id
+	final String fromEmail = "";//user.getFromEmail(); //requires valid gmail id
+        final String password = "";//user.getPassword(); // correct password for gmail id
          final String toEmail = Eemail; // can be any email id 
 
         Properties props = new Properties();
