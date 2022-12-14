@@ -79,7 +79,8 @@ Deliveryman (All CRUD operations)
 
 
 
- 
+**Note-** sms.java requires Twilio Account ID and Authentication token obtained upon registering with twilio
+          sendReqMail.java requires from mail ID and Application password 
 
 ## CONTRIBUTERS:
 
